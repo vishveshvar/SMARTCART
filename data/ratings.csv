@@ -1,0 +1,1314 @@
+Rating_ID,Customer_ID,Product_ID,Rating,Review_Text,Rating_Date
+RAT_000001,CUST_00884,PROD_00016,3,Okay for the price point.,2026-03-19 08:57:23
+RAT_000002,CUST_01261,PROD_00468,3,Okay for the price point.,2026-05-30 15:57:06
+RAT_000003,CUST_01571,PROD_00486,5,Top notch performance and build.,2026-04-08 18:03:55
+RAT_000004,CUST_00711,PROD_00145,4,"Good product, very satisfied with the purchase.",2026-06-21 13:18:47
+RAT_000005,CUST_01358,PROD_00148,4,Value for money. Delivery was fast.,2026-03-29 05:13:52
+RAT_000006,CUST_01583,PROD_00211,4,"Works as described, pleased with quality.",2026-07-10 11:15:26
+RAT_000007,CUST_01995,PROD_00232,4,"Works as described, pleased with quality.",2026-07-12 08:28:52
+RAT_000008,CUST_01006,PROD_00410,3,Decent purchase. Average experience.,2026-04-20 06:39:40
+RAT_000009,CUST_00592,PROD_00020,3,Decent purchase. Average experience.,2026-04-23 20:30:48
+RAT_000010,CUST_01618,PROD_00035,4,"Good product, very satisfied with the purchase.",2026-05-14 17:00:05
+RAT_000011,CUST_00184,PROD_00353,3,Okay for the price point.,2026-03-22 13:03:21
+RAT_000012,CUST_00184,PROD_00366,4,"Works as described, pleased with quality.",2026-03-23 13:08:48
+RAT_000013,CUST_02538,PROD_00105,3,Okay for the price point.,2026-03-17 16:17:05
+RAT_000014,CUST_02347,PROD_00490,3,Okay for the price point.,2026-05-11 13:43:17
+RAT_000015,CUST_02049,PROD_00333,4,"Works as described, pleased with quality.",2026-04-03 02:51:53
+RAT_000016,CUST_01118,PROD_00199,4,"Good product, very satisfied with the purchase.",2026-06-28 13:02:52
+RAT_000017,CUST_02783,PROD_00548,4,Value for money. Delivery was fast.,2026-07-25 10:49:09
+RAT_000018,CUST_02987,PROD_00134,5,"Exceptional quality, surpassed expectations!",2026-07-08 16:20:55
+RAT_000019,CUST_02702,PROD_00020,3,Decent purchase. Average experience.,2026-06-11 19:46:53
+RAT_000020,CUST_01697,PROD_00622,5,Top notch performance and build.,2026-07-05 17:01:29
+RAT_000021,CUST_00150,PROD_00190,4,"Works as described, pleased with quality.",2026-09-05 12:46:59
+RAT_000022,CUST_02391,PROD_00166,5,"Exceptional quality, surpassed expectations!",2026-04-04 04:48:07
+RAT_000023,CUST_01538,PROD_00593,4,Value for money. Delivery was fast.,2026-03-19 19:13:30
+RAT_000024,CUST_00271,PROD_00205,4,Value for money. Delivery was fast.,2026-05-14 03:45:03
+RAT_000025,CUST_01868,PROD_00616,4,"Good product, very satisfied with the purchase.",2026-04-27 04:04:27
+RAT_000026,CUST_02906,PROD_00520,4,Value for money. Delivery was fast.,2026-08-14 04:11:28
+RAT_000027,CUST_02186,PROD_00390,3,Okay for the price point.,2026-04-15 02:32:04
+RAT_000028,CUST_02701,PROD_00327,3,Okay for the price point.,2026-08-15 11:37:59
+RAT_000029,CUST_01927,PROD_00231,4,Value for money. Delivery was fast.,2026-04-17 08:52:09
+RAT_000030,CUST_00059,PROD_00084,4,Value for money. Delivery was fast.,2026-09-04 03:37:11
+RAT_000031,CUST_01382,PROD_00005,4,"Works as described, pleased with quality.",2026-08-17 02:57:32
+RAT_000032,CUST_00919,PROD_00453,3,Okay for the price point.,2026-08-20 13:09:20
+RAT_000033,CUST_01928,PROD_00144,4,"Works as described, pleased with quality.",2026-07-03 07:19:34
+RAT_000034,CUST_00363,PROD_00246,3,Decent purchase. Average experience.,2026-03-30 10:29:27
+RAT_000035,CUST_02468,PROD_00234,4,"Good product, very satisfied with the purchase.",2026-04-23 20:34:13
+RAT_000036,CUST_00248,PROD_00268,3,Meets basic expectations.,2026-05-16 17:50:24
+RAT_000037,CUST_00362,PROD_00087,3,Meets basic expectations.,2026-05-30 10:50:48
+RAT_000038,CUST_00380,PROD_00451,4,"Works as described, pleased with quality.",2026-08-10 13:24:53
+RAT_000039,CUST_01998,PROD_00132,3,Meets basic expectations.,2026-05-31 14:33:01
+RAT_000040,CUST_00856,PROD_00347,4,Value for money. Delivery was fast.,2026-05-11 03:46:30
+RAT_000041,CUST_00583,PROD_00020,3,Okay for the price point.,2026-04-10 15:33:05
+RAT_000042,CUST_00836,PROD_00602,2,Could have been better. Material feels average.,2026-06-05 11:02:14
+RAT_000043,CUST_02701,PROD_00071,4,Value for money. Delivery was fast.,2026-05-25 06:49:20
+RAT_000044,CUST_00836,PROD_00626,4,Value for money. Delivery was fast.,2026-04-22 06:08:59
+RAT_000045,CUST_02157,PROD_00015,4,Value for money. Delivery was fast.,2026-09-08 07:15:52
+RAT_000046,CUST_00324,PROD_00139,4,"Works as described, pleased with quality.",2026-04-05 02:30:34
+RAT_000047,CUST_00299,PROD_00429,3,Decent purchase. Average experience.,2026-04-22 17:46:07
+RAT_000048,CUST_00690,PROD_00148,5,"Exceptional quality, surpassed expectations!",2026-08-07 01:53:21
+RAT_000049,CUST_01979,PROD_00079,3,Meets basic expectations.,2026-04-14 07:24:52
+RAT_000050,CUST_01445,PROD_00172,4,"Works as described, pleased with quality.",2026-07-12 17:37:04
+RAT_000051,CUST_01982,PROD_00458,5,Absolutely loved this! Highly recommended.,2026-05-06 16:45:13
+RAT_000052,CUST_00778,PROD_00058,4,Value for money. Delivery was fast.,2026-07-18 23:08:10
+RAT_000053,CUST_01818,PROD_00608,4,Value for money. Delivery was fast.,2026-04-10 23:14:10
+RAT_000054,CUST_02670,PROD_00135,4,Value for money. Delivery was fast.,2026-05-17 01:29:46
+RAT_000055,CUST_00763,PROD_00511,3,Meets basic expectations.,2026-04-15 18:57:54
+RAT_000056,CUST_00794,PROD_00255,4,"Good product, very satisfied with the purchase.",2026-09-10 21:08:24
+RAT_000057,CUST_00794,PROD_00280,3,Decent purchase. Average experience.,2026-09-08 21:10:48
+RAT_000058,CUST_01685,PROD_00442,4,"Good product, very satisfied with the purchase.",2026-09-01 12:35:52
+RAT_000059,CUST_02807,PROD_00467,5,"Exceptional quality, surpassed expectations!",2026-05-09 17:08:50
+RAT_000060,CUST_00266,PROD_00223,4,Value for money. Delivery was fast.,2026-06-28 00:00:45
+RAT_000061,CUST_02571,PROD_00007,2,Could have been better. Material feels average.,2026-05-21 07:36:27
+RAT_000062,CUST_01822,PROD_00592,4,"Good product, very satisfied with the purchase.",2026-06-27 10:47:07
+RAT_000063,CUST_01284,PROD_00622,4,"Works as described, pleased with quality.",2026-08-07 14:45:11
+RAT_000064,CUST_02685,PROD_00082,4,"Works as described, pleased with quality.",2026-05-12 05:49:11
+RAT_000065,CUST_00045,PROD_00518,4,"Works as described, pleased with quality.",2026-08-11 17:53:16
+RAT_000066,CUST_01860,PROD_00551,5,Top notch performance and build.,2026-05-13 03:41:48
+RAT_000067,CUST_01504,PROD_00196,3,Okay for the price point.,2026-03-19 18:05:47
+RAT_000068,CUST_01504,PROD_00195,3,Meets basic expectations.,2026-03-17 18:08:15
+RAT_000069,CUST_01945,PROD_00277,4,"Good product, very satisfied with the purchase.",2026-07-09 09:21:59
+RAT_000070,CUST_01038,PROD_00178,3,Decent purchase. Average experience.,2026-07-20 21:59:09
+RAT_000071,CUST_02974,PROD_00180,4,"Works as described, pleased with quality.",2026-06-23 21:58:03
+RAT_000072,CUST_02370,PROD_00005,3,Decent purchase. Average experience.,2026-06-15 14:33:44
+RAT_000073,CUST_02370,PROD_00017,3,Decent purchase. Average experience.,2026-06-14 14:36:37
+RAT_000074,CUST_01662,PROD_00081,3,Meets basic expectations.,2026-07-23 14:19:38
+RAT_000075,CUST_02811,PROD_00063,4,Value for money. Delivery was fast.,2026-04-03 13:07:30
+RAT_000076,CUST_01577,PROD_00135,3,Meets basic expectations.,2026-05-10 05:10:43
+RAT_000077,CUST_00777,PROD_00201,4,"Works as described, pleased with quality.",2026-05-08 09:03:12
+RAT_000078,CUST_02878,PROD_00143,3,Meets basic expectations.,2026-05-07 02:25:17
+RAT_000079,CUST_01266,PROD_00600,4,"Good product, very satisfied with the purchase.",2026-09-05 10:22:33
+RAT_000080,CUST_01509,PROD_00019,3,Decent purchase. Average experience.,2026-04-02 14:10:24
+RAT_000081,CUST_00739,PROD_00139,4,"Good product, very satisfied with the purchase.",2026-04-06 13:22:32
+RAT_000082,CUST_00882,PROD_00092,3,Meets basic expectations.,2026-05-06 19:24:53
+RAT_000083,CUST_00954,PROD_00044,4,"Works as described, pleased with quality.",2026-07-07 03:42:00
+RAT_000084,CUST_01814,PROD_00555,4,"Good product, very satisfied with the purchase.",2026-08-04 23:51:37
+RAT_000085,CUST_00797,PROD_00264,3,Okay for the price point.,2026-08-27 14:42:43
+RAT_000086,CUST_01969,PROD_00554,3,Meets basic expectations.,2026-04-07 00:05:20
+RAT_000087,CUST_02626,PROD_00492,4,"Works as described, pleased with quality.",2026-05-20 22:28:09
+RAT_000088,CUST_02723,PROD_00093,4,Value for money. Delivery was fast.,2026-09-03 03:42:44
+RAT_000089,CUST_01378,PROD_00463,3,Meets basic expectations.,2026-09-06 13:40:32
+RAT_000090,CUST_01378,PROD_00491,4,"Good product, very satisfied with the purchase.",2026-09-06 13:45:05
+RAT_000091,CUST_02943,PROD_00436,4,"Good product, very satisfied with the purchase.",2026-05-10 05:16:19
+RAT_000092,CUST_02943,PROD_00462,3,Decent purchase. Average experience.,2026-05-13 05:19:46
+RAT_000093,CUST_00937,PROD_00137,4,"Good product, very satisfied with the purchase.",2026-04-10 08:12:28
+RAT_000094,CUST_00896,PROD_00106,3,Meets basic expectations.,2026-03-21 11:49:29
+RAT_000095,CUST_02678,PROD_00455,4,Value for money. Delivery was fast.,2026-07-13 20:01:29
+RAT_000096,CUST_02751,PROD_00608,4,"Good product, very satisfied with the purchase.",2026-05-18 11:29:37
+RAT_000097,CUST_00389,PROD_00455,5,"Exceptional quality, surpassed expectations!",2026-07-17 03:12:41
+RAT_000098,CUST_00275,PROD_00141,3,Okay for the price point.,2026-07-12 01:57:08
+RAT_000099,CUST_02887,PROD_00274,3,Meets basic expectations.,2026-08-21 09:55:00
+RAT_000100,CUST_02887,PROD_00265,4,"Works as described, pleased with quality.",2026-08-19 10:00:38
+RAT_000101,CUST_01762,PROD_00115,4,"Good product, very satisfied with the purchase.",2026-08-09 23:31:19
+RAT_000102,CUST_00605,PROD_00112,3,Okay for the price point.,2026-09-12 03:43:08
+RAT_000103,CUST_00605,PROD_00098,3,Okay for the price point.,2026-09-11 03:44:14
+RAT_000104,CUST_01688,PROD_00341,2,Slightly disappointed with specs.,2026-06-16 11:02:39
+RAT_000105,CUST_01708,PROD_00430,4,Value for money. Delivery was fast.,2026-07-04 19:18:39
+RAT_000106,CUST_02285,PROD_00292,5,Absolutely loved this! Highly recommended.,2026-09-08 15:40:53
+RAT_000107,CUST_00564,PROD_00409,4,"Works as described, pleased with quality.",2026-07-21 01:25:21
+RAT_000108,CUST_00951,PROD_00101,4,Value for money. Delivery was fast.,2026-06-10 19:31:44
+RAT_000109,CUST_01582,PROD_00083,2,Could have been better. Material feels average.,2026-05-29 19:25:54
+RAT_000110,CUST_01695,PROD_00225,5,Top notch performance and build.,2026-05-21 19:52:31
+RAT_000111,CUST_00305,PROD_00478,4,"Works as described, pleased with quality.",2026-07-28 11:07:27
+RAT_000112,CUST_00305,PROD_00481,3,Okay for the price point.,2026-07-30 11:09:46
+RAT_000113,CUST_02160,PROD_00310,3,Meets basic expectations.,2026-05-19 08:24:19
+RAT_000114,CUST_00788,PROD_00117,4,Value for money. Delivery was fast.,2026-04-30 05:54:17
+RAT_000115,CUST_00788,PROD_00112,3,Decent purchase. Average experience.,2026-04-29 05:58:09
+RAT_000116,CUST_02661,PROD_00135,5,Top notch performance and build.,2026-07-17 20:13:16
+RAT_000117,CUST_01631,PROD_00235,4,"Good product, very satisfied with the purchase.",2026-04-19 15:03:51
+RAT_000118,CUST_00491,PROD_00480,5,Absolutely loved this! Highly recommended.,2026-03-29 11:04:50
+RAT_000119,CUST_00788,PROD_00481,3,Decent purchase. Average experience.,2026-04-11 05:15:08
+RAT_000120,CUST_00926,PROD_00626,2,Could have been better. Material feels average.,2026-08-30 00:37:54
+RAT_000121,CUST_02104,PROD_00309,4,Value for money. Delivery was fast.,2026-05-19 21:17:57
+RAT_000122,CUST_01099,PROD_00154,4,Value for money. Delivery was fast.,2026-08-31 16:37:50
+RAT_000123,CUST_01570,PROD_00351,4,"Works as described, pleased with quality.",2026-04-19 11:30:47
+RAT_000124,CUST_02612,PROD_00306,4,Value for money. Delivery was fast.,2026-05-29 10:55:12
+RAT_000125,CUST_02612,PROD_00311,3,Okay for the price point.,2026-05-29 10:56:02
+RAT_000126,CUST_02532,PROD_00292,5,"Exceptional quality, surpassed expectations!",2026-03-22 06:43:42
+RAT_000127,CUST_01465,PROD_00009,5,Absolutely loved this! Highly recommended.,2026-09-11 17:32:57
+RAT_000128,CUST_00976,PROD_00519,4,Value for money. Delivery was fast.,2026-05-28 05:17:41
+RAT_000129,CUST_02057,PROD_00264,3,Meets basic expectations.,2026-07-06 03:22:49
+RAT_000130,CUST_00010,PROD_00521,4,"Works as described, pleased with quality.",2026-06-16 03:55:28
+RAT_000131,CUST_02442,PROD_00522,4,"Works as described, pleased with quality.",2026-08-24 05:53:28
+RAT_000132,CUST_02442,PROD_00539,5,"Exceptional quality, surpassed expectations!",2026-08-23 05:55:56
+RAT_000133,CUST_01381,PROD_00046,3,Meets basic expectations.,2026-04-10 10:14:11
+RAT_000134,CUST_02230,PROD_00336,5,"Exceptional quality, surpassed expectations!",2026-07-14 22:52:09
+RAT_000135,CUST_01256,PROD_00332,4,"Works as described, pleased with quality.",2026-05-18 03:48:35
+RAT_000136,CUST_02758,PROD_00212,4,Value for money. Delivery was fast.,2026-07-15 07:02:00
+RAT_000137,CUST_02044,PROD_00005,4,Value for money. Delivery was fast.,2026-08-13 08:26:20
+RAT_000138,CUST_00023,PROD_00034,3,Meets basic expectations.,2026-04-22 10:05:33
+RAT_000139,CUST_01602,PROD_00237,3,Meets basic expectations.,2026-07-30 19:39:08
+RAT_000140,CUST_00190,PROD_00007,4,Value for money. Delivery was fast.,2026-09-08 08:59:43
+RAT_000141,CUST_01730,PROD_00309,4,"Works as described, pleased with quality.",2026-05-29 08:31:00
+RAT_000142,CUST_01805,PROD_00529,4,"Works as described, pleased with quality.",2026-05-31 09:59:15
+RAT_000143,CUST_00832,PROD_00289,4,Value for money. Delivery was fast.,2026-08-05 06:23:04
+RAT_000144,CUST_00406,PROD_00145,4,"Works as described, pleased with quality.",2026-07-15 17:57:02
+RAT_000145,CUST_00005,PROD_00294,5,"Exceptional quality, surpassed expectations!",2026-03-31 05:56:09
+RAT_000146,CUST_01883,PROD_00491,5,Absolutely loved this! Highly recommended.,2026-04-17 16:33:31
+RAT_000147,CUST_02307,PROD_00491,2,Could have been better. Material feels average.,2026-07-17 03:02:31
+RAT_000148,CUST_01505,PROD_00489,4,"Good product, very satisfied with the purchase.",2026-08-07 19:30:02
+RAT_000149,CUST_02409,PROD_00196,3,Decent purchase. Average experience.,2026-07-21 00:56:41
+RAT_000150,CUST_02024,PROD_00170,4,"Works as described, pleased with quality.",2026-04-26 23:45:00
+RAT_000151,CUST_01334,PROD_00528,4,"Good product, very satisfied with the purchase.",2026-06-21 22:53:24
+RAT_000152,CUST_00614,PROD_00604,5,Absolutely loved this! Highly recommended.,2026-05-10 08:04:58
+RAT_000153,CUST_00460,PROD_00487,3,Decent purchase. Average experience.,2026-06-17 17:29:06
+RAT_000154,CUST_02475,PROD_00547,4,"Good product, very satisfied with the purchase.",2026-05-29 00:16:35
+RAT_000155,CUST_00209,PROD_00265,4,"Works as described, pleased with quality.",2026-04-01 21:32:28
+RAT_000156,CUST_00209,PROD_00273,3,Meets basic expectations.,2026-04-01 21:34:48
+RAT_000157,CUST_01321,PROD_00581,5,Top notch performance and build.,2026-09-11 10:13:01
+RAT_000158,CUST_02523,PROD_00353,4,"Works as described, pleased with quality.",2026-03-27 17:11:21
+RAT_000159,CUST_00407,PROD_00540,3,Meets basic expectations.,2026-05-25 19:40:02
+RAT_000160,CUST_00407,PROD_00506,4,"Good product, very satisfied with the purchase.",2026-05-22 19:42:40
+RAT_000161,CUST_00772,PROD_00325,4,"Works as described, pleased with quality.",2026-08-26 10:26:06
+RAT_000162,CUST_01895,PROD_00608,4,"Works as described, pleased with quality.",2026-05-07 11:33:13
+RAT_000163,CUST_01805,PROD_00159,4,"Good product, very satisfied with the purchase.",2026-09-07 18:59:10
+RAT_000164,CUST_01962,PROD_00206,5,Absolutely loved this! Highly recommended.,2026-04-20 15:52:57
+RAT_000165,CUST_01616,PROD_00615,3,Meets basic expectations.,2026-05-14 02:11:04
+RAT_000166,CUST_01579,PROD_00291,5,Absolutely loved this! Highly recommended.,2026-06-29 20:58:00
+RAT_000167,CUST_01579,PROD_00258,3,Decent purchase. Average experience.,2026-06-29 21:02:20
+RAT_000168,CUST_01995,PROD_00150,3,Meets basic expectations.,2026-07-26 20:46:37
+RAT_000169,CUST_02057,PROD_00006,4,"Works as described, pleased with quality.",2026-06-26 18:39:28
+RAT_000170,CUST_02188,PROD_00325,4,Value for money. Delivery was fast.,2026-03-31 03:47:24
+RAT_000171,CUST_02375,PROD_00338,3,Decent purchase. Average experience.,2026-07-28 00:00:13
+RAT_000172,CUST_00488,PROD_00287,3,Decent purchase. Average experience.,2026-05-23 16:58:37
+RAT_000173,CUST_02238,PROD_00298,4,"Works as described, pleased with quality.",2026-05-13 21:04:07
+RAT_000174,CUST_01233,PROD_00362,5,Top notch performance and build.,2026-04-15 09:52:01
+RAT_000175,CUST_02877,PROD_00009,4,Value for money. Delivery was fast.,2026-04-14 18:06:59
+RAT_000176,CUST_01327,PROD_00286,2,Could have been better. Material feels average.,2026-06-10 17:45:15
+RAT_000177,CUST_00851,PROD_00556,5,Absolutely loved this! Highly recommended.,2026-06-30 22:14:06
+RAT_000178,CUST_00413,PROD_00088,4,"Good product, very satisfied with the purchase.",2026-07-15 06:59:25
+RAT_000179,CUST_02878,PROD_00161,3,Decent purchase. Average experience.,2026-09-07 15:17:12
+RAT_000180,CUST_00753,PROD_00455,4,"Good product, very satisfied with the purchase.",2026-03-16 00:54:07
+RAT_000181,CUST_00807,PROD_00061,4,"Works as described, pleased with quality.",2026-08-04 11:12:41
+RAT_000182,CUST_02980,PROD_00166,4,"Works as described, pleased with quality.",2026-05-04 03:18:10
+RAT_000183,CUST_00586,PROD_00079,4,"Good product, very satisfied with the purchase.",2026-05-30 03:25:20
+RAT_000184,CUST_00253,PROD_00057,3,Okay for the price point.,2026-03-28 21:11:59
+RAT_000185,CUST_02560,PROD_00182,4,Value for money. Delivery was fast.,2026-04-20 12:25:51
+RAT_000186,CUST_00816,PROD_00371,4,Value for money. Delivery was fast.,2026-05-19 06:31:13
+RAT_000187,CUST_01068,PROD_00307,4,"Works as described, pleased with quality.",2026-07-17 08:26:00
+RAT_000188,CUST_00714,PROD_00055,4,"Works as described, pleased with quality.",2026-06-27 03:35:32
+RAT_000189,CUST_00714,PROD_00073,3,Meets basic expectations.,2026-06-28 03:36:21
+RAT_000190,CUST_00714,PROD_00077,5,Absolutely loved this! Highly recommended.,2026-06-26 03:37:35
+RAT_000191,CUST_01868,PROD_00598,5,Absolutely loved this! Highly recommended.,2026-05-21 15:30:00
+RAT_000192,CUST_00313,PROD_00298,4,"Good product, very satisfied with the purchase.",2026-07-27 09:30:08
+RAT_000193,CUST_01556,PROD_00267,3,Meets basic expectations.,2026-06-11 10:48:09
+RAT_000194,CUST_02777,PROD_00280,4,"Works as described, pleased with quality.",2026-06-09 07:13:35
+RAT_000195,CUST_02870,PROD_00197,4,"Good product, very satisfied with the purchase.",2026-05-30 12:04:33
+RAT_000196,CUST_02328,PROD_00219,5,"Exceptional quality, surpassed expectations!",2026-08-13 19:37:22
+RAT_000197,CUST_01464,PROD_00012,4,"Works as described, pleased with quality.",2026-04-13 22:21:09
+RAT_000198,CUST_01416,PROD_00459,2,Slightly disappointed with specs.,2026-03-25 04:23:21
+RAT_000199,CUST_01560,PROD_00143,3,Okay for the price point.,2026-07-22 06:42:14
+RAT_000200,CUST_02521,PROD_00039,4,"Works as described, pleased with quality.",2026-03-26 14:12:31
+RAT_000201,CUST_01619,PROD_00027,4,"Works as described, pleased with quality.",2026-08-15 21:21:15
+RAT_000202,CUST_00723,PROD_00464,4,"Good product, very satisfied with the purchase.",2026-06-14 05:58:41
+RAT_000203,CUST_02317,PROD_00208,4,"Works as described, pleased with quality.",2026-06-23 18:00:02
+RAT_000204,CUST_00697,PROD_00275,4,"Good product, very satisfied with the purchase.",2026-03-28 03:10:20
+RAT_000205,CUST_01088,PROD_00479,3,Okay for the price point.,2026-08-08 01:45:28
+RAT_000206,CUST_02643,PROD_00457,5,"Exceptional quality, surpassed expectations!",2026-08-09 23:49:03
+RAT_000207,CUST_02941,PROD_00091,4,"Good product, very satisfied with the purchase.",2026-06-25 19:46:03
+RAT_000208,CUST_02884,PROD_00367,3,Okay for the price point.,2026-07-09 11:57:30
+RAT_000209,CUST_02677,PROD_00435,4,"Good product, very satisfied with the purchase.",2026-04-03 15:21:27
+RAT_000210,CUST_00544,PROD_00098,2,Slightly disappointed with specs.,2026-05-18 20:11:32
+RAT_000211,CUST_01859,PROD_00355,5,Top notch performance and build.,2026-04-11 03:24:20
+RAT_000212,CUST_01507,PROD_00290,4,"Good product, very satisfied with the purchase.",2026-09-01 17:57:13
+RAT_000213,CUST_01507,PROD_00283,4,Value for money. Delivery was fast.,2026-09-01 17:59:56
+RAT_000214,CUST_02550,PROD_00520,4,"Good product, very satisfied with the purchase.",2026-08-28 14:52:39
+RAT_000215,CUST_01976,PROD_00337,3,Meets basic expectations.,2026-04-20 20:16:14
+RAT_000216,CUST_01949,PROD_00524,4,"Works as described, pleased with quality.",2026-08-18 04:25:13
+RAT_000217,CUST_00582,PROD_00169,3,Meets basic expectations.,2026-07-08 20:50:41
+RAT_000218,CUST_02384,PROD_00311,3,Meets basic expectations.,2026-07-30 00:53:13
+RAT_000219,CUST_00412,PROD_00300,4,"Good product, very satisfied with the purchase.",2026-07-10 15:52:55
+RAT_000220,CUST_02620,PROD_00515,4,"Good product, very satisfied with the purchase.",2026-03-18 11:33:02
+RAT_000221,CUST_01451,PROD_00552,2,Slightly disappointed with specs.,2026-07-24 18:51:19
+RAT_000222,CUST_02525,PROD_00042,5,"Exceptional quality, surpassed expectations!",2026-06-15 11:26:11
+RAT_000223,CUST_01589,PROD_00014,4,Value for money. Delivery was fast.,2026-09-08 16:25:38
+RAT_000224,CUST_00725,PROD_00340,4,"Works as described, pleased with quality.",2026-08-13 07:23:39
+RAT_000225,CUST_01298,PROD_00056,3,Okay for the price point.,2026-08-19 15:23:57
+RAT_000226,CUST_00848,PROD_00224,3,Decent purchase. Average experience.,2026-06-07 01:50:03
+RAT_000227,CUST_01292,PROD_00138,5,Absolutely loved this! Highly recommended.,2026-03-31 20:37:01
+RAT_000228,CUST_01544,PROD_00004,3,Meets basic expectations.,2026-06-01 17:33:03
+RAT_000229,CUST_01975,PROD_00112,4,Value for money. Delivery was fast.,2026-08-23 21:49:30
+RAT_000230,CUST_02260,PROD_00408,4,"Good product, very satisfied with the purchase.",2026-07-07 09:18:57
+RAT_000231,CUST_02095,PROD_00577,2,Could have been better. Material feels average.,2026-06-05 18:49:08
+RAT_000232,CUST_02597,PROD_00045,5,Absolutely loved this! Highly recommended.,2026-05-09 01:43:12
+RAT_000233,CUST_00770,PROD_00284,5,Top notch performance and build.,2026-04-30 09:26:06
+RAT_000234,CUST_01360,PROD_00458,3,Decent purchase. Average experience.,2026-05-19 10:40:16
+RAT_000235,CUST_02699,PROD_00210,3,Meets basic expectations.,2026-07-27 00:51:19
+RAT_000236,CUST_02824,PROD_00237,3,Okay for the price point.,2026-06-15 12:42:03
+RAT_000237,CUST_01063,PROD_00017,5,Top notch performance and build.,2026-08-11 13:05:39
+RAT_000238,CUST_02794,PROD_00003,3,Meets basic expectations.,2026-06-03 14:32:41
+RAT_000239,CUST_01889,PROD_00193,3,Okay for the price point.,2026-05-26 17:12:46
+RAT_000240,CUST_01196,PROD_00115,3,Meets basic expectations.,2026-08-29 23:32:40
+RAT_000241,CUST_00966,PROD_00199,4,Value for money. Delivery was fast.,2026-08-27 14:00:13
+RAT_000242,CUST_01665,PROD_00501,4,Value for money. Delivery was fast.,2026-05-20 07:50:43
+RAT_000243,CUST_01215,PROD_00470,4,"Works as described, pleased with quality.",2026-08-19 00:09:24
+RAT_000244,CUST_02397,PROD_00055,4,"Works as described, pleased with quality.",2026-08-19 22:50:12
+RAT_000245,CUST_01677,PROD_00454,4,"Works as described, pleased with quality.",2026-06-06 22:23:25
+RAT_000246,CUST_02188,PROD_00134,4,"Good product, very satisfied with the purchase.",2026-06-13 15:43:50
+RAT_000247,CUST_02305,PROD_00538,4,Value for money. Delivery was fast.,2026-06-29 22:48:00
+RAT_000248,CUST_00555,PROD_00203,5,Absolutely loved this! Highly recommended.,2026-04-30 01:54:44
+RAT_000249,CUST_01946,PROD_00193,4,"Good product, very satisfied with the purchase.",2026-05-18 07:44:58
+RAT_000250,CUST_01141,PROD_00140,4,Value for money. Delivery was fast.,2026-08-02 17:51:24
+RAT_000251,CUST_01420,PROD_00173,5,Absolutely loved this! Highly recommended.,2026-04-12 18:39:45
+RAT_000252,CUST_00145,PROD_00617,5,Top notch performance and build.,2026-06-11 02:19:45
+RAT_000253,CUST_00145,PROD_00624,4,Value for money. Delivery was fast.,2026-06-13 02:22:38
+RAT_000254,CUST_00734,PROD_00565,5,Absolutely loved this! Highly recommended.,2026-04-19 04:20:22
+RAT_000255,CUST_00734,PROD_00558,5,"Exceptional quality, surpassed expectations!",2026-04-22 04:22:35
+RAT_000256,CUST_02178,PROD_00592,3,Meets basic expectations.,2026-05-04 04:01:36
+RAT_000257,CUST_00211,PROD_00239,5,Top notch performance and build.,2026-05-01 09:54:19
+RAT_000258,CUST_02102,PROD_00033,3,Okay for the price point.,2026-07-06 05:18:12
+RAT_000259,CUST_01521,PROD_00009,5,"Exceptional quality, surpassed expectations!",2026-08-19 18:13:00
+RAT_000260,CUST_01817,PROD_00265,4,Value for money. Delivery was fast.,2026-05-22 01:14:14
+RAT_000261,CUST_02968,PROD_00461,3,Decent purchase. Average experience.,2026-05-10 16:46:04
+RAT_000262,CUST_02567,PROD_00210,3,Okay for the price point.,2026-05-19 07:44:06
+RAT_000263,CUST_01525,PROD_00228,4,"Good product, very satisfied with the purchase.",2026-05-23 16:31:05
+RAT_000264,CUST_00097,PROD_00338,3,Decent purchase. Average experience.,2026-07-23 10:40:11
+RAT_000265,CUST_00097,PROD_00365,4,Value for money. Delivery was fast.,2026-07-22 10:45:02
+RAT_000266,CUST_02686,PROD_00194,2,Slightly disappointed with specs.,2026-06-12 14:36:07
+RAT_000267,CUST_02686,PROD_00176,3,Meets basic expectations.,2026-06-10 14:38:09
+RAT_000268,CUST_02136,PROD_00030,3,Okay for the price point.,2026-04-24 09:01:58
+RAT_000269,CUST_02153,PROD_00432,4,"Works as described, pleased with quality.",2026-04-09 19:02:46
+RAT_000270,CUST_02153,PROD_00431,4,"Works as described, pleased with quality.",2026-04-09 19:05:43
+RAT_000271,CUST_02447,PROD_00308,4,"Works as described, pleased with quality.",2026-08-03 05:23:44
+RAT_000272,CUST_02322,PROD_00508,4,"Works as described, pleased with quality.",2026-05-23 09:06:34
+RAT_000273,CUST_02322,PROD_00511,4,Value for money. Delivery was fast.,2026-05-26 09:09:46
+RAT_000274,CUST_02262,PROD_00185,5,Top notch performance and build.,2026-09-09 15:18:30
+RAT_000275,CUST_00177,PROD_00484,3,Meets basic expectations.,2026-06-07 19:00:49
+RAT_000276,CUST_01930,PROD_00005,5,Absolutely loved this! Highly recommended.,2026-07-10 14:18:44
+RAT_000277,CUST_02782,PROD_00202,4,"Works as described, pleased with quality.",2026-04-21 08:41:24
+RAT_000278,CUST_01813,PROD_00374,4,"Good product, very satisfied with the purchase.",2026-05-21 02:23:11
+RAT_000279,CUST_01557,PROD_00111,4,"Works as described, pleased with quality.",2026-05-21 09:06:27
+RAT_000280,CUST_01557,PROD_00113,4,Value for money. Delivery was fast.,2026-05-21 09:10:14
+RAT_000281,CUST_02208,PROD_00240,4,Value for money. Delivery was fast.,2026-05-10 18:17:37
+RAT_000282,CUST_02735,PROD_00179,4,"Works as described, pleased with quality.",2026-04-22 22:37:54
+RAT_000283,CUST_01879,PROD_00297,5,Absolutely loved this! Highly recommended.,2026-08-15 21:41:47
+RAT_000284,CUST_02795,PROD_00082,4,"Works as described, pleased with quality.",2026-08-14 08:14:49
+RAT_000285,CUST_00716,PROD_00177,3,Okay for the price point.,2026-04-08 21:31:31
+RAT_000286,CUST_00829,PROD_00054,4,Value for money. Delivery was fast.,2026-07-23 11:00:44
+RAT_000287,CUST_02815,PROD_00623,3,Decent purchase. Average experience.,2026-08-10 02:49:02
+RAT_000288,CUST_01864,PROD_00441,3,Meets basic expectations.,2026-08-22 23:15:22
+RAT_000289,CUST_00587,PROD_00424,5,Top notch performance and build.,2026-04-12 01:35:31
+RAT_000290,CUST_01384,PROD_00181,4,"Good product, very satisfied with the purchase.",2026-06-05 07:43:41
+RAT_000291,CUST_02820,PROD_00323,4,"Good product, very satisfied with the purchase.",2026-05-11 13:10:51
+RAT_000292,CUST_02762,PROD_00299,2,Slightly disappointed with specs.,2026-04-14 05:58:39
+RAT_000293,CUST_02116,PROD_00547,4,Value for money. Delivery was fast.,2026-06-28 11:02:41
+RAT_000294,CUST_02116,PROD_00556,5,Absolutely loved this! Highly recommended.,2026-07-02 11:04:57
+RAT_000295,CUST_02475,PROD_00447,3,Decent purchase. Average experience.,2026-09-10 01:54:56
+RAT_000296,CUST_01608,PROD_00158,4,"Works as described, pleased with quality.",2026-07-11 16:19:12
+RAT_000297,CUST_02010,PROD_00159,4,"Works as described, pleased with quality.",2026-04-07 06:08:01
+RAT_000298,CUST_00544,PROD_00099,3,Okay for the price point.,2026-06-05 10:38:37
+RAT_000299,CUST_01229,PROD_00220,4,"Works as described, pleased with quality.",2026-08-27 21:25:02
+RAT_000300,CUST_02739,PROD_00062,3,Meets basic expectations.,2026-07-28 13:06:47
+RAT_000301,CUST_02739,PROD_00056,5,"Exceptional quality, surpassed expectations!",2026-07-28 13:08:36
+RAT_000302,CUST_02737,PROD_00376,5,Absolutely loved this! Highly recommended.,2026-06-25 16:41:56
+RAT_000303,CUST_02538,PROD_00093,4,"Good product, very satisfied with the purchase.",2026-09-06 04:35:46
+RAT_000304,CUST_02945,PROD_00137,4,"Good product, very satisfied with the purchase.",2026-08-17 14:03:25
+RAT_000305,CUST_01336,PROD_00272,4,Value for money. Delivery was fast.,2026-07-05 07:59:23
+RAT_000306,CUST_01372,PROD_00272,4,"Good product, very satisfied with the purchase.",2026-06-25 20:57:01
+RAT_000307,CUST_02557,PROD_00472,3,Okay for the price point.,2026-04-19 03:50:57
+RAT_000308,CUST_00290,PROD_00123,4,"Good product, very satisfied with the purchase.",2026-06-19 23:27:58
+RAT_000309,CUST_02459,PROD_00264,4,"Good product, very satisfied with the purchase.",2026-05-04 16:05:02
+RAT_000310,CUST_00854,PROD_00504,4,"Good product, very satisfied with the purchase.",2026-04-16 07:20:06
+RAT_000311,CUST_00158,PROD_00025,3,Meets basic expectations.,2026-03-20 17:41:00
+RAT_000312,CUST_01914,PROD_00183,4,"Good product, very satisfied with the purchase.",2026-05-24 05:24:48
+RAT_000313,CUST_00136,PROD_00090,4,"Good product, very satisfied with the purchase.",2026-06-12 22:38:40
+RAT_000314,CUST_00285,PROD_00326,3,Okay for the price point.,2026-08-19 20:25:59
+RAT_000315,CUST_02761,PROD_00076,4,"Works as described, pleased with quality.",2026-05-26 08:59:35
+RAT_000316,CUST_02761,PROD_00066,3,Okay for the price point.,2026-05-27 09:01:36
+RAT_000317,CUST_02311,PROD_00183,3,Meets basic expectations.,2026-07-06 11:29:27
+RAT_000318,CUST_00196,PROD_00584,4,"Good product, very satisfied with the purchase.",2026-05-24 16:13:50
+RAT_000319,CUST_02288,PROD_00444,3,Meets basic expectations.,2026-09-01 04:03:30
+RAT_000320,CUST_01362,PROD_00493,3,Decent purchase. Average experience.,2026-09-08 21:12:06
+RAT_000321,CUST_00510,PROD_00109,4,"Works as described, pleased with quality.",2026-04-17 06:59:02
+RAT_000322,CUST_02116,PROD_00579,3,Okay for the price point.,2026-03-21 04:50:15
+RAT_000323,CUST_00127,PROD_00254,4,"Good product, very satisfied with the purchase.",2026-07-10 12:35:10
+RAT_000324,CUST_00226,PROD_00461,2,Could have been better. Material feels average.,2026-04-20 23:26:20
+RAT_000325,CUST_01456,PROD_00498,5,"Exceptional quality, surpassed expectations!",2026-07-26 04:05:35
+RAT_000326,CUST_01910,PROD_00154,3,Okay for the price point.,2026-08-16 18:53:27
+RAT_000327,CUST_02008,PROD_00376,4,"Good product, very satisfied with the purchase.",2026-07-03 01:08:00
+RAT_000328,CUST_00754,PROD_00574,5,Absolutely loved this! Highly recommended.,2026-04-20 13:07:29
+RAT_000329,CUST_02869,PROD_00237,4,"Works as described, pleased with quality.",2026-08-07 05:22:56
+RAT_000330,CUST_00280,PROD_00439,3,Okay for the price point.,2026-05-25 16:59:50
+RAT_000331,CUST_00709,PROD_00513,4,Value for money. Delivery was fast.,2026-07-16 09:35:54
+RAT_000332,CUST_00397,PROD_00005,5,Absolutely loved this! Highly recommended.,2026-04-17 06:25:54
+RAT_000333,CUST_00060,PROD_00522,4,"Works as described, pleased with quality.",2026-08-22 08:40:53
+RAT_000334,CUST_01286,PROD_00165,3,Okay for the price point.,2026-07-08 05:21:50
+RAT_000335,CUST_01719,PROD_00150,3,Okay for the price point.,2026-03-29 14:25:24
+RAT_000336,CUST_02238,PROD_00321,3,Meets basic expectations.,2026-07-26 01:23:09
+RAT_000337,CUST_00781,PROD_00098,2,Slightly disappointed with specs.,2026-05-25 20:51:20
+RAT_000338,CUST_01352,PROD_00027,4,Value for money. Delivery was fast.,2026-03-24 13:30:11
+RAT_000339,CUST_00045,PROD_00520,5,Absolutely loved this! Highly recommended.,2026-04-27 01:09:35
+RAT_000340,CUST_02096,PROD_00215,3,Okay for the price point.,2026-08-10 11:21:24
+RAT_000341,CUST_00437,PROD_00114,3,Decent purchase. Average experience.,2026-07-13 09:22:32
+RAT_000342,CUST_01594,PROD_00008,2,Slightly disappointed with specs.,2026-03-24 09:27:20
+RAT_000343,CUST_02131,PROD_00108,5,Absolutely loved this! Highly recommended.,2026-05-12 01:01:19
+RAT_000344,CUST_00575,PROD_00449,4,"Good product, very satisfied with the purchase.",2026-03-17 11:07:43
+RAT_000345,CUST_02101,PROD_00184,5,Absolutely loved this! Highly recommended.,2026-08-04 14:54:14
+RAT_000346,CUST_02014,PROD_00463,2,Could have been better. Material feels average.,2026-03-19 07:08:58
+RAT_000347,CUST_01491,PROD_00277,3,Meets basic expectations.,2026-06-03 07:51:03
+RAT_000348,CUST_02461,PROD_00039,5,Absolutely loved this! Highly recommended.,2026-06-25 15:43:19
+RAT_000349,CUST_01289,PROD_00263,4,"Works as described, pleased with quality.",2026-03-23 22:43:54
+RAT_000350,CUST_00829,PROD_00083,4,"Good product, very satisfied with the purchase.",2026-04-13 22:07:00
+RAT_000351,CUST_02294,PROD_00335,4,Value for money. Delivery was fast.,2026-04-20 21:07:50
+RAT_000352,CUST_02294,PROD_00298,3,Okay for the price point.,2026-04-21 21:09:42
+RAT_000353,CUST_00034,PROD_00423,4,"Works as described, pleased with quality.",2026-05-27 10:44:32
+RAT_000354,CUST_01969,PROD_00487,4,"Good product, very satisfied with the purchase.",2026-05-02 05:00:03
+RAT_000355,CUST_02086,PROD_00101,3,Meets basic expectations.,2026-04-27 08:41:46
+RAT_000356,CUST_00771,PROD_00356,3,Okay for the price point.,2026-03-25 08:15:31
+RAT_000357,CUST_00222,PROD_00071,5,"Exceptional quality, surpassed expectations!",2026-05-19 20:57:53
+RAT_000358,CUST_02819,PROD_00305,3,Okay for the price point.,2026-05-18 13:32:45
+RAT_000359,CUST_02495,PROD_00489,4,"Works as described, pleased with quality.",2026-06-18 17:18:20
+RAT_000360,CUST_01074,PROD_00182,4,"Works as described, pleased with quality.",2026-04-08 23:32:37
+RAT_000361,CUST_01459,PROD_00190,4,"Good product, very satisfied with the purchase.",2026-03-31 05:45:57
+RAT_000362,CUST_01681,PROD_00267,4,"Works as described, pleased with quality.",2026-05-21 13:55:29
+RAT_000363,CUST_01679,PROD_00235,5,Top notch performance and build.,2026-08-15 02:03:13
+RAT_000364,CUST_01717,PROD_00004,4,Value for money. Delivery was fast.,2026-04-25 11:52:41
+RAT_000365,CUST_01012,PROD_00580,3,Decent purchase. Average experience.,2026-04-15 18:31:07
+RAT_000366,CUST_00774,PROD_00452,3,Okay for the price point.,2026-05-01 22:25:57
+RAT_000367,CUST_02400,PROD_00522,4,"Good product, very satisfied with the purchase.",2026-06-25 12:17:59
+RAT_000368,CUST_01942,PROD_00163,4,"Works as described, pleased with quality.",2026-03-21 02:09:26
+RAT_000369,CUST_01942,PROD_00133,4,Value for money. Delivery was fast.,2026-03-19 02:10:42
+RAT_000370,CUST_02877,PROD_00005,5,"Exceptional quality, surpassed expectations!",2026-08-15 04:10:34
+RAT_000371,CUST_01171,PROD_00257,5,"Exceptional quality, surpassed expectations!",2026-09-07 14:46:01
+RAT_000372,CUST_02008,PROD_00573,3,Meets basic expectations.,2026-04-23 17:21:57
+RAT_000373,CUST_01360,PROD_00454,3,Okay for the price point.,2026-09-10 14:11:26
+RAT_000374,CUST_00604,PROD_00416,3,Okay for the price point.,2026-05-30 05:46:08
+RAT_000375,CUST_01728,PROD_00018,4,Value for money. Delivery was fast.,2026-06-04 06:46:03
+RAT_000376,CUST_01797,PROD_00482,3,Meets basic expectations.,2026-03-26 12:40:33
+RAT_000377,CUST_01797,PROD_00502,5,"Exceptional quality, surpassed expectations!",2026-03-30 12:42:15
+RAT_000378,CUST_02843,PROD_00174,3,Decent purchase. Average experience.,2026-03-30 03:23:48
+RAT_000379,CUST_02062,PROD_00426,3,Decent purchase. Average experience.,2026-04-13 11:53:22
+RAT_000380,CUST_00428,PROD_00038,4,Value for money. Delivery was fast.,2026-09-03 02:28:54
+RAT_000381,CUST_00566,PROD_00627,3,Meets basic expectations.,2026-03-23 13:49:14
+RAT_000382,CUST_01258,PROD_00307,4,Value for money. Delivery was fast.,2026-03-28 04:25:11
+RAT_000383,CUST_02873,PROD_00359,3,Okay for the price point.,2026-08-26 05:44:18
+RAT_000384,CUST_00174,PROD_00509,3,Okay for the price point.,2026-03-28 23:35:02
+RAT_000385,CUST_02927,PROD_00434,4,"Works as described, pleased with quality.",2026-03-16 07:27:49
+RAT_000386,CUST_02841,PROD_00060,2,Could have been better. Material feels average.,2026-06-05 17:38:53
+RAT_000387,CUST_02654,PROD_00004,2,Could have been better. Material feels average.,2026-04-13 08:59:47
+RAT_000388,CUST_00202,PROD_00572,3,Meets basic expectations.,2026-06-27 11:22:30
+RAT_000389,CUST_01024,PROD_00549,4,"Works as described, pleased with quality.",2026-08-14 20:37:56
+RAT_000390,CUST_01904,PROD_00341,3,Meets basic expectations.,2026-05-05 00:57:34
+RAT_000391,CUST_00692,PROD_00014,5,"Exceptional quality, surpassed expectations!",2026-08-10 11:07:07
+RAT_000392,CUST_02113,PROD_00022,4,Value for money. Delivery was fast.,2026-05-17 06:59:18
+RAT_000393,CUST_00722,PROD_00462,5,Absolutely loved this! Highly recommended.,2026-04-27 02:33:22
+RAT_000394,CUST_00995,PROD_00135,4,"Works as described, pleased with quality.",2026-03-19 06:53:10
+RAT_000395,CUST_02983,PROD_00189,4,Value for money. Delivery was fast.,2026-04-08 00:04:53
+RAT_000396,CUST_02737,PROD_00251,3,Decent purchase. Average experience.,2026-08-08 21:28:30
+RAT_000397,CUST_02763,PROD_00099,4,"Works as described, pleased with quality.",2026-08-15 17:53:53
+RAT_000398,CUST_02335,PROD_00312,4,"Works as described, pleased with quality.",2026-03-31 11:26:15
+RAT_000399,CUST_02163,PROD_00205,4,"Good product, very satisfied with the purchase.",2026-03-21 23:48:02
+RAT_000400,CUST_02129,PROD_00127,4,"Works as described, pleased with quality.",2026-06-10 01:46:08
+RAT_000401,CUST_01184,PROD_00257,4,Value for money. Delivery was fast.,2026-04-23 23:34:57
+RAT_000402,CUST_02046,PROD_00459,3,Okay for the price point.,2026-04-22 08:17:11
+RAT_000403,CUST_02665,PROD_00112,3,Decent purchase. Average experience.,2026-05-07 00:20:19
+RAT_000404,CUST_01208,PROD_00542,4,Value for money. Delivery was fast.,2026-07-21 23:38:26
+RAT_000405,CUST_00291,PROD_00063,3,Decent purchase. Average experience.,2026-03-28 04:00:20
+RAT_000406,CUST_01441,PROD_00005,4,Value for money. Delivery was fast.,2026-09-04 12:42:50
+RAT_000407,CUST_01448,PROD_00462,4,"Good product, very satisfied with the purchase.",2026-05-30 02:10:45
+RAT_000408,CUST_02001,PROD_00365,3,Okay for the price point.,2026-03-20 21:11:02
+RAT_000409,CUST_00895,PROD_00248,4,"Works as described, pleased with quality.",2026-07-14 13:28:17
+RAT_000410,CUST_00363,PROD_00040,4,Value for money. Delivery was fast.,2026-06-04 22:26:33
+RAT_000411,CUST_02653,PROD_00287,3,Okay for the price point.,2026-06-05 09:44:58
+RAT_000412,CUST_01228,PROD_00505,3,Okay for the price point.,2026-05-07 09:58:00
+RAT_000413,CUST_00228,PROD_00378,4,"Works as described, pleased with quality.",2026-07-29 20:27:33
+RAT_000414,CUST_00920,PROD_00181,5,Absolutely loved this! Highly recommended.,2026-04-06 00:48:51
+RAT_000415,CUST_00746,PROD_00007,4,"Works as described, pleased with quality.",2026-08-06 22:50:51
+RAT_000416,CUST_00911,PROD_00337,4,Value for money. Delivery was fast.,2026-08-03 13:37:38
+RAT_000417,CUST_02115,PROD_00310,3,Okay for the price point.,2026-08-28 10:21:41
+RAT_000418,CUST_00214,PROD_00040,3,Okay for the price point.,2026-08-02 09:54:34
+RAT_000419,CUST_02705,PROD_00611,4,"Works as described, pleased with quality.",2026-07-02 06:30:37
+RAT_000420,CUST_00628,PROD_00033,3,Decent purchase. Average experience.,2026-03-19 12:42:55
+RAT_000421,CUST_01436,PROD_00297,4,Value for money. Delivery was fast.,2026-04-08 04:16:35
+RAT_000422,CUST_02868,PROD_00344,4,Value for money. Delivery was fast.,2026-08-21 06:07:49
+RAT_000423,CUST_01385,PROD_00600,3,Okay for the price point.,2026-08-19 02:14:16
+RAT_000424,CUST_00520,PROD_00460,3,Meets basic expectations.,2026-08-26 16:31:53
+RAT_000425,CUST_00438,PROD_00187,2,Slightly disappointed with specs.,2026-04-02 16:59:30
+RAT_000426,CUST_00496,PROD_00129,4,"Works as described, pleased with quality.",2026-09-02 23:20:55
+RAT_000427,CUST_02408,PROD_00466,4,"Good product, very satisfied with the purchase.",2026-08-24 01:06:05
+RAT_000428,CUST_01677,PROD_00428,4,"Good product, very satisfied with the purchase.",2026-05-24 01:38:10
+RAT_000429,CUST_02088,PROD_00034,5,Top notch performance and build.,2026-07-03 11:28:04
+RAT_000430,CUST_02727,PROD_00189,4,"Good product, very satisfied with the purchase.",2026-09-05 13:32:55
+RAT_000431,CUST_00637,PROD_00063,2,Slightly disappointed with specs.,2026-05-01 04:31:21
+RAT_000432,CUST_00119,PROD_00124,4,"Good product, very satisfied with the purchase.",2026-06-20 08:09:22
+RAT_000433,CUST_00396,PROD_00626,3,Okay for the price point.,2026-05-07 16:38:59
+RAT_000434,CUST_01298,PROD_00079,3,Decent purchase. Average experience.,2026-06-18 12:56:00
+RAT_000435,CUST_01288,PROD_00500,4,"Good product, very satisfied with the purchase.",2026-05-10 03:53:35
+RAT_000436,CUST_01279,PROD_00621,3,Decent purchase. Average experience.,2026-08-07 08:53:49
+RAT_000437,CUST_02596,PROD_00224,3,Decent purchase. Average experience.,2026-07-27 09:28:55
+RAT_000438,CUST_01855,PROD_00296,4,"Good product, very satisfied with the purchase.",2026-09-06 21:23:17
+RAT_000439,CUST_00888,PROD_00012,4,"Good product, very satisfied with the purchase.",2026-05-22 12:19:48
+RAT_000440,CUST_00248,PROD_00276,3,Decent purchase. Average experience.,2026-07-27 18:04:40
+RAT_000441,CUST_01057,PROD_00345,3,Meets basic expectations.,2026-09-09 04:54:30
+RAT_000442,CUST_02976,PROD_00014,5,"Exceptional quality, surpassed expectations!",2026-08-26 11:20:39
+RAT_000443,CUST_02976,PROD_00021,4,"Good product, very satisfied with the purchase.",2026-08-26 11:21:35
+RAT_000444,CUST_00900,PROD_00584,4,"Works as described, pleased with quality.",2026-08-14 14:10:08
+RAT_000445,CUST_02009,PROD_00052,4,"Works as described, pleased with quality.",2026-03-23 23:06:06
+RAT_000446,CUST_01529,PROD_00220,4,"Works as described, pleased with quality.",2026-08-18 06:00:07
+RAT_000447,CUST_01592,PROD_00016,4,"Good product, very satisfied with the purchase.",2026-04-07 01:07:22
+RAT_000448,CUST_01592,PROD_00008,3,Okay for the price point.,2026-04-07 01:10:09
+RAT_000449,CUST_00144,PROD_00607,4,"Good product, very satisfied with the purchase.",2026-04-03 05:08:10
+RAT_000450,CUST_02743,PROD_00308,3,Okay for the price point.,2026-03-31 20:57:01
+RAT_000451,CUST_00536,PROD_00011,4,Value for money. Delivery was fast.,2026-08-03 08:33:28
+RAT_000452,CUST_00150,PROD_00194,4,Value for money. Delivery was fast.,2026-04-15 11:08:50
+RAT_000453,CUST_01608,PROD_00152,4,"Works as described, pleased with quality.",2026-09-04 05:04:57
+RAT_000454,CUST_00966,PROD_00176,4,Value for money. Delivery was fast.,2026-04-28 03:52:22
+RAT_000455,CUST_00783,PROD_00294,4,Value for money. Delivery was fast.,2026-03-25 04:36:43
+RAT_000456,CUST_00783,PROD_00281,4,"Works as described, pleased with quality.",2026-03-21 04:39:06
+RAT_000457,CUST_00348,PROD_00155,4,"Good product, very satisfied with the purchase.",2026-05-09 23:19:49
+RAT_000458,CUST_02838,PROD_00184,5,Top notch performance and build.,2026-08-29 00:09:15
+RAT_000459,CUST_02916,PROD_00190,2,Could have been better. Material feels average.,2026-04-04 03:32:12
+RAT_000460,CUST_00322,PROD_00271,2,Slightly disappointed with specs.,2026-06-02 10:56:35
+RAT_000461,CUST_01908,PROD_00116,5,"Exceptional quality, surpassed expectations!",2026-05-14 17:34:57
+RAT_000462,CUST_02702,PROD_00042,4,"Good product, very satisfied with the purchase.",2026-05-21 00:22:10
+RAT_000463,CUST_01774,PROD_00288,4,"Works as described, pleased with quality.",2026-08-01 00:56:11
+RAT_000464,CUST_02742,PROD_00142,3,Meets basic expectations.,2026-09-04 19:43:06
+RAT_000465,CUST_02742,PROD_00159,4,Value for money. Delivery was fast.,2026-09-06 19:46:12
+RAT_000466,CUST_00885,PROD_00483,4,Value for money. Delivery was fast.,2026-05-04 12:18:27
+RAT_000467,CUST_01665,PROD_00497,4,"Works as described, pleased with quality.",2026-07-27 22:58:45
+RAT_000468,CUST_01641,PROD_00182,4,"Works as described, pleased with quality.",2026-06-14 16:13:39
+RAT_000469,CUST_00295,PROD_00014,5,Absolutely loved this! Highly recommended.,2026-06-12 12:21:21
+RAT_000470,CUST_01276,PROD_00087,4,"Good product, very satisfied with the purchase.",2026-07-12 22:36:30
+RAT_000471,CUST_00002,PROD_00123,4,"Good product, very satisfied with the purchase.",2026-07-27 13:33:18
+RAT_000472,CUST_02951,PROD_00243,4,"Good product, very satisfied with the purchase.",2026-04-17 16:16:05
+RAT_000473,CUST_00840,PROD_00170,3,Okay for the price point.,2026-05-01 05:19:01
+RAT_000474,CUST_02847,PROD_00621,3,Okay for the price point.,2026-05-28 11:33:58
+RAT_000475,CUST_01623,PROD_00586,5,Absolutely loved this! Highly recommended.,2026-05-28 21:59:22
+RAT_000476,CUST_01454,PROD_00025,3,Meets basic expectations.,2026-09-07 14:50:56
+RAT_000477,CUST_02986,PROD_00103,4,"Works as described, pleased with quality.",2026-03-24 04:32:49
+RAT_000478,CUST_02671,PROD_00277,4,Value for money. Delivery was fast.,2026-04-10 05:38:40
+RAT_000479,CUST_01560,PROD_00127,5,Top notch performance and build.,2026-08-08 20:27:37
+RAT_000480,CUST_02828,PROD_00271,3,Meets basic expectations.,2026-08-10 15:32:03
+RAT_000481,CUST_02336,PROD_00498,3,Okay for the price point.,2026-04-30 04:00:47
+RAT_000482,CUST_02336,PROD_00474,3,Decent purchase. Average experience.,2026-04-30 04:03:41
+RAT_000483,CUST_02697,PROD_00355,5,"Exceptional quality, surpassed expectations!",2026-06-26 21:42:11
+RAT_000484,CUST_00419,PROD_00393,2,Could have been better. Material feels average.,2026-08-31 15:22:43
+RAT_000485,CUST_00590,PROD_00097,3,Meets basic expectations.,2026-04-09 22:03:46
+RAT_000486,CUST_00642,PROD_00307,4,"Good product, very satisfied with the purchase.",2026-07-25 08:06:25
+RAT_000487,CUST_01783,PROD_00599,3,Decent purchase. Average experience.,2026-06-26 12:06:41
+RAT_000488,CUST_01431,PROD_00184,4,"Good product, very satisfied with the purchase.",2026-06-11 22:16:27
+RAT_000489,CUST_01154,PROD_00539,4,Value for money. Delivery was fast.,2026-05-22 09:38:58
+RAT_000490,CUST_01154,PROD_00507,3,Meets basic expectations.,2026-05-21 09:43:23
+RAT_000491,CUST_00460,PROD_00492,5,"Exceptional quality, surpassed expectations!",2026-06-26 01:48:32
+RAT_000492,CUST_01803,PROD_00174,4,"Works as described, pleased with quality.",2026-04-23 18:49:49
+RAT_000493,CUST_01116,PROD_00123,4,"Works as described, pleased with quality.",2026-03-29 14:34:51
+RAT_000494,CUST_01987,PROD_00178,4,Value for money. Delivery was fast.,2026-04-04 19:17:44
+RAT_000495,CUST_01987,PROD_00198,3,Okay for the price point.,2026-04-05 19:21:15
+RAT_000496,CUST_01366,PROD_00015,3,Meets basic expectations.,2026-08-28 11:02:37
+RAT_000497,CUST_02383,PROD_00397,4,"Works as described, pleased with quality.",2026-08-12 01:26:41
+RAT_000498,CUST_02487,PROD_00254,4,Value for money. Delivery was fast.,2026-07-28 05:40:52
+RAT_000499,CUST_02925,PROD_00148,4,Value for money. Delivery was fast.,2026-05-14 20:04:43
+RAT_000500,CUST_02925,PROD_00157,4,"Good product, very satisfied with the purchase.",2026-05-11 20:05:41
+RAT_000501,CUST_02925,PROD_00128,3,Decent purchase. Average experience.,2026-05-16 20:08:29
+RAT_000502,CUST_01561,PROD_00449,3,Meets basic expectations.,2026-07-02 04:12:49
+RAT_000503,CUST_02956,PROD_00561,4,"Good product, very satisfied with the purchase.",2026-04-01 15:54:07
+RAT_000504,CUST_01259,PROD_00271,2,Slightly disappointed with specs.,2026-06-25 04:07:56
+RAT_000505,CUST_01225,PROD_00185,2,Slightly disappointed with specs.,2026-04-01 19:01:11
+RAT_000506,CUST_02277,PROD_00142,3,Okay for the price point.,2026-04-27 00:16:43
+RAT_000507,CUST_02142,PROD_00367,4,"Works as described, pleased with quality.",2026-07-20 03:09:04
+RAT_000508,CUST_01711,PROD_00007,3,Meets basic expectations.,2026-05-16 11:11:08
+RAT_000509,CUST_01656,PROD_00035,4,"Good product, very satisfied with the purchase.",2026-03-29 03:02:42
+RAT_000510,CUST_01904,PROD_00368,2,Slightly disappointed with specs.,2026-03-23 00:56:48
+RAT_000511,CUST_02392,PROD_00181,4,"Good product, very satisfied with the purchase.",2026-08-30 23:55:02
+RAT_000512,CUST_02114,PROD_00471,2,Could have been better. Material feels average.,2026-08-08 23:47:28
+RAT_000513,CUST_00977,PROD_00052,3,Meets basic expectations.,2026-06-17 11:17:24
+RAT_000514,CUST_00977,PROD_00061,5,"Exceptional quality, surpassed expectations!",2026-06-19 11:18:59
+RAT_000515,CUST_02876,PROD_00538,4,"Works as described, pleased with quality.",2026-07-23 11:54:12
+RAT_000516,CUST_02947,PROD_00156,4,"Good product, very satisfied with the purchase.",2026-07-17 05:33:01
+RAT_000517,CUST_02479,PROD_00408,3,Decent purchase. Average experience.,2026-06-04 03:37:29
+RAT_000518,CUST_02528,PROD_00504,4,Value for money. Delivery was fast.,2026-06-18 00:51:46
+RAT_000519,CUST_02239,PROD_00594,5,Absolutely loved this! Highly recommended.,2026-05-20 16:04:01
+RAT_000520,CUST_02224,PROD_00284,4,Value for money. Delivery was fast.,2026-03-23 18:22:34
+RAT_000521,CUST_02224,PROD_00254,3,Okay for the price point.,2026-03-26 18:23:35
+RAT_000522,CUST_01142,PROD_00068,3,Decent purchase. Average experience.,2026-04-28 12:01:24
+RAT_000523,CUST_00681,PROD_00103,4,"Good product, very satisfied with the purchase.",2026-05-09 19:42:16
+RAT_000524,CUST_00875,PROD_00272,4,"Good product, very satisfied with the purchase.",2026-08-13 07:41:56
+RAT_000525,CUST_00875,PROD_00255,5,Top notch performance and build.,2026-08-13 07:43:08
+RAT_000526,CUST_02386,PROD_00022,2,Could have been better. Material feels average.,2026-05-03 23:18:08
+RAT_000527,CUST_00519,PROD_00042,4,Value for money. Delivery was fast.,2026-09-08 11:49:02
+RAT_000528,CUST_00138,PROD_00398,2,Slightly disappointed with specs.,2026-05-29 13:40:09
+RAT_000529,CUST_01386,PROD_00500,4,"Works as described, pleased with quality.",2026-08-31 00:51:21
+RAT_000530,CUST_00769,PROD_00130,3,Decent purchase. Average experience.,2026-03-24 20:52:11
+RAT_000531,CUST_00218,PROD_00180,5,"Exceptional quality, surpassed expectations!",2026-04-04 05:59:40
+RAT_000532,CUST_02028,PROD_00528,4,"Good product, very satisfied with the purchase.",2026-06-08 22:23:36
+RAT_000533,CUST_00248,PROD_00281,4,"Good product, very satisfied with the purchase.",2026-04-30 03:44:24
+RAT_000534,CUST_00875,PROD_00293,4,"Good product, very satisfied with the purchase.",2026-08-12 00:17:25
+RAT_000535,CUST_01040,PROD_00462,4,"Works as described, pleased with quality.",2026-07-28 02:03:39
+RAT_000536,CUST_01541,PROD_00453,3,Decent purchase. Average experience.,2026-03-20 07:03:55
+RAT_000537,CUST_01717,PROD_00009,3,Okay for the price point.,2026-04-19 13:59:08
+RAT_000538,CUST_02671,PROD_00280,3,Decent purchase. Average experience.,2026-03-23 15:00:08
+RAT_000539,CUST_02133,PROD_00008,3,Decent purchase. Average experience.,2026-07-12 13:21:18
+RAT_000540,CUST_00295,PROD_00476,4,Value for money. Delivery was fast.,2026-06-17 00:21:03
+RAT_000541,CUST_00664,PROD_00056,4,"Works as described, pleased with quality.",2026-03-21 02:40:04
+RAT_000542,CUST_01457,PROD_00037,4,"Works as described, pleased with quality.",2026-06-27 07:24:32
+RAT_000543,CUST_02066,PROD_00392,4,"Good product, very satisfied with the purchase.",2026-05-17 10:02:12
+RAT_000544,CUST_02066,PROD_00415,4,Value for money. Delivery was fast.,2026-05-19 10:02:45
+RAT_000545,CUST_02878,PROD_00560,4,"Works as described, pleased with quality.",2026-04-06 21:50:24
+RAT_000546,CUST_00905,PROD_00120,5,Absolutely loved this! Highly recommended.,2026-07-27 07:59:18
+RAT_000547,CUST_02234,PROD_00206,5,"Exceptional quality, surpassed expectations!",2026-06-24 13:20:43
+RAT_000548,CUST_00561,PROD_00614,3,Meets basic expectations.,2026-07-18 01:36:59
+RAT_000549,CUST_02919,PROD_00038,4,"Works as described, pleased with quality.",2026-05-27 17:38:13
+RAT_000550,CUST_00038,PROD_00369,5,Top notch performance and build.,2026-06-20 08:30:12
+RAT_000551,CUST_01819,PROD_00299,3,Meets basic expectations.,2026-05-22 10:37:19
+RAT_000552,CUST_01819,PROD_00329,4,"Good product, very satisfied with the purchase.",2026-05-21 10:43:24
+RAT_000553,CUST_00673,PROD_00255,3,Meets basic expectations.,2026-03-30 20:07:18
+RAT_000554,CUST_00673,PROD_00257,4,"Works as described, pleased with quality.",2026-04-01 20:12:05
+RAT_000555,CUST_01827,PROD_00315,4,"Works as described, pleased with quality.",2026-04-14 00:28:09
+RAT_000556,CUST_01207,PROD_00006,3,Decent purchase. Average experience.,2026-07-29 22:22:41
+RAT_000557,CUST_01207,PROD_00026,3,Meets basic expectations.,2026-07-31 22:23:36
+RAT_000558,CUST_01838,PROD_00595,3,Meets basic expectations.,2026-06-20 11:44:23
+RAT_000559,CUST_01889,PROD_00189,5,"Exceptional quality, surpassed expectations!",2026-05-28 08:15:10
+RAT_000560,CUST_01749,PROD_00046,4,"Works as described, pleased with quality.",2026-07-27 13:43:02
+RAT_000561,CUST_00319,PROD_00023,4,"Works as described, pleased with quality.",2026-03-23 02:41:52
+RAT_000562,CUST_00776,PROD_00424,4,"Good product, very satisfied with the purchase.",2026-03-25 00:31:04
+RAT_000563,CUST_00031,PROD_00488,4,"Works as described, pleased with quality.",2026-07-06 23:29:28
+RAT_000564,CUST_02127,PROD_00307,5,Top notch performance and build.,2026-05-18 10:03:50
+RAT_000565,CUST_00624,PROD_00503,4,"Good product, very satisfied with the purchase.",2026-08-02 17:05:39
+RAT_000566,CUST_02165,PROD_00208,5,Top notch performance and build.,2026-09-02 12:53:53
+RAT_000567,CUST_00665,PROD_00511,5,Top notch performance and build.,2026-04-06 21:50:51
+RAT_000568,CUST_02647,PROD_00033,4,Value for money. Delivery was fast.,2026-08-15 08:28:40
+RAT_000569,CUST_02647,PROD_00034,2,Could have been better. Material feels average.,2026-08-19 08:30:07
+RAT_000570,CUST_00846,PROD_00151,4,"Works as described, pleased with quality.",2026-04-22 11:07:32
+RAT_000571,CUST_00846,PROD_00158,3,Okay for the price point.,2026-04-20 11:10:23
+RAT_000572,CUST_02298,PROD_00514,4,"Works as described, pleased with quality.",2026-08-05 00:04:32
+RAT_000573,CUST_01950,PROD_00337,2,Could have been better. Material feels average.,2026-05-17 18:05:08
+RAT_000574,CUST_01555,PROD_00587,2,Could have been better. Material feels average.,2026-07-21 21:57:34
+RAT_000575,CUST_02693,PROD_00088,5,"Exceptional quality, surpassed expectations!",2026-08-31 03:29:33
+RAT_000576,CUST_02291,PROD_00107,4,"Good product, very satisfied with the purchase.",2026-06-21 18:08:10
+RAT_000577,CUST_02032,PROD_00457,4,"Works as described, pleased with quality.",2026-06-16 14:00:44
+RAT_000578,CUST_01092,PROD_00056,4,Value for money. Delivery was fast.,2026-04-05 09:21:53
+RAT_000579,CUST_00038,PROD_00456,4,"Good product, very satisfied with the purchase.",2026-03-29 14:44:38
+RAT_000580,CUST_01171,PROD_00273,4,"Works as described, pleased with quality.",2026-08-07 19:25:16
+RAT_000581,CUST_00461,PROD_00386,3,Meets basic expectations.,2026-04-26 02:11:23
+RAT_000582,CUST_00883,PROD_00590,3,Decent purchase. Average experience.,2026-06-26 18:35:28
+RAT_000583,CUST_00127,PROD_00281,4,"Works as described, pleased with quality.",2026-04-30 23:56:32
+RAT_000584,CUST_00281,PROD_00197,3,Decent purchase. Average experience.,2026-09-08 04:21:58
+RAT_000585,CUST_01675,PROD_00450,5,"Exceptional quality, surpassed expectations!",2026-08-23 12:01:41
+RAT_000586,CUST_00871,PROD_00484,3,Okay for the price point.,2026-09-02 03:24:26
+RAT_000587,CUST_02549,PROD_00162,4,"Good product, very satisfied with the purchase.",2026-07-21 05:41:55
+RAT_000588,CUST_02377,PROD_00567,4,Value for money. Delivery was fast.,2026-06-12 05:09:03
+RAT_000589,CUST_02626,PROD_00495,4,Value for money. Delivery was fast.,2026-06-13 03:18:17
+RAT_000590,CUST_01366,PROD_00029,3,Okay for the price point.,2026-07-18 22:02:33
+RAT_000591,CUST_00451,PROD_00093,4,"Works as described, pleased with quality.",2026-03-30 16:59:06
+RAT_000592,CUST_00914,PROD_00157,3,Okay for the price point.,2026-06-03 10:48:13
+RAT_000593,CUST_00404,PROD_00194,4,"Good product, very satisfied with the purchase.",2026-07-19 09:44:48
+RAT_000594,CUST_02886,PROD_00262,5,Top notch performance and build.,2026-04-06 11:11:44
+RAT_000595,CUST_02655,PROD_00073,5,"Exceptional quality, surpassed expectations!",2026-06-17 06:11:29
+RAT_000596,CUST_00885,PROD_00031,3,Decent purchase. Average experience.,2026-07-14 20:44:26
+RAT_000597,CUST_00885,PROD_00019,4,"Good product, very satisfied with the purchase.",2026-07-16 20:44:57
+RAT_000598,CUST_00162,PROD_00449,1,Not as expected. Would not recommend.,2026-03-18 03:14:47
+RAT_000599,CUST_01267,PROD_00503,5,"Exceptional quality, surpassed expectations!",2026-06-03 07:22:01
+RAT_000600,CUST_01484,PROD_00328,4,"Good product, very satisfied with the purchase.",2026-07-15 13:14:23
+RAT_000601,CUST_01484,PROD_00302,3,Okay for the price point.,2026-07-14 13:16:18
+RAT_000602,CUST_01606,PROD_00205,4,"Works as described, pleased with quality.",2026-08-07 17:08:14
+RAT_000603,CUST_01325,PROD_00118,3,Decent purchase. Average experience.,2026-07-29 08:21:03
+RAT_000604,CUST_01480,PROD_00176,3,Decent purchase. Average experience.,2026-07-10 20:32:37
+RAT_000605,CUST_02443,PROD_00160,5,"Exceptional quality, surpassed expectations!",2026-05-30 03:43:35
+RAT_000606,CUST_01494,PROD_00434,3,Decent purchase. Average experience.,2026-04-28 10:29:06
+RAT_000607,CUST_02672,PROD_00242,4,"Works as described, pleased with quality.",2026-04-01 15:21:49
+RAT_000608,CUST_02672,PROD_00211,4,"Works as described, pleased with quality.",2026-03-28 15:23:52
+RAT_000609,CUST_02672,PROD_00212,3,Okay for the price point.,2026-04-02 15:25:09
+RAT_000610,CUST_01487,PROD_00106,3,Meets basic expectations.,2026-05-16 22:45:08
+RAT_000611,CUST_01487,PROD_00122,3,Decent purchase. Average experience.,2026-05-16 22:49:07
+RAT_000612,CUST_02211,PROD_00271,4,"Works as described, pleased with quality.",2026-04-11 12:01:21
+RAT_000613,CUST_02368,PROD_00244,3,Meets basic expectations.,2026-04-30 02:30:53
+RAT_000614,CUST_02261,PROD_00130,3,Decent purchase. Average experience.,2026-04-25 00:22:57
+RAT_000615,CUST_01681,PROD_00082,5,"Exceptional quality, surpassed expectations!",2026-07-20 08:33:14
+RAT_000616,CUST_01509,PROD_00028,3,Decent purchase. Average experience.,2026-04-14 07:20:03
+RAT_000617,CUST_02176,PROD_00174,3,Okay for the price point.,2026-05-12 19:07:44
+RAT_000618,CUST_02176,PROD_00207,3,Decent purchase. Average experience.,2026-05-12 19:10:44
+RAT_000619,CUST_00033,PROD_00193,4,"Good product, very satisfied with the purchase.",2026-07-13 23:29:33
+RAT_000620,CUST_01362,PROD_00470,4,Value for money. Delivery was fast.,2026-03-25 02:35:53
+RAT_000621,CUST_02033,PROD_00323,5,"Exceptional quality, surpassed expectations!",2026-04-13 17:41:13
+RAT_000622,CUST_02040,PROD_00256,4,Value for money. Delivery was fast.,2026-08-07 14:39:53
+RAT_000623,CUST_02876,PROD_00024,5,Top notch performance and build.,2026-08-24 19:00:02
+RAT_000624,CUST_02337,PROD_00073,4,"Good product, very satisfied with the purchase.",2026-08-03 19:08:12
+RAT_000625,CUST_01391,PROD_00319,4,"Works as described, pleased with quality.",2026-07-20 03:07:37
+RAT_000626,CUST_00171,PROD_00472,4,Value for money. Delivery was fast.,2026-09-09 18:00:16
+RAT_000627,CUST_01496,PROD_00478,3,Okay for the price point.,2026-04-04 14:54:44
+RAT_000628,CUST_00397,PROD_00006,5,Top notch performance and build.,2026-04-17 13:21:28
+RAT_000629,CUST_01077,PROD_00091,5,Absolutely loved this! Highly recommended.,2026-06-27 17:33:40
+RAT_000630,CUST_02058,PROD_00621,3,Meets basic expectations.,2026-07-11 04:19:39
+RAT_000631,CUST_01475,PROD_00513,3,Okay for the price point.,2026-03-24 13:51:29
+RAT_000632,CUST_00989,PROD_00323,3,Meets basic expectations.,2026-08-15 13:20:13
+RAT_000633,CUST_00059,PROD_00241,3,Decent purchase. Average experience.,2026-04-09 05:47:23
+RAT_000634,CUST_01704,PROD_00027,4,"Works as described, pleased with quality.",2026-09-13 14:59:55
+RAT_000635,CUST_01704,PROD_00024,4,"Works as described, pleased with quality.",2026-09-08 15:01:52
+RAT_000636,CUST_02442,PROD_00529,3,Decent purchase. Average experience.,2026-07-12 16:17:26
+RAT_000637,CUST_02047,PROD_00347,4,"Works as described, pleased with quality.",2026-06-13 02:49:26
+RAT_000638,CUST_01640,PROD_00285,4,"Good product, very satisfied with the purchase.",2026-07-03 21:11:10
+RAT_000639,CUST_01305,PROD_00367,3,Meets basic expectations.,2026-07-10 10:27:25
+RAT_000640,CUST_02795,PROD_00200,3,Meets basic expectations.,2026-05-06 07:27:33
+RAT_000641,CUST_02795,PROD_00178,4,"Works as described, pleased with quality.",2026-05-05 07:30:22
+RAT_000642,CUST_02795,PROD_00169,4,Value for money. Delivery was fast.,2026-05-01 07:31:09
+RAT_000643,CUST_02795,PROD_00202,3,Okay for the price point.,2026-05-03 07:32:41
+RAT_000644,CUST_01358,PROD_00147,3,Meets basic expectations.,2026-03-24 02:35:51
+RAT_000645,CUST_01727,PROD_00270,4,Value for money. Delivery was fast.,2026-06-16 15:41:23
+RAT_000646,CUST_00631,PROD_00260,3,Okay for the price point.,2026-07-12 23:33:44
+RAT_000647,CUST_02862,PROD_00258,4,"Works as described, pleased with quality.",2026-04-21 11:53:39
+RAT_000648,CUST_02086,PROD_00095,4,"Works as described, pleased with quality.",2026-03-20 04:37:35
+RAT_000649,CUST_01839,PROD_00533,4,"Good product, very satisfied with the purchase.",2026-07-19 21:06:22
+RAT_000650,CUST_00870,PROD_00298,3,Decent purchase. Average experience.,2026-05-25 04:46:49
+RAT_000651,CUST_01654,PROD_00525,3,Okay for the price point.,2026-06-17 09:11:50
+RAT_000652,CUST_01226,PROD_00118,4,"Good product, very satisfied with the purchase.",2026-07-13 12:18:30
+RAT_000653,CUST_01903,PROD_00517,3,Meets basic expectations.,2026-04-19 16:59:25
+RAT_000654,CUST_00746,PROD_00039,4,"Works as described, pleased with quality.",2026-06-04 09:07:07
+RAT_000655,CUST_00746,PROD_00033,4,"Good product, very satisfied with the purchase.",2026-06-05 09:11:24
+RAT_000656,CUST_00543,PROD_00253,4,"Works as described, pleased with quality.",2026-06-16 03:22:09
+RAT_000657,CUST_01198,PROD_00353,3,Decent purchase. Average experience.,2026-08-29 09:35:41
+RAT_000658,CUST_01655,PROD_00306,3,Meets basic expectations.,2026-08-12 10:55:09
+RAT_000659,CUST_00576,PROD_00187,4,"Works as described, pleased with quality.",2026-07-23 10:51:44
+RAT_000660,CUST_01130,PROD_00134,4,"Good product, very satisfied with the purchase.",2026-09-14 04:50:14
+RAT_000661,CUST_00217,PROD_00134,5,"Exceptional quality, surpassed expectations!",2026-07-03 16:13:18
+RAT_000662,CUST_02855,PROD_00319,3,Decent purchase. Average experience.,2026-08-10 04:22:45
+RAT_000663,CUST_00668,PROD_00448,4,"Good product, very satisfied with the purchase.",2026-05-28 21:36:40
+RAT_000664,CUST_01346,PROD_00153,3,Decent purchase. Average experience.,2026-04-16 00:15:29
+RAT_000665,CUST_01799,PROD_00320,3,Meets basic expectations.,2026-06-24 04:18:09
+RAT_000666,CUST_01667,PROD_00349,2,Could have been better. Material feels average.,2026-08-07 05:16:43
+RAT_000667,CUST_00255,PROD_00462,3,Meets basic expectations.,2026-04-15 01:31:49
+RAT_000668,CUST_00255,PROD_00444,4,Value for money. Delivery was fast.,2026-04-16 01:33:00
+RAT_000669,CUST_02767,PROD_00085,4,"Good product, very satisfied with the purchase.",2026-08-27 06:26:17
+RAT_000670,CUST_00304,PROD_00177,4,Value for money. Delivery was fast.,2026-06-22 14:23:25
+RAT_000671,CUST_02519,PROD_00433,4,"Works as described, pleased with quality.",2026-04-19 02:08:54
+RAT_000672,CUST_02519,PROD_00448,3,Meets basic expectations.,2026-04-20 02:12:35
+RAT_000673,CUST_02217,PROD_00110,5,"Exceptional quality, surpassed expectations!",2026-05-09 22:37:38
+RAT_000674,CUST_02724,PROD_00016,3,Meets basic expectations.,2026-06-22 06:14:11
+RAT_000675,CUST_01260,PROD_00200,5,"Exceptional quality, surpassed expectations!",2026-05-30 13:07:10
+RAT_000676,CUST_01260,PROD_00184,4,"Good product, very satisfied with the purchase.",2026-06-02 13:11:49
+RAT_000677,CUST_00464,PROD_00292,5,Absolutely loved this! Highly recommended.,2026-09-01 06:02:37
+RAT_000678,CUST_01617,PROD_00549,4,"Good product, very satisfied with the purchase.",2026-05-31 00:47:07
+RAT_000679,CUST_00491,PROD_00473,3,Decent purchase. Average experience.,2026-06-15 01:22:34
+RAT_000680,CUST_01088,PROD_00478,4,Value for money. Delivery was fast.,2026-04-21 08:06:38
+RAT_000681,CUST_01756,PROD_00458,4,"Good product, very satisfied with the purchase.",2026-08-01 04:02:53
+RAT_000682,CUST_02950,PROD_00517,3,Okay for the price point.,2026-04-04 07:15:40
+RAT_000683,CUST_02950,PROD_00524,4,"Good product, very satisfied with the purchase.",2026-04-03 07:16:20
+RAT_000684,CUST_02624,PROD_00025,3,Meets basic expectations.,2026-07-16 22:16:02
+RAT_000685,CUST_01181,PROD_00505,4,"Works as described, pleased with quality.",2026-05-21 14:54:54
+RAT_000686,CUST_01181,PROD_00532,4,"Works as described, pleased with quality.",2026-05-20 14:56:57
+RAT_000687,CUST_02274,PROD_00188,3,Okay for the price point.,2026-04-10 14:15:56
+RAT_000688,CUST_02927,PROD_00443,4,Value for money. Delivery was fast.,2026-06-01 17:43:12
+RAT_000689,CUST_00932,PROD_00582,3,Decent purchase. Average experience.,2026-05-31 14:26:21
+RAT_000690,CUST_01238,PROD_00027,5,"Exceptional quality, surpassed expectations!",2026-07-22 06:01:37
+RAT_000691,CUST_00392,PROD_00162,3,Decent purchase. Average experience.,2026-06-24 23:28:02
+RAT_000692,CUST_01002,PROD_00486,5,"Exceptional quality, surpassed expectations!",2026-06-11 07:09:17
+RAT_000693,CUST_02004,PROD_00221,4,Value for money. Delivery was fast.,2026-03-19 00:52:27
+RAT_000694,CUST_01765,PROD_00499,4,"Works as described, pleased with quality.",2026-05-08 16:08:16
+RAT_000695,CUST_01612,PROD_00118,3,Okay for the price point.,2026-06-01 06:57:22
+RAT_000696,CUST_02183,PROD_00387,4,"Good product, very satisfied with the purchase.",2026-09-02 13:01:28
+RAT_000697,CUST_02063,PROD_00494,4,"Works as described, pleased with quality.",2026-08-21 06:41:01
+RAT_000698,CUST_01621,PROD_00035,3,Decent purchase. Average experience.,2026-03-25 20:28:47
+RAT_000699,CUST_00200,PROD_00014,5,Absolutely loved this! Highly recommended.,2026-05-02 04:08:09
+RAT_000700,CUST_00787,PROD_00408,3,Okay for the price point.,2026-05-06 13:09:58
+RAT_000701,CUST_01247,PROD_00453,3,Okay for the price point.,2026-05-19 02:24:58
+RAT_000702,CUST_00442,PROD_00305,3,Okay for the price point.,2026-04-27 12:19:27
+RAT_000703,CUST_00442,PROD_00316,4,"Works as described, pleased with quality.",2026-04-29 12:20:16
+RAT_000704,CUST_01061,PROD_00158,3,Okay for the price point.,2026-03-19 06:48:00
+RAT_000705,CUST_01942,PROD_00096,5,"Exceptional quality, surpassed expectations!",2026-04-30 17:03:10
+RAT_000706,CUST_02235,PROD_00195,4,Value for money. Delivery was fast.,2026-09-05 20:35:20
+RAT_000707,CUST_00337,PROD_00266,3,Okay for the price point.,2026-06-17 02:17:22
+RAT_000708,CUST_02207,PROD_00155,4,Value for money. Delivery was fast.,2026-04-13 03:30:10
+RAT_000709,CUST_02521,PROD_00003,3,Okay for the price point.,2026-05-06 08:50:35
+RAT_000710,CUST_02390,PROD_00324,3,Decent purchase. Average experience.,2026-04-25 12:45:32
+RAT_000711,CUST_00588,PROD_00151,5,"Exceptional quality, surpassed expectations!",2026-05-26 02:02:50
+RAT_000712,CUST_01853,PROD_00096,3,Meets basic expectations.,2026-03-24 14:58:37
+RAT_000713,CUST_00799,PROD_00289,4,Value for money. Delivery was fast.,2026-08-11 21:54:11
+RAT_000714,CUST_01701,PROD_00207,4,"Works as described, pleased with quality.",2026-04-09 15:02:55
+RAT_000715,CUST_02172,PROD_00279,4,"Works as described, pleased with quality.",2026-03-27 07:04:19
+RAT_000716,CUST_02324,PROD_00179,3,Decent purchase. Average experience.,2026-07-25 02:12:38
+RAT_000717,CUST_01972,PROD_00152,4,"Good product, very satisfied with the purchase.",2026-05-12 16:19:57
+RAT_000718,CUST_00947,PROD_00271,3,Okay for the price point.,2026-08-12 02:35:26
+RAT_000719,CUST_01487,PROD_00108,4,"Works as described, pleased with quality.",2026-09-04 11:04:17
+RAT_000720,CUST_00573,PROD_00091,4,"Works as described, pleased with quality.",2026-05-26 23:36:28
+RAT_000721,CUST_00573,PROD_00089,4,Value for money. Delivery was fast.,2026-05-28 23:39:26
+RAT_000722,CUST_02508,PROD_00463,3,Decent purchase. Average experience.,2026-07-27 04:27:36
+RAT_000723,CUST_00913,PROD_00296,5,"Exceptional quality, surpassed expectations!",2026-08-31 20:55:28
+RAT_000724,CUST_02819,PROD_00328,4,"Works as described, pleased with quality.",2026-04-26 01:31:49
+RAT_000725,CUST_01867,PROD_00433,4,"Works as described, pleased with quality.",2026-07-05 13:56:43
+RAT_000726,CUST_01867,PROD_00430,3,Decent purchase. Average experience.,2026-07-03 13:58:20
+RAT_000727,CUST_01867,PROD_00428,4,"Works as described, pleased with quality.",2026-07-06 14:01:11
+RAT_000728,CUST_02095,PROD_00571,3,Okay for the price point.,2026-08-18 01:39:49
+RAT_000729,CUST_02382,PROD_00611,4,"Good product, very satisfied with the purchase.",2026-06-23 22:00:14
+RAT_000730,CUST_02382,PROD_00618,3,Decent purchase. Average experience.,2026-06-27 22:04:56
+RAT_000731,CUST_02382,PROD_00606,4,Value for money. Delivery was fast.,2026-06-23 22:05:54
+RAT_000732,CUST_02934,PROD_00246,4,Value for money. Delivery was fast.,2026-06-22 03:54:13
+RAT_000733,CUST_02359,PROD_00595,4,"Works as described, pleased with quality.",2026-09-09 18:40:01
+RAT_000734,CUST_02359,PROD_00622,5,"Exceptional quality, surpassed expectations!",2026-09-08 18:42:12
+RAT_000735,CUST_00364,PROD_00371,2,Could have been better. Material feels average.,2026-04-08 14:42:39
+RAT_000736,CUST_00364,PROD_00344,4,Value for money. Delivery was fast.,2026-04-13 14:45:16
+RAT_000737,CUST_00889,PROD_00266,4,"Works as described, pleased with quality.",2026-07-15 14:33:21
+RAT_000738,CUST_00330,PROD_00090,5,Absolutely loved this! Highly recommended.,2026-03-22 11:36:23
+RAT_000739,CUST_02781,PROD_00429,2,Slightly disappointed with specs.,2026-03-27 01:47:25
+RAT_000740,CUST_02781,PROD_00423,3,Meets basic expectations.,2026-03-28 01:50:11
+RAT_000741,CUST_01222,PROD_00072,4,"Works as described, pleased with quality.",2026-07-07 21:27:16
+RAT_000742,CUST_02036,PROD_00301,4,Value for money. Delivery was fast.,2026-08-08 13:29:25
+RAT_000743,CUST_02193,PROD_00507,2,Slightly disappointed with specs.,2026-07-09 17:00:50
+RAT_000744,CUST_01626,PROD_00370,3,Okay for the price point.,2026-04-24 08:57:27
+RAT_000745,CUST_01122,PROD_00361,4,Value for money. Delivery was fast.,2026-04-18 20:23:13
+RAT_000746,CUST_02224,PROD_00280,2,Slightly disappointed with specs.,2026-03-22 10:46:32
+RAT_000747,CUST_02708,PROD_00023,4,"Good product, very satisfied with the purchase.",2026-07-03 22:36:01
+RAT_000748,CUST_01414,PROD_00324,4,"Good product, very satisfied with the purchase.",2026-03-20 10:18:33
+RAT_000749,CUST_01350,PROD_00118,3,Okay for the price point.,2026-08-07 06:36:33
+RAT_000750,CUST_02404,PROD_00190,3,Decent purchase. Average experience.,2026-05-10 22:00:15
+RAT_000751,CUST_02654,PROD_00373,5,Top notch performance and build.,2026-06-13 10:00:53
+RAT_000752,CUST_02654,PROD_00346,4,Value for money. Delivery was fast.,2026-06-13 10:01:53
+RAT_000753,CUST_02391,PROD_00603,2,Slightly disappointed with specs.,2026-04-28 04:13:51
+RAT_000754,CUST_01908,PROD_00114,4,"Works as described, pleased with quality.",2026-03-15 19:16:28
+RAT_000755,CUST_00282,PROD_00149,4,Value for money. Delivery was fast.,2026-06-27 07:42:21
+RAT_000756,CUST_00521,PROD_00125,3,Meets basic expectations.,2026-06-09 19:18:57
+RAT_000757,CUST_01882,PROD_00147,3,Decent purchase. Average experience.,2026-08-04 17:07:35
+RAT_000758,CUST_02532,PROD_00279,4,"Good product, very satisfied with the purchase.",2026-07-25 15:12:38
+RAT_000759,CUST_00564,PROD_00011,5,Top notch performance and build.,2026-04-02 11:03:22
+RAT_000760,CUST_02444,PROD_00020,5,"Exceptional quality, surpassed expectations!",2026-06-30 03:49:41
+RAT_000761,CUST_00011,PROD_00063,3,Okay for the price point.,2026-07-17 02:13:50
+RAT_000762,CUST_00410,PROD_00467,5,"Exceptional quality, surpassed expectations!",2026-05-25 13:36:09
+RAT_000763,CUST_01927,PROD_00228,4,"Works as described, pleased with quality.",2026-09-07 14:55:19
+RAT_000764,CUST_02048,PROD_00379,4,"Works as described, pleased with quality.",2026-05-22 09:35:24
+RAT_000765,CUST_02032,PROD_00448,4,"Good product, very satisfied with the purchase.",2026-05-05 00:58:30
+RAT_000766,CUST_02054,PROD_00500,3,Decent purchase. Average experience.,2026-06-08 05:04:05
+RAT_000767,CUST_02738,PROD_00319,4,"Good product, very satisfied with the purchase.",2026-08-22 08:18:00
+RAT_000768,CUST_02738,PROD_00304,3,Okay for the price point.,2026-08-20 08:20:38
+RAT_000769,CUST_01592,PROD_00009,3,Meets basic expectations.,2026-03-15 05:47:26
+RAT_000770,CUST_01945,PROD_00240,3,Okay for the price point.,2026-03-28 04:24:58
+RAT_000771,CUST_00812,PROD_00238,5,Top notch performance and build.,2026-05-27 21:51:50
+RAT_000772,CUST_00196,PROD_00553,4,Value for money. Delivery was fast.,2026-05-04 12:46:01
+RAT_000773,CUST_02672,PROD_00453,3,Decent purchase. Average experience.,2026-05-18 14:49:21
+RAT_000774,CUST_00194,PROD_00359,4,"Good product, very satisfied with the purchase.",2026-07-22 21:06:27
+RAT_000775,CUST_02692,PROD_00133,4,"Good product, very satisfied with the purchase.",2026-08-20 17:37:30
+RAT_000776,CUST_01067,PROD_00011,4,"Good product, very satisfied with the purchase.",2026-06-09 18:28:41
+RAT_000777,CUST_00043,PROD_00545,4,"Good product, very satisfied with the purchase.",2026-07-18 04:37:35
+RAT_000778,CUST_02205,PROD_00101,3,Okay for the price point.,2026-07-14 22:02:55
+RAT_000779,CUST_01286,PROD_00136,4,Value for money. Delivery was fast.,2026-08-23 01:15:00
+RAT_000780,CUST_00940,PROD_00497,4,"Good product, very satisfied with the purchase.",2026-08-28 19:32:41
+RAT_000781,CUST_00673,PROD_00472,4,"Works as described, pleased with quality.",2026-04-17 00:39:56
+RAT_000782,CUST_01501,PROD_00579,4,"Works as described, pleased with quality.",2026-07-16 17:04:12
+RAT_000783,CUST_01861,PROD_00223,4,"Works as described, pleased with quality.",2026-08-29 14:04:46
+RAT_000784,CUST_01861,PROD_00224,4,Value for money. Delivery was fast.,2026-08-30 14:08:21
+RAT_000785,CUST_02573,PROD_00629,4,"Works as described, pleased with quality.",2026-04-03 02:50:36
+RAT_000786,CUST_00032,PROD_00200,5,Absolutely loved this! Highly recommended.,2026-04-07 16:21:58
+RAT_000787,CUST_02353,PROD_00251,2,Slightly disappointed with specs.,2026-07-14 12:47:40
+RAT_000788,CUST_02634,PROD_00616,5,Absolutely loved this! Highly recommended.,2026-04-24 17:23:04
+RAT_000789,CUST_01649,PROD_00494,4,Value for money. Delivery was fast.,2026-04-21 16:07:57
+RAT_000790,CUST_01900,PROD_00608,4,Value for money. Delivery was fast.,2026-05-22 14:03:32
+RAT_000791,CUST_01035,PROD_00285,4,"Works as described, pleased with quality.",2026-04-15 06:30:07
+RAT_000792,CUST_01035,PROD_00287,3,Decent purchase. Average experience.,2026-04-18 06:34:57
+RAT_000793,CUST_01174,PROD_00447,4,"Good product, very satisfied with the purchase.",2026-04-03 10:37:05
+RAT_000794,CUST_01174,PROD_00444,4,"Good product, very satisfied with the purchase.",2026-04-04 10:38:47
+RAT_000795,CUST_01855,PROD_00586,4,"Good product, very satisfied with the purchase.",2026-04-17 12:13:38
+RAT_000796,CUST_01230,PROD_00382,3,Meets basic expectations.,2026-08-08 14:28:37
+RAT_000797,CUST_00671,PROD_00054,5,Absolutely loved this! Highly recommended.,2026-08-11 22:06:40
+RAT_000798,CUST_02406,PROD_00028,4,Value for money. Delivery was fast.,2026-04-04 23:33:47
+RAT_000799,CUST_02406,PROD_00018,4,"Works as described, pleased with quality.",2026-04-01 23:38:14
+RAT_000800,CUST_01133,PROD_00007,3,Okay for the price point.,2026-06-09 01:56:09
+RAT_000801,CUST_00834,PROD_00542,4,"Works as described, pleased with quality.",2026-04-22 16:53:08
+RAT_000802,CUST_02387,PROD_00181,4,"Works as described, pleased with quality.",2026-07-06 04:55:52
+RAT_000803,CUST_01509,PROD_00040,4,"Works as described, pleased with quality.",2026-03-31 14:25:28
+RAT_000804,CUST_01645,PROD_00506,4,"Good product, very satisfied with the purchase.",2026-05-11 06:27:19
+RAT_000805,CUST_00051,PROD_00255,3,Meets basic expectations.,2026-07-07 12:23:35
+RAT_000806,CUST_00051,PROD_00263,4,"Works as described, pleased with quality.",2026-07-04 12:25:33
+RAT_000807,CUST_02390,PROD_00296,4,Value for money. Delivery was fast.,2026-06-10 05:46:50
+RAT_000808,CUST_00880,PROD_00292,4,"Good product, very satisfied with the purchase.",2026-08-08 02:13:43
+RAT_000809,CUST_00880,PROD_00279,3,Decent purchase. Average experience.,2026-08-09 02:17:40
+RAT_000810,CUST_01467,PROD_00597,5,"Exceptional quality, surpassed expectations!",2026-08-25 08:08:48
+RAT_000811,CUST_00410,PROD_00499,4,"Works as described, pleased with quality.",2026-04-25 10:13:56
+RAT_000812,CUST_01977,PROD_00533,3,Decent purchase. Average experience.,2026-04-02 09:48:43
+RAT_000813,CUST_02890,PROD_00417,3,Decent purchase. Average experience.,2026-07-21 07:49:04
+RAT_000814,CUST_02758,PROD_00240,3,Okay for the price point.,2026-06-17 23:30:04
+RAT_000815,CUST_00373,PROD_00092,4,"Works as described, pleased with quality.",2026-04-07 19:05:44
+RAT_000816,CUST_01944,PROD_00092,4,"Good product, very satisfied with the purchase.",2026-07-23 00:43:49
+RAT_000817,CUST_02674,PROD_00295,4,"Works as described, pleased with quality.",2026-06-22 23:52:12
+RAT_000818,CUST_02097,PROD_00343,2,Slightly disappointed with specs.,2026-03-22 02:11:32
+RAT_000819,CUST_02097,PROD_00348,4,"Works as described, pleased with quality.",2026-03-19 02:12:40
+RAT_000820,CUST_00377,PROD_00192,5,"Exceptional quality, surpassed expectations!",2026-05-24 12:29:44
+RAT_000821,CUST_02699,PROD_00559,4,"Good product, very satisfied with the purchase.",2026-09-03 06:31:28
+RAT_000822,CUST_00110,PROD_00239,4,Value for money. Delivery was fast.,2026-05-27 06:28:50
+RAT_000823,CUST_02572,PROD_00123,5,"Exceptional quality, surpassed expectations!",2026-03-22 06:49:49
+RAT_000824,CUST_00627,PROD_00115,4,"Works as described, pleased with quality.",2026-04-10 05:45:44
+RAT_000825,CUST_02473,PROD_00485,5,"Exceptional quality, surpassed expectations!",2026-08-27 17:33:36
+RAT_000826,CUST_00989,PROD_00085,4,"Good product, very satisfied with the purchase.",2026-05-26 07:02:00
+RAT_000827,CUST_00989,PROD_00086,3,Decent purchase. Average experience.,2026-05-27 07:03:41
+RAT_000828,CUST_02499,PROD_00172,4,"Good product, very satisfied with the purchase.",2026-09-06 10:50:51
+RAT_000829,CUST_00602,PROD_00042,4,"Good product, very satisfied with the purchase.",2026-08-22 18:52:15
+RAT_000830,CUST_00602,PROD_00005,4,Value for money. Delivery was fast.,2026-08-24 18:53:19
+RAT_000831,CUST_00505,PROD_00282,2,Could have been better. Material feels average.,2026-08-05 16:35:55
+RAT_000832,CUST_00553,PROD_00200,4,"Good product, very satisfied with the purchase.",2026-06-04 22:00:40
+RAT_000833,CUST_00249,PROD_00258,3,Decent purchase. Average experience.,2026-07-06 10:15:20
+RAT_000834,CUST_00920,PROD_00196,4,"Good product, very satisfied with the purchase.",2026-05-17 13:45:57
+RAT_000835,CUST_00920,PROD_00191,4,"Works as described, pleased with quality.",2026-05-18 13:48:03
+RAT_000836,CUST_00552,PROD_00327,3,Meets basic expectations.,2026-06-24 22:06:09
+RAT_000837,CUST_00523,PROD_00168,3,Okay for the price point.,2026-07-30 19:25:27
+RAT_000838,CUST_00499,PROD_00144,4,Value for money. Delivery was fast.,2026-07-16 00:58:16
+RAT_000839,CUST_00716,PROD_00203,5,Top notch performance and build.,2026-04-03 10:45:50
+RAT_000840,CUST_00600,PROD_00382,3,Meets basic expectations.,2026-07-17 00:24:04
+RAT_000841,CUST_01233,PROD_00342,3,Decent purchase. Average experience.,2026-06-17 00:35:59
+RAT_000842,CUST_01233,PROD_00368,3,Okay for the price point.,2026-06-18 00:38:22
+RAT_000843,CUST_01233,PROD_00369,5,Absolutely loved this! Highly recommended.,2026-06-17 00:43:05
+RAT_000844,CUST_01558,PROD_00230,4,"Works as described, pleased with quality.",2026-05-19 23:57:23
+RAT_000845,CUST_02419,PROD_00510,4,"Good product, very satisfied with the purchase.",2026-05-01 14:31:50
+RAT_000846,CUST_00939,PROD_00580,3,Meets basic expectations.,2026-08-19 12:18:19
+RAT_000847,CUST_00808,PROD_00564,4,"Good product, very satisfied with the purchase.",2026-05-05 04:56:25
+RAT_000848,CUST_01688,PROD_00128,4,"Works as described, pleased with quality.",2026-05-03 05:25:44
+RAT_000849,CUST_01688,PROD_00151,4,"Works as described, pleased with quality.",2026-05-03 05:27:19
+RAT_000850,CUST_00783,PROD_00294,4,Value for money. Delivery was fast.,2026-07-21 00:25:32
+RAT_000851,CUST_02207,PROD_00160,5,Absolutely loved this! Highly recommended.,2026-06-17 19:41:59
+RAT_000852,CUST_02968,PROD_00458,3,Decent purchase. Average experience.,2026-05-06 02:37:48
+RAT_000853,CUST_00881,PROD_00328,4,Value for money. Delivery was fast.,2026-07-05 05:13:11
+RAT_000854,CUST_00195,PROD_00009,3,Okay for the price point.,2026-04-01 09:24:07
+RAT_000855,CUST_01898,PROD_00529,4,Value for money. Delivery was fast.,2026-05-24 15:21:14
+RAT_000856,CUST_02545,PROD_00158,4,"Works as described, pleased with quality.",2026-04-06 16:34:10
+RAT_000857,CUST_01387,PROD_00273,3,Meets basic expectations.,2026-05-25 00:50:11
+RAT_000858,CUST_01387,PROD_00279,4,"Works as described, pleased with quality.",2026-05-23 00:53:05
+RAT_000859,CUST_01944,PROD_00124,4,"Works as described, pleased with quality.",2026-06-17 18:26:28
+RAT_000860,CUST_02802,PROD_00512,3,Decent purchase. Average experience.,2026-08-10 04:53:36
+RAT_000861,CUST_00617,PROD_00451,4,"Works as described, pleased with quality.",2026-04-06 04:50:35
+RAT_000862,CUST_02358,PROD_00328,4,"Works as described, pleased with quality.",2026-04-24 11:27:50
+RAT_000863,CUST_02983,PROD_00355,4,"Works as described, pleased with quality.",2026-08-03 21:31:16
+RAT_000864,CUST_02983,PROD_00347,5,"Exceptional quality, surpassed expectations!",2026-08-05 21:34:09
+RAT_000865,CUST_01068,PROD_00524,3,Okay for the price point.,2026-07-17 11:48:20
+RAT_000866,CUST_00215,PROD_00485,3,Decent purchase. Average experience.,2026-08-10 06:16:28
+RAT_000867,CUST_00448,PROD_00178,4,Value for money. Delivery was fast.,2026-06-08 15:15:20
+RAT_000868,CUST_00855,PROD_00529,4,Value for money. Delivery was fast.,2026-04-23 22:29:21
+RAT_000869,CUST_01463,PROD_00353,5,Top notch performance and build.,2026-04-11 19:47:19
+RAT_000870,CUST_01778,PROD_00244,2,Slightly disappointed with specs.,2026-08-14 09:12:38
+RAT_000871,CUST_01718,PROD_00263,4,Value for money. Delivery was fast.,2026-07-23 21:33:29
+RAT_000872,CUST_02039,PROD_00184,3,Meets basic expectations.,2026-08-02 09:16:23
+RAT_000873,CUST_02513,PROD_00429,4,"Works as described, pleased with quality.",2026-05-08 05:02:42
+RAT_000874,CUST_01209,PROD_00030,4,Value for money. Delivery was fast.,2026-08-08 18:30:08
+RAT_000875,CUST_01209,PROD_00032,4,"Works as described, pleased with quality.",2026-08-07 18:32:20
+RAT_000876,CUST_02831,PROD_00065,4,"Good product, very satisfied with the purchase.",2026-04-11 06:27:29
+RAT_000877,CUST_02831,PROD_00082,4,Value for money. Delivery was fast.,2026-04-08 06:28:46
+RAT_000878,CUST_00008,PROD_00238,4,Value for money. Delivery was fast.,2026-07-08 14:12:24
+RAT_000879,CUST_01849,PROD_00255,4,"Good product, very satisfied with the purchase.",2026-04-02 22:22:49
+RAT_000880,CUST_01133,PROD_00014,5,"Exceptional quality, surpassed expectations!",2026-07-09 10:06:36
+RAT_000881,CUST_02775,PROD_00417,5,Top notch performance and build.,2026-08-08 16:45:33
+RAT_000882,CUST_02775,PROD_00387,4,"Works as described, pleased with quality.",2026-08-09 16:47:36
+RAT_000883,CUST_00168,PROD_00024,5,Absolutely loved this! Highly recommended.,2026-06-25 22:25:02
+RAT_000884,CUST_01078,PROD_00202,4,Value for money. Delivery was fast.,2026-08-16 04:42:17
+RAT_000885,CUST_02950,PROD_00365,2,Slightly disappointed with specs.,2026-03-21 19:29:47
+RAT_000886,CUST_01061,PROD_00168,3,Meets basic expectations.,2026-03-23 12:44:18
+RAT_000887,CUST_01825,PROD_00284,5,"Exceptional quality, surpassed expectations!",2026-06-20 12:12:20
+RAT_000888,CUST_02767,PROD_00099,4,"Good product, very satisfied with the purchase.",2026-05-08 15:03:48
+RAT_000889,CUST_01892,PROD_00036,4,"Works as described, pleased with quality.",2026-08-21 15:32:15
+RAT_000890,CUST_00677,PROD_00081,3,Meets basic expectations.,2026-06-05 20:00:30
+RAT_000891,CUST_00184,PROD_00358,4,"Works as described, pleased with quality.",2026-04-22 02:45:28
+RAT_000892,CUST_00252,PROD_00010,4,Value for money. Delivery was fast.,2026-06-17 19:10:15
+RAT_000893,CUST_00297,PROD_00179,4,"Works as described, pleased with quality.",2026-07-17 02:29:38
+RAT_000894,CUST_00297,PROD_00175,3,Meets basic expectations.,2026-07-21 02:31:20
+RAT_000895,CUST_00250,PROD_00150,3,Meets basic expectations.,2026-07-08 21:46:30
+RAT_000896,CUST_00250,PROD_00138,5,Absolutely loved this! Highly recommended.,2026-07-09 21:51:40
+RAT_000897,CUST_00877,PROD_00625,4,Value for money. Delivery was fast.,2026-05-25 06:25:58
+RAT_000898,CUST_01302,PROD_00151,4,Value for money. Delivery was fast.,2026-04-30 01:25:33
+RAT_000899,CUST_00963,PROD_00165,3,Okay for the price point.,2026-05-31 01:27:34
+RAT_000900,CUST_00963,PROD_00136,4,"Good product, very satisfied with the purchase.",2026-06-04 01:28:17
+RAT_000901,CUST_02586,PROD_00421,4,"Good product, very satisfied with the purchase.",2026-06-12 23:08:29
+RAT_000902,CUST_01006,PROD_00319,3,Meets basic expectations.,2026-09-06 21:03:35
+RAT_000903,CUST_00656,PROD_00016,3,Meets basic expectations.,2026-03-15 20:52:08
+RAT_000904,CUST_02748,PROD_00110,5,Top notch performance and build.,2026-04-03 02:15:03
+RAT_000905,CUST_02713,PROD_00315,4,"Good product, very satisfied with the purchase.",2026-08-29 20:22:49
+RAT_000906,CUST_00714,PROD_00248,3,Okay for the price point.,2026-05-08 06:34:05
+RAT_000907,CUST_00346,PROD_00103,4,"Works as described, pleased with quality.",2026-07-11 18:50:03
+RAT_000908,CUST_00678,PROD_00077,5,"Exceptional quality, surpassed expectations!",2026-09-05 07:21:46
+RAT_000909,CUST_00678,PROD_00058,4,"Works as described, pleased with quality.",2026-08-31 07:24:16
+RAT_000910,CUST_00170,PROD_00449,3,Meets basic expectations.,2026-05-01 19:04:21
+RAT_000911,CUST_01456,PROD_00324,4,Value for money. Delivery was fast.,2026-07-22 15:34:20
+RAT_000912,CUST_01529,PROD_00492,3,Okay for the price point.,2026-07-06 21:27:35
+RAT_000913,CUST_00883,PROD_00630,4,"Works as described, pleased with quality.",2026-06-12 14:02:08
+RAT_000914,CUST_00895,PROD_00212,4,"Good product, very satisfied with the purchase.",2026-09-07 05:21:43
+RAT_000915,CUST_00895,PROD_00239,4,Value for money. Delivery was fast.,2026-09-05 05:23:50
+RAT_000916,CUST_02834,PROD_00295,2,Could have been better. Material feels average.,2026-06-07 14:32:09
+RAT_000917,CUST_02554,PROD_00272,4,"Works as described, pleased with quality.",2026-05-12 18:25:57
+RAT_000918,CUST_00761,PROD_00474,5,"Exceptional quality, surpassed expectations!",2026-08-28 10:04:11
+RAT_000919,CUST_02176,PROD_00412,5,Top notch performance and build.,2026-09-06 19:12:24
+RAT_000920,CUST_01512,PROD_00197,3,Decent purchase. Average experience.,2026-08-10 03:28:38
+RAT_000921,CUST_01198,PROD_00440,4,"Works as described, pleased with quality.",2026-03-28 09:29:12
+RAT_000922,CUST_02446,PROD_00186,4,Value for money. Delivery was fast.,2026-07-26 23:12:15
+RAT_000923,CUST_01028,PROD_00475,3,Decent purchase. Average experience.,2026-08-01 16:45:56
+RAT_000924,CUST_01760,PROD_00600,3,Okay for the price point.,2026-08-26 23:02:10
+RAT_000925,CUST_02851,PROD_00150,4,"Good product, very satisfied with the purchase.",2026-07-09 15:52:57
+RAT_000926,CUST_00793,PROD_00395,4,Value for money. Delivery was fast.,2026-05-28 00:17:10
+RAT_000927,CUST_02867,PROD_00050,4,Value for money. Delivery was fast.,2026-03-17 07:05:13
+RAT_000928,CUST_01875,PROD_00074,4,"Good product, very satisfied with the purchase.",2026-07-08 17:55:44
+RAT_000929,CUST_01514,PROD_00543,2,Could have been better. Material feels average.,2026-08-16 13:52:07
+RAT_000930,CUST_01562,PROD_00368,4,"Works as described, pleased with quality.",2026-05-27 22:24:13
+RAT_000931,CUST_00812,PROD_00231,5,"Exceptional quality, surpassed expectations!",2026-08-26 01:50:36
+RAT_000932,CUST_01644,PROD_00322,4,"Works as described, pleased with quality.",2026-06-06 09:39:13
+RAT_000933,CUST_00613,PROD_00263,3,Decent purchase. Average experience.,2026-07-05 14:07:01
+RAT_000934,CUST_00506,PROD_00490,3,Decent purchase. Average experience.,2026-08-18 06:12:19
+RAT_000935,CUST_01769,PROD_00605,4,"Good product, very satisfied with the purchase.",2026-06-12 00:49:11
+RAT_000936,CUST_01769,PROD_00616,4,"Good product, very satisfied with the purchase.",2026-06-16 00:53:38
+RAT_000937,CUST_01820,PROD_00592,4,"Good product, very satisfied with the purchase.",2026-04-13 10:58:13
+RAT_000938,CUST_02751,PROD_00472,4,Value for money. Delivery was fast.,2026-03-26 23:19:57
+RAT_000939,CUST_00716,PROD_00125,3,Decent purchase. Average experience.,2026-06-13 20:30:12
+RAT_000940,CUST_00357,PROD_00470,2,Slightly disappointed with specs.,2026-07-04 15:44:11
+RAT_000941,CUST_02756,PROD_00001,3,Decent purchase. Average experience.,2026-04-03 02:42:09
+RAT_000942,CUST_02493,PROD_00408,4,Value for money. Delivery was fast.,2026-03-18 13:01:31
+RAT_000943,CUST_02107,PROD_00033,3,Okay for the price point.,2026-06-05 18:35:18
+RAT_000944,CUST_00608,PROD_00149,4,Value for money. Delivery was fast.,2026-08-21 12:35:31
+RAT_000945,CUST_00618,PROD_00261,3,Decent purchase. Average experience.,2026-06-15 05:33:58
+RAT_000946,CUST_01121,PROD_00049,3,Okay for the price point.,2026-08-08 18:23:17
+RAT_000947,CUST_01362,PROD_00501,5,Absolutely loved this! Highly recommended.,2026-07-22 13:22:37
+RAT_000948,CUST_01629,PROD_00526,4,Value for money. Delivery was fast.,2026-04-30 14:04:41
+RAT_000949,CUST_02333,PROD_00402,3,Okay for the price point.,2026-04-10 08:53:55
+RAT_000950,CUST_01609,PROD_00533,4,Value for money. Delivery was fast.,2026-06-15 16:34:48
+RAT_000951,CUST_01498,PROD_00583,4,"Works as described, pleased with quality.",2026-04-23 07:28:28
+RAT_000952,CUST_02673,PROD_00034,3,Meets basic expectations.,2026-08-09 21:40:50
+RAT_000953,CUST_02859,PROD_00605,3,Okay for the price point.,2026-06-21 22:52:00
+RAT_000954,CUST_00030,PROD_00586,3,Meets basic expectations.,2026-08-02 10:01:31
+RAT_000955,CUST_01380,PROD_00107,4,Value for money. Delivery was fast.,2026-08-31 19:44:28
+RAT_000956,CUST_00795,PROD_00197,4,Value for money. Delivery was fast.,2026-04-01 21:19:13
+RAT_000957,CUST_00540,PROD_00432,5,Absolutely loved this! Highly recommended.,2026-06-28 19:19:18
+RAT_000958,CUST_02707,PROD_00456,3,Decent purchase. Average experience.,2026-04-13 04:18:22
+RAT_000959,CUST_00158,PROD_00030,3,Decent purchase. Average experience.,2026-06-14 23:07:06
+RAT_000960,CUST_00491,PROD_00501,3,Meets basic expectations.,2026-05-09 18:32:07
+RAT_000961,CUST_00844,PROD_00039,4,Value for money. Delivery was fast.,2026-03-18 13:49:54
+RAT_000962,CUST_01994,PROD_00167,3,Decent purchase. Average experience.,2026-08-12 19:48:27
+RAT_000963,CUST_01967,PROD_00461,3,Meets basic expectations.,2026-06-05 17:18:59
+RAT_000964,CUST_01926,PROD_00442,3,Okay for the price point.,2026-05-31 23:27:46
+RAT_000965,CUST_02247,PROD_00003,4,"Good product, very satisfied with the purchase.",2026-05-19 05:12:06
+RAT_000966,CUST_01536,PROD_00048,5,Absolutely loved this! Highly recommended.,2026-08-09 00:33:51
+RAT_000967,CUST_02115,PROD_00306,4,"Good product, very satisfied with the purchase.",2026-04-02 05:23:43
+RAT_000968,CUST_02262,PROD_00176,4,"Good product, very satisfied with the purchase.",2026-03-21 07:51:54
+RAT_000969,CUST_02708,PROD_00033,3,Okay for the price point.,2026-04-27 14:38:09
+RAT_000970,CUST_02708,PROD_00001,2,Slightly disappointed with specs.,2026-04-27 14:38:51
+RAT_000971,CUST_02823,PROD_00432,3,Decent purchase. Average experience.,2026-06-24 17:47:05
+RAT_000972,CUST_02715,PROD_00335,3,Okay for the price point.,2026-06-28 05:18:19
+RAT_000973,CUST_01044,PROD_00009,3,Meets basic expectations.,2026-07-01 12:50:19
+RAT_000974,CUST_02361,PROD_00320,3,Decent purchase. Average experience.,2026-04-28 05:57:43
+RAT_000975,CUST_00139,PROD_00147,4,"Works as described, pleased with quality.",2026-07-28 10:23:23
+RAT_000976,CUST_01503,PROD_00452,3,Meets basic expectations.,2026-07-04 03:57:49
+RAT_000977,CUST_00147,PROD_00121,3,Okay for the price point.,2026-07-04 20:51:15
+RAT_000978,CUST_00410,PROD_00285,4,"Works as described, pleased with quality.",2026-07-22 02:41:18
+RAT_000979,CUST_00144,PROD_00230,4,"Good product, very satisfied with the purchase.",2026-08-14 04:37:22
+RAT_000980,CUST_02969,PROD_00048,5,Top notch performance and build.,2026-07-26 03:57:37
+RAT_000981,CUST_02035,PROD_00057,3,Meets basic expectations.,2026-03-30 12:08:02
+RAT_000982,CUST_01309,PROD_00572,4,"Works as described, pleased with quality.",2026-03-28 05:03:48
+RAT_000983,CUST_02664,PROD_00620,4,Value for money. Delivery was fast.,2026-05-17 02:32:07
+RAT_000984,CUST_02595,PROD_00560,4,"Works as described, pleased with quality.",2026-05-13 03:51:18
+RAT_000985,CUST_01004,PROD_00134,3,Okay for the price point.,2026-07-28 06:31:16
+RAT_000986,CUST_02506,PROD_00225,5,Absolutely loved this! Highly recommended.,2026-09-03 07:10:48
+RAT_000987,CUST_01445,PROD_00525,3,Meets basic expectations.,2026-06-19 10:05:40
+RAT_000988,CUST_02939,PROD_00032,4,"Works as described, pleased with quality.",2026-06-20 05:04:44
+RAT_000989,CUST_01020,PROD_00459,4,"Works as described, pleased with quality.",2026-03-31 09:46:05
+RAT_000990,CUST_01020,PROD_00447,4,Value for money. Delivery was fast.,2026-04-01 09:49:40
+RAT_000991,CUST_02568,PROD_00319,4,"Good product, very satisfied with the purchase.",2026-06-19 17:15:08
+RAT_000992,CUST_00930,PROD_00627,3,Okay for the price point.,2026-05-13 21:29:39
+RAT_000993,CUST_01448,PROD_00110,4,Value for money. Delivery was fast.,2026-04-23 03:05:24
+RAT_000994,CUST_02476,PROD_00033,4,Value for money. Delivery was fast.,2026-05-09 07:37:06
+RAT_000995,CUST_02476,PROD_00011,4,Value for money. Delivery was fast.,2026-05-06 07:40:41
+RAT_000996,CUST_00298,PROD_00117,4,"Works as described, pleased with quality.",2026-09-04 11:41:51
+RAT_000997,CUST_00361,PROD_00037,4,"Good product, very satisfied with the purchase.",2026-08-26 18:03:30
+RAT_000998,CUST_00242,PROD_00453,3,Okay for the price point.,2026-07-09 05:06:16
+RAT_000999,CUST_00242,PROD_00456,4,"Good product, very satisfied with the purchase.",2026-07-09 05:08:03
+RAT_001000,CUST_02652,PROD_00523,3,Decent purchase. Average experience.,2026-06-12 09:11:55
+RAT_001001,CUST_02096,PROD_00381,4,"Good product, very satisfied with the purchase.",2026-05-11 20:16:31
+RAT_001002,CUST_02107,PROD_00041,5,"Exceptional quality, surpassed expectations!",2026-03-20 13:32:23
+RAT_001003,CUST_01004,PROD_00143,3,Meets basic expectations.,2026-08-07 01:14:11
+RAT_001004,CUST_00454,PROD_00191,3,Meets basic expectations.,2026-06-22 18:38:29
+RAT_001005,CUST_00454,PROD_00193,3,Okay for the price point.,2026-06-18 18:40:42
+RAT_001006,CUST_00757,PROD_00480,4,Value for money. Delivery was fast.,2026-05-22 12:02:29
+RAT_001007,CUST_00948,PROD_00563,5,Absolutely loved this! Highly recommended.,2026-05-27 22:30:00
+RAT_001008,CUST_02547,PROD_00561,4,"Good product, very satisfied with the purchase.",2026-05-30 01:54:08
+RAT_001009,CUST_02938,PROD_00051,3,Meets basic expectations.,2026-08-04 13:48:52
+RAT_001010,CUST_02994,PROD_00344,4,"Good product, very satisfied with the purchase.",2026-05-14 15:06:13
+RAT_001011,CUST_01188,PROD_00279,4,"Works as described, pleased with quality.",2026-07-16 07:46:37
+RAT_001012,CUST_02100,PROD_00114,3,Meets basic expectations.,2026-04-12 17:40:14
+RAT_001013,CUST_02147,PROD_00017,4,Value for money. Delivery was fast.,2026-08-07 02:45:50
+RAT_001014,CUST_02386,PROD_00018,4,Value for money. Delivery was fast.,2026-04-15 09:35:30
+RAT_001015,CUST_01921,PROD_00265,4,"Works as described, pleased with quality.",2026-08-25 08:26:59
+RAT_001016,CUST_02693,PROD_00098,4,Value for money. Delivery was fast.,2026-09-07 02:22:11
+RAT_001017,CUST_02927,PROD_00423,4,"Good product, very satisfied with the purchase.",2026-07-29 21:19:40
+RAT_001018,CUST_02090,PROD_00309,2,Slightly disappointed with specs.,2026-06-11 01:42:44
+RAT_001019,CUST_02090,PROD_00323,4,Value for money. Delivery was fast.,2026-06-15 01:45:01
+RAT_001020,CUST_00299,PROD_00584,4,Value for money. Delivery was fast.,2026-08-10 10:07:55
+RAT_001021,CUST_00784,PROD_00020,3,Okay for the price point.,2026-08-21 01:08:23
+RAT_001022,CUST_01154,PROD_00536,4,"Good product, very satisfied with the purchase.",2026-04-17 17:43:09
+RAT_001023,CUST_00896,PROD_00469,4,Value for money. Delivery was fast.,2026-08-27 06:36:43
+RAT_001024,CUST_00612,PROD_00124,4,"Good product, very satisfied with the purchase.",2026-06-18 22:49:48
+RAT_001025,CUST_01789,PROD_00202,4,"Good product, very satisfied with the purchase.",2026-04-10 05:00:33
+RAT_001026,CUST_00291,PROD_00049,3,Meets basic expectations.,2026-03-24 16:35:53
+RAT_001027,CUST_02667,PROD_00208,4,"Works as described, pleased with quality.",2026-07-20 23:07:20
+RAT_001028,CUST_02509,PROD_00617,5,Top notch performance and build.,2026-05-16 21:03:38
+RAT_001029,CUST_00598,PROD_00487,4,"Works as described, pleased with quality.",2026-09-05 13:43:34
+RAT_001030,CUST_01839,PROD_00447,4,Value for money. Delivery was fast.,2026-08-07 18:54:54
+RAT_001031,CUST_01267,PROD_00482,3,Okay for the price point.,2026-09-01 08:00:49
+RAT_001032,CUST_01267,PROD_00468,4,Value for money. Delivery was fast.,2026-09-04 08:05:09
+RAT_001033,CUST_02343,PROD_00277,3,Meets basic expectations.,2026-04-01 11:16:55
+RAT_001034,CUST_01642,PROD_00055,5,Absolutely loved this! Highly recommended.,2026-07-06 08:18:28
+RAT_001035,CUST_02913,PROD_00063,3,Decent purchase. Average experience.,2026-05-17 11:15:26
+RAT_001036,CUST_01311,PROD_00144,3,Meets basic expectations.,2026-03-24 20:50:37
+RAT_001037,CUST_01142,PROD_00190,4,"Good product, very satisfied with the purchase.",2026-05-23 09:36:43
+RAT_001038,CUST_02358,PROD_00323,5,Absolutely loved this! Highly recommended.,2026-06-20 18:45:22
+RAT_001039,CUST_02670,PROD_00131,3,Okay for the price point.,2026-08-13 01:49:08
+RAT_001040,CUST_02225,PROD_00213,3,Meets basic expectations.,2026-08-31 12:47:34
+RAT_001041,CUST_00016,PROD_00478,4,Value for money. Delivery was fast.,2026-09-04 08:10:24
+RAT_001042,CUST_01612,PROD_00209,5,Absolutely loved this! Highly recommended.,2026-04-25 06:02:55
+RAT_001043,CUST_01038,PROD_00275,5,Absolutely loved this! Highly recommended.,2026-06-20 09:02:59
+RAT_001044,CUST_01453,PROD_00386,4,"Good product, very satisfied with the purchase.",2026-04-06 17:35:28
+RAT_001045,CUST_02885,PROD_00009,2,Could have been better. Material feels average.,2026-08-13 04:04:39
+RAT_001046,CUST_01534,PROD_00525,4,Value for money. Delivery was fast.,2026-07-12 05:10:11
+RAT_001047,CUST_02659,PROD_00515,4,Value for money. Delivery was fast.,2026-08-13 09:53:35
+RAT_001048,CUST_02492,PROD_00166,4,"Works as described, pleased with quality.",2026-07-21 17:57:21
+RAT_001049,CUST_00412,PROD_00606,3,Decent purchase. Average experience.,2026-08-13 23:37:19
+RAT_001050,CUST_00266,PROD_00232,3,Decent purchase. Average experience.,2026-05-21 17:56:55
+RAT_001051,CUST_02663,PROD_00578,3,Meets basic expectations.,2026-08-24 13:40:10
+RAT_001052,CUST_01894,PROD_00606,5,"Exceptional quality, surpassed expectations!",2026-08-01 01:05:14
+RAT_001053,CUST_01998,PROD_00162,4,"Good product, very satisfied with the purchase.",2026-07-26 02:19:44
+RAT_001054,CUST_01998,PROD_00144,4,"Good product, very satisfied with the purchase.",2026-07-28 02:20:18
+RAT_001055,CUST_00142,PROD_00445,4,"Good product, very satisfied with the purchase.",2026-07-18 16:39:45
+RAT_001056,CUST_00142,PROD_00424,4,"Good product, very satisfied with the purchase.",2026-07-18 16:42:21
+RAT_001057,CUST_00142,PROD_00457,4,"Good product, very satisfied with the purchase.",2026-07-20 16:45:47
+RAT_001058,CUST_01342,PROD_00513,4,Value for money. Delivery was fast.,2026-07-30 05:34:32
+RAT_001059,CUST_01920,PROD_00023,4,Value for money. Delivery was fast.,2026-04-19 05:08:00
+RAT_001060,CUST_02946,PROD_00030,4,"Good product, very satisfied with the purchase.",2026-05-18 06:01:27
+RAT_001061,CUST_02946,PROD_00019,4,Value for money. Delivery was fast.,2026-05-22 06:02:53
+RAT_001062,CUST_00518,PROD_00447,4,"Works as described, pleased with quality.",2026-04-01 20:33:14
+RAT_001063,CUST_01833,PROD_00472,4,Value for money. Delivery was fast.,2026-07-25 19:29:39
+RAT_001064,CUST_01227,PROD_00369,5,Top notch performance and build.,2026-07-20 13:26:37
+RAT_001065,CUST_01618,PROD_00365,4,"Works as described, pleased with quality.",2026-04-21 21:02:39
+RAT_001066,CUST_01618,PROD_00355,5,Top notch performance and build.,2026-04-16 21:04:38
+RAT_001067,CUST_02717,PROD_00086,3,Okay for the price point.,2026-04-23 19:47:05
+RAT_001068,CUST_02717,PROD_00104,4,Value for money. Delivery was fast.,2026-04-23 19:48:45
+RAT_001069,CUST_02692,PROD_00156,3,Decent purchase. Average experience.,2026-08-06 02:23:09
+RAT_001070,CUST_00863,PROD_00017,3,Okay for the price point.,2026-04-29 13:31:39
+RAT_001071,CUST_01695,PROD_00435,2,Could have been better. Material feels average.,2026-05-26 04:29:19
+RAT_001072,CUST_00746,PROD_00008,3,Decent purchase. Average experience.,2026-08-25 02:47:56
+RAT_001073,CUST_01302,PROD_00146,4,Value for money. Delivery was fast.,2026-04-21 09:50:47
+RAT_001074,CUST_02998,PROD_00295,3,Decent purchase. Average experience.,2026-06-05 17:30:12
+RAT_001075,CUST_02254,PROD_00180,5,Absolutely loved this! Highly recommended.,2026-05-28 06:49:29
+RAT_001076,CUST_00906,PROD_00433,4,Value for money. Delivery was fast.,2026-08-05 12:23:28
+RAT_001077,CUST_01405,PROD_00615,4,Value for money. Delivery was fast.,2026-05-02 16:42:30
+RAT_001078,CUST_00715,PROD_00018,4,"Good product, very satisfied with the purchase.",2026-07-23 05:49:06
+RAT_001079,CUST_00715,PROD_00034,4,"Good product, very satisfied with the purchase.",2026-07-27 05:53:36
+RAT_001080,CUST_02078,PROD_00302,3,Meets basic expectations.,2026-06-27 20:11:11
+RAT_001081,CUST_02533,PROD_00145,4,"Good product, very satisfied with the purchase.",2026-08-31 04:35:18
+RAT_001082,CUST_02968,PROD_00461,3,Decent purchase. Average experience.,2026-06-09 01:42:52
+RAT_001083,CUST_00602,PROD_00020,4,"Good product, very satisfied with the purchase.",2026-07-30 12:56:37
+RAT_001084,CUST_02605,PROD_00186,5,"Exceptional quality, surpassed expectations!",2026-03-17 12:44:01
+RAT_001085,CUST_01427,PROD_00096,4,"Works as described, pleased with quality.",2026-06-07 13:17:49
+RAT_001086,CUST_01427,PROD_00087,4,"Good product, very satisfied with the purchase.",2026-06-07 13:20:25
+RAT_001087,CUST_02601,PROD_00002,4,"Good product, very satisfied with the purchase.",2026-04-15 12:07:03
+RAT_001088,CUST_01718,PROD_00257,4,"Works as described, pleased with quality.",2026-04-12 17:51:08
+RAT_001089,CUST_00508,PROD_00015,4,"Works as described, pleased with quality.",2026-08-05 04:17:35
+RAT_001090,CUST_00432,PROD_00451,4,Value for money. Delivery was fast.,2026-04-03 03:21:35
+RAT_001091,CUST_00771,PROD_00598,4,"Works as described, pleased with quality.",2026-06-03 15:10:06
+RAT_001092,CUST_01714,PROD_00567,4,"Works as described, pleased with quality.",2026-04-25 07:40:39
+RAT_001093,CUST_01136,PROD_00147,3,Decent purchase. Average experience.,2026-08-28 00:17:17
+RAT_001094,CUST_01262,PROD_00053,3,Meets basic expectations.,2026-08-29 04:26:49
+RAT_001095,CUST_01480,PROD_00230,5,"Exceptional quality, surpassed expectations!",2026-08-12 16:32:27
+RAT_001096,CUST_00101,PROD_00122,4,"Works as described, pleased with quality.",2026-08-11 02:09:01
+RAT_001097,CUST_01153,PROD_00264,4,Value for money. Delivery was fast.,2026-05-14 06:38:28
+RAT_001098,CUST_00836,PROD_00605,4,"Works as described, pleased with quality.",2026-05-05 20:47:39
+RAT_001099,CUST_02940,PROD_00600,3,Decent purchase. Average experience.,2026-04-24 06:49:50
+RAT_001100,CUST_00850,PROD_00096,4,"Works as described, pleased with quality.",2026-06-25 22:44:20
+RAT_001101,CUST_00132,PROD_00317,4,"Good product, very satisfied with the purchase.",2026-08-16 12:28:44
+RAT_001102,CUST_02874,PROD_00455,4,"Works as described, pleased with quality.",2026-06-15 10:15:14
+RAT_001103,CUST_01346,PROD_00161,4,Value for money. Delivery was fast.,2026-08-17 00:48:54
+RAT_001104,CUST_01225,PROD_00446,3,Okay for the price point.,2026-06-20 17:19:57
+RAT_001105,CUST_01225,PROD_00461,4,"Works as described, pleased with quality.",2026-06-22 17:22:45
+RAT_001106,CUST_00844,PROD_00023,5,Absolutely loved this! Highly recommended.,2026-06-09 02:33:18
+RAT_001107,CUST_02976,PROD_00063,3,Okay for the price point.,2026-06-17 11:01:17
+RAT_001108,CUST_02229,PROD_00125,5,"Exceptional quality, surpassed expectations!",2026-07-19 16:15:14
+RAT_001109,CUST_00774,PROD_00433,4,Value for money. Delivery was fast.,2026-09-06 07:06:33
+RAT_001110,CUST_00060,PROD_00528,4,"Works as described, pleased with quality.",2026-06-15 04:57:57
+RAT_001111,CUST_01225,PROD_00432,5,Absolutely loved this! Highly recommended.,2026-04-09 07:45:37
+RAT_001112,CUST_01225,PROD_00448,4,"Works as described, pleased with quality.",2026-04-08 07:49:49
+RAT_001113,CUST_00759,PROD_00301,4,"Works as described, pleased with quality.",2026-03-14 15:23:37
+RAT_001114,CUST_01931,PROD_00424,4,"Works as described, pleased with quality.",2026-07-03 17:59:45
+RAT_001115,CUST_01328,PROD_00616,5,Top notch performance and build.,2026-06-18 20:24:25
+RAT_001116,CUST_00348,PROD_00176,3,Decent purchase. Average experience.,2026-06-21 10:03:00
+RAT_001117,CUST_01544,PROD_00263,3,Meets basic expectations.,2026-05-17 10:35:35
+RAT_001118,CUST_01152,PROD_00334,5,Absolutely loved this! Highly recommended.,2026-04-23 00:21:50
+RAT_001119,CUST_01916,PROD_00022,3,Meets basic expectations.,2026-07-26 07:00:50
+RAT_001120,CUST_00303,PROD_00388,4,Value for money. Delivery was fast.,2026-05-26 08:40:13
+RAT_001121,CUST_01975,PROD_00118,3,Decent purchase. Average experience.,2026-07-02 10:53:36
+RAT_001122,CUST_01975,PROD_00102,2,Could have been better. Material feels average.,2026-07-02 10:56:36
+RAT_001123,CUST_01975,PROD_00107,4,"Good product, very satisfied with the purchase.",2026-07-03 10:57:50
+RAT_001124,CUST_02196,PROD_00612,3,Okay for the price point.,2026-05-24 04:06:22
+RAT_001125,CUST_02525,PROD_00011,4,Value for money. Delivery was fast.,2026-08-20 13:15:50
+RAT_001126,CUST_00194,PROD_00352,3,Decent purchase. Average experience.,2026-07-20 08:04:22
+RAT_001127,CUST_00565,PROD_00566,4,Value for money. Delivery was fast.,2026-06-20 03:36:28
+RAT_001128,CUST_02684,PROD_00399,4,"Good product, very satisfied with the purchase.",2026-08-05 15:14:56
+RAT_001129,CUST_02796,PROD_00350,4,Value for money. Delivery was fast.,2026-09-04 20:40:44
+RAT_001130,CUST_00253,PROD_00047,3,Okay for the price point.,2026-08-22 06:04:00
+RAT_001131,CUST_01930,PROD_00021,4,Value for money. Delivery was fast.,2026-03-17 12:53:32
+RAT_001132,CUST_01493,PROD_00588,3,Okay for the price point.,2026-08-28 23:37:47
+RAT_001133,CUST_01572,PROD_00587,4,"Good product, very satisfied with the purchase.",2026-04-26 04:13:52
+RAT_001134,CUST_01064,PROD_00316,3,Meets basic expectations.,2026-05-06 12:45:53
+RAT_001135,CUST_02141,PROD_00232,3,Decent purchase. Average experience.,2026-08-17 05:08:52
+RAT_001136,CUST_01661,PROD_00016,2,Slightly disappointed with specs.,2026-07-04 21:23:10
+RAT_001137,CUST_00435,PROD_00267,3,Meets basic expectations.,2026-08-14 13:24:51
+RAT_001138,CUST_01772,PROD_00480,4,Value for money. Delivery was fast.,2026-08-03 06:58:53
+RAT_001139,CUST_01776,PROD_00623,3,Decent purchase. Average experience.,2026-07-02 17:35:02
+RAT_001140,CUST_02414,PROD_00565,4,"Good product, very satisfied with the purchase.",2026-05-13 09:00:50
+RAT_001141,CUST_01649,PROD_00528,4,Value for money. Delivery was fast.,2026-09-04 01:16:29
+RAT_001142,CUST_00766,PROD_00154,5,Absolutely loved this! Highly recommended.,2026-08-21 15:48:27
+RAT_001143,CUST_01028,PROD_00471,3,Okay for the price point.,2026-03-23 17:17:48
+RAT_001144,CUST_01860,PROD_00440,4,"Works as described, pleased with quality.",2026-06-09 07:56:16
+RAT_001145,CUST_02907,PROD_00040,3,Meets basic expectations.,2026-04-08 06:03:30
+RAT_001146,CUST_02907,PROD_00028,3,Decent purchase. Average experience.,2026-04-04 06:05:10
+RAT_001147,CUST_02963,PROD_00444,2,Could have been better. Material feels average.,2026-06-23 10:28:24
+RAT_001148,CUST_01468,PROD_00160,4,Value for money. Delivery was fast.,2026-03-16 20:46:22
+RAT_001149,CUST_01468,PROD_00132,4,"Works as described, pleased with quality.",2026-03-17 20:48:35
+RAT_001150,CUST_02028,PROD_00610,4,"Works as described, pleased with quality.",2026-06-25 04:40:53
+RAT_001151,CUST_02987,PROD_00165,4,"Good product, very satisfied with the purchase.",2026-06-17 03:06:16
+RAT_001152,CUST_02951,PROD_00245,3,Okay for the price point.,2026-06-30 20:40:02
+RAT_001153,CUST_00769,PROD_00152,4,"Good product, very satisfied with the purchase.",2026-07-12 08:55:27
+RAT_001154,CUST_00769,PROD_00141,3,Meets basic expectations.,2026-07-10 08:59:10
+RAT_001155,CUST_02262,PROD_00194,4,"Good product, very satisfied with the purchase.",2026-05-14 04:51:17
+RAT_001156,CUST_00083,PROD_00113,4,"Works as described, pleased with quality.",2026-04-11 11:48:19
+RAT_001157,CUST_00325,PROD_00031,5,Absolutely loved this! Highly recommended.,2026-03-24 10:31:58
+RAT_001158,CUST_01973,PROD_00578,4,Value for money. Delivery was fast.,2026-04-19 06:58:38
+RAT_001159,CUST_00767,PROD_00075,3,Okay for the price point.,2026-03-22 22:48:14
+RAT_001160,CUST_00767,PROD_00060,4,"Good product, very satisfied with the purchase.",2026-03-23 22:50:07
+RAT_001161,CUST_02489,PROD_00260,5,Absolutely loved this! Highly recommended.,2026-06-10 20:22:47
+RAT_001162,CUST_01454,PROD_00237,4,"Good product, very satisfied with the purchase.",2026-03-26 07:15:30
+RAT_001163,CUST_00403,PROD_00510,4,Value for money. Delivery was fast.,2026-03-26 18:16:08
+RAT_001164,CUST_01478,PROD_00299,4,"Good product, very satisfied with the purchase.",2026-06-09 21:20:31
+RAT_001165,CUST_01478,PROD_00312,5,Top notch performance and build.,2026-06-06 21:25:20
+RAT_001166,CUST_00403,PROD_00104,5,Absolutely loved this! Highly recommended.,2026-08-12 15:18:08
+RAT_001167,CUST_02746,PROD_00377,3,Okay for the price point.,2026-06-07 19:42:24
+RAT_001168,CUST_00283,PROD_00114,4,"Good product, very satisfied with the purchase.",2026-05-10 08:59:05
+RAT_001169,CUST_01484,PROD_00296,4,"Works as described, pleased with quality.",2026-05-16 01:44:26
+RAT_001170,CUST_00976,PROD_00536,3,Decent purchase. Average experience.,2026-03-31 17:48:22
+RAT_001171,CUST_01909,PROD_00621,3,Meets basic expectations.,2026-08-05 08:11:46
+RAT_001172,CUST_02444,PROD_00026,4,"Works as described, pleased with quality.",2026-06-17 19:19:38
+RAT_001173,CUST_01232,PROD_00470,2,Could have been better. Material feels average.,2026-08-24 07:54:33
+RAT_001174,CUST_01081,PROD_00345,2,Could have been better. Material feels average.,2026-06-14 08:35:05
+RAT_001175,CUST_01787,PROD_00154,4,"Works as described, pleased with quality.",2026-03-22 16:52:27
+RAT_001176,CUST_01046,PROD_00579,4,"Good product, very satisfied with the purchase.",2026-06-08 05:37:24
+RAT_001177,CUST_01857,PROD_00186,3,Okay for the price point.,2026-03-19 06:39:44
+RAT_001178,CUST_01317,PROD_00029,4,"Works as described, pleased with quality.",2026-05-28 17:29:01
+RAT_001179,CUST_01161,PROD_00501,4,Value for money. Delivery was fast.,2026-04-04 17:55:29
+RAT_001180,CUST_01161,PROD_00485,4,Value for money. Delivery was fast.,2026-04-05 17:59:24
+RAT_001181,CUST_01114,PROD_00224,4,"Good product, very satisfied with the purchase.",2026-04-20 06:00:00
+RAT_001182,CUST_01978,PROD_00298,3,Meets basic expectations.,2026-04-17 03:39:29
+RAT_001183,CUST_01153,PROD_00258,3,Meets basic expectations.,2026-07-26 21:31:59
+RAT_001184,CUST_00927,PROD_00034,4,"Works as described, pleased with quality.",2026-08-14 12:59:53
+RAT_001185,CUST_00614,PROD_00039,4,"Good product, very satisfied with the purchase.",2026-03-30 05:11:30
+RAT_001186,CUST_01855,PROD_00564,3,Decent purchase. Average experience.,2026-05-29 03:03:31
+RAT_001187,CUST_01967,PROD_00525,3,Meets basic expectations.,2026-07-22 15:56:45
+RAT_001188,CUST_01016,PROD_00054,5,Absolutely loved this! Highly recommended.,2026-07-27 07:02:20
+RAT_001189,CUST_01928,PROD_00138,4,"Good product, very satisfied with the purchase.",2026-05-02 06:06:06
+RAT_001190,CUST_01928,PROD_00153,4,"Good product, very satisfied with the purchase.",2026-04-30 06:09:48
+RAT_001191,CUST_01947,PROD_00301,4,"Good product, very satisfied with the purchase.",2026-03-17 09:30:05
+RAT_001192,CUST_00922,PROD_00240,3,Decent purchase. Average experience.,2026-06-22 13:12:06
+RAT_001193,CUST_02558,PROD_00188,4,"Works as described, pleased with quality.",2026-09-05 22:13:39
+RAT_001194,CUST_00928,PROD_00273,3,Decent purchase. Average experience.,2026-08-23 02:50:50
+RAT_001195,CUST_00497,PROD_00145,4,"Good product, very satisfied with the purchase.",2026-06-06 07:22:03
+RAT_001196,CUST_02305,PROD_00128,4,"Works as described, pleased with quality.",2026-04-12 23:32:11
+RAT_001197,CUST_02411,PROD_00082,4,"Works as described, pleased with quality.",2026-07-02 13:22:27
+RAT_001198,CUST_00727,PROD_00051,4,"Good product, very satisfied with the purchase.",2026-06-11 10:52:14
+RAT_001199,CUST_00997,PROD_00050,3,Meets basic expectations.,2026-08-19 18:02:20
+RAT_001200,CUST_00982,PROD_00371,3,Meets basic expectations.,2026-08-23 06:37:51
+RAT_001201,CUST_01033,PROD_00502,3,Okay for the price point.,2026-07-06 04:35:03
+RAT_001202,CUST_02234,PROD_00204,3,Meets basic expectations.,2026-08-06 07:53:10
+RAT_001203,CUST_01486,PROD_00266,3,Meets basic expectations.,2026-08-19 21:58:50
+RAT_001204,CUST_01643,PROD_00098,4,"Works as described, pleased with quality.",2026-08-23 16:32:54
+RAT_001205,CUST_00591,PROD_00608,3,Okay for the price point.,2026-05-06 02:29:26
+RAT_001206,CUST_02580,PROD_00332,4,"Good product, very satisfied with the purchase.",2026-08-16 06:53:49
+RAT_001207,CUST_02686,PROD_00202,3,Meets basic expectations.,2026-04-22 14:15:36
+RAT_001208,CUST_02102,PROD_00002,5,Absolutely loved this! Highly recommended.,2026-06-25 17:55:12
+RAT_001209,CUST_01254,PROD_00233,4,"Works as described, pleased with quality.",2026-04-15 09:28:58
+RAT_001210,CUST_00897,PROD_00095,4,"Works as described, pleased with quality.",2026-04-13 16:13:42
+RAT_001211,CUST_01979,PROD_00066,4,"Works as described, pleased with quality.",2026-08-31 07:11:05
+RAT_001212,CUST_00633,PROD_00164,4,"Works as described, pleased with quality.",2026-03-24 20:27:42
+RAT_001213,CUST_02017,PROD_00267,4,"Works as described, pleased with quality.",2026-05-16 14:13:28
+RAT_001214,CUST_01353,PROD_00424,4,"Works as described, pleased with quality.",2026-03-29 13:12:05
+RAT_001215,CUST_01416,PROD_00459,4,"Works as described, pleased with quality.",2026-04-30 15:44:56
+RAT_001216,CUST_00281,PROD_00200,4,"Works as described, pleased with quality.",2026-06-06 02:37:25
+RAT_001217,CUST_01825,PROD_00189,4,"Works as described, pleased with quality.",2026-08-13 01:14:34
+RAT_001218,CUST_01821,PROD_00168,4,"Good product, very satisfied with the purchase.",2026-07-18 13:04:25
+RAT_001219,CUST_01821,PROD_00165,3,Meets basic expectations.,2026-07-14 13:05:38
+RAT_001220,CUST_02750,PROD_00235,4,"Good product, very satisfied with the purchase.",2026-08-12 22:55:21
+RAT_001221,CUST_02750,PROD_00219,3,Okay for the price point.,2026-08-13 22:56:17
+RAT_001222,CUST_02588,PROD_00005,5,Top notch performance and build.,2026-09-04 02:53:35
+RAT_001223,CUST_01467,PROD_00259,4,"Good product, very satisfied with the purchase.",2026-03-27 05:49:10
+RAT_001224,CUST_01823,PROD_00107,4,Value for money. Delivery was fast.,2026-04-03 18:03:59
+RAT_001225,CUST_01326,PROD_00427,4,"Good product, very satisfied with the purchase.",2026-08-09 23:47:13
+RAT_001226,CUST_00762,PROD_00257,4,"Good product, very satisfied with the purchase.",2026-09-09 21:03:32
+RAT_001227,CUST_01927,PROD_00235,5,Absolutely loved this! Highly recommended.,2026-04-23 17:40:19
+RAT_001228,CUST_01158,PROD_00116,4,"Good product, very satisfied with the purchase.",2026-06-28 20:52:20
+RAT_001229,CUST_00100,PROD_00227,5,Top notch performance and build.,2026-05-31 15:23:16
+RAT_001230,CUST_02301,PROD_00027,4,Value for money. Delivery was fast.,2026-07-01 01:32:29
+RAT_001231,CUST_02301,PROD_00005,5,Top notch performance and build.,2026-06-29 01:34:53
+RAT_001232,CUST_00090,PROD_00156,2,Slightly disappointed with specs.,2026-06-13 13:56:08
+RAT_001233,CUST_02062,PROD_00065,3,Decent purchase. Average experience.,2026-06-19 04:31:09
+RAT_001234,CUST_01985,PROD_00166,3,Okay for the price point.,2026-08-31 17:57:35
+RAT_001235,CUST_00492,PROD_00239,3,Meets basic expectations.,2026-05-13 08:31:44
+RAT_001236,CUST_00863,PROD_00019,4,Value for money. Delivery was fast.,2026-07-14 17:08:41
+RAT_001237,CUST_01996,PROD_00304,3,Decent purchase. Average experience.,2026-05-24 04:37:35
+RAT_001238,CUST_02777,PROD_00274,4,"Good product, very satisfied with the purchase.",2026-08-24 13:45:37
+RAT_001239,CUST_01042,PROD_00348,3,Decent purchase. Average experience.,2026-05-31 23:03:19
+RAT_001240,CUST_02780,PROD_00153,4,"Good product, very satisfied with the purchase.",2026-08-02 03:51:16
+RAT_001241,CUST_01553,PROD_00546,5,"Exceptional quality, surpassed expectations!",2026-04-16 15:04:00
+RAT_001242,CUST_02537,PROD_00099,5,Absolutely loved this! Highly recommended.,2026-09-04 00:35:47
+RAT_001243,CUST_02564,PROD_00190,3,Meets basic expectations.,2026-04-28 01:07:47
+RAT_001244,CUST_02434,PROD_00622,3,Decent purchase. Average experience.,2026-08-14 03:30:43
+RAT_001245,CUST_01179,PROD_00049,3,Decent purchase. Average experience.,2026-08-03 15:09:02
+RAT_001246,CUST_01781,PROD_00123,4,"Good product, very satisfied with the purchase.",2026-06-23 00:01:31
+RAT_001247,CUST_01394,PROD_00346,3,Okay for the price point.,2026-05-15 06:02:49
+RAT_001248,CUST_01261,PROD_00466,3,Meets basic expectations.,2026-08-27 05:11:56
+RAT_001249,CUST_00502,PROD_00065,4,Value for money. Delivery was fast.,2026-07-29 12:38:05
+RAT_001250,CUST_01893,PROD_00109,3,Decent purchase. Average experience.,2026-04-14 00:16:35
+RAT_001251,CUST_00552,PROD_00325,4,"Works as described, pleased with quality.",2026-06-25 04:17:12
+RAT_001252,CUST_00136,PROD_00087,4,"Good product, very satisfied with the purchase.",2026-09-09 22:02:28
+RAT_001253,CUST_00136,PROD_00108,4,Value for money. Delivery was fast.,2026-09-10 22:04:37
+RAT_001254,CUST_02159,PROD_00599,4,"Good product, very satisfied with the purchase.",2026-06-27 11:26:53
+RAT_001255,CUST_00173,PROD_00104,5,Top notch performance and build.,2026-05-27 11:00:00
+RAT_001256,CUST_02394,PROD_00142,3,Okay for the price point.,2026-06-28 11:02:59
+RAT_001257,CUST_02625,PROD_00479,3,Decent purchase. Average experience.,2026-08-04 11:07:03
+RAT_001258,CUST_02625,PROD_00476,4,Value for money. Delivery was fast.,2026-08-07 11:11:35
+RAT_001259,CUST_01607,PROD_00159,4,Value for money. Delivery was fast.,2026-05-21 23:22:38
+RAT_001260,CUST_00720,PROD_00310,3,Decent purchase. Average experience.,2026-06-27 03:36:20
+RAT_001261,CUST_01914,PROD_00207,3,Decent purchase. Average experience.,2026-09-06 03:02:23
+RAT_001262,CUST_00136,PROD_00117,2,Slightly disappointed with specs.,2026-04-08 21:46:36
+RAT_001263,CUST_01040,PROD_00036,3,Okay for the price point.,2026-07-02 21:48:23
+RAT_001264,CUST_02084,PROD_00162,3,Okay for the price point.,2026-04-14 19:09:32
+RAT_001265,CUST_02084,PROD_00168,4,Value for money. Delivery was fast.,2026-04-12 19:11:53
+RAT_001266,CUST_00247,PROD_00224,3,Decent purchase. Average experience.,2026-03-31 21:24:04
+RAT_001267,CUST_00527,PROD_00437,4,"Works as described, pleased with quality.",2026-07-06 01:58:50
+RAT_001268,CUST_00299,PROD_00583,3,Meets basic expectations.,2026-06-17 23:15:16
+RAT_001269,CUST_01372,PROD_00156,3,Okay for the price point.,2026-04-17 11:32:06
+RAT_001270,CUST_01121,PROD_00071,5,"Exceptional quality, surpassed expectations!",2026-08-08 13:00:55
+RAT_001271,CUST_01409,PROD_00453,4,"Good product, very satisfied with the purchase.",2026-05-13 17:02:04
+RAT_001272,CUST_00322,PROD_00260,5,Top notch performance and build.,2026-05-18 08:14:21
+RAT_001273,CUST_00064,PROD_00157,4,Value for money. Delivery was fast.,2026-03-30 02:11:22
+RAT_001274,CUST_01557,PROD_00126,3,Decent purchase. Average experience.,2026-03-26 07:01:22
+RAT_001275,CUST_01155,PROD_00286,4,"Works as described, pleased with quality.",2026-08-12 07:15:42
+RAT_001276,CUST_02677,PROD_00430,3,Okay for the price point.,2026-08-07 13:15:15
+RAT_001277,CUST_00381,PROD_00514,3,Decent purchase. Average experience.,2026-07-20 22:48:06
+RAT_001278,CUST_00617,PROD_00448,3,Meets basic expectations.,2026-08-31 12:31:01
+RAT_001279,CUST_01154,PROD_00514,4,"Good product, very satisfied with the purchase.",2026-04-28 06:39:41
+RAT_001280,CUST_02131,PROD_00111,4,"Good product, very satisfied with the purchase.",2026-07-09 18:01:05
+RAT_001281,CUST_00475,PROD_00562,3,Meets basic expectations.,2026-07-23 05:26:13
+RAT_001282,CUST_02167,PROD_00519,3,Meets basic expectations.,2026-06-13 02:34:07
+RAT_001283,CUST_01256,PROD_00317,4,Value for money. Delivery was fast.,2026-03-30 03:14:12
+RAT_001284,CUST_00663,PROD_00580,3,Meets basic expectations.,2026-05-01 21:06:18
+RAT_001285,CUST_00543,PROD_00261,3,Decent purchase. Average experience.,2026-03-30 20:54:40
+RAT_001286,CUST_01894,PROD_00380,5,"Exceptional quality, surpassed expectations!",2026-07-20 21:22:07
+RAT_001287,CUST_01894,PROD_00382,4,"Works as described, pleased with quality.",2026-07-19 21:25:51
+RAT_001288,CUST_01204,PROD_00314,3,Meets basic expectations.,2026-06-24 19:07:20
+RAT_001289,CUST_01437,PROD_00284,4,"Works as described, pleased with quality.",2026-08-24 09:25:27
+RAT_001290,CUST_01437,PROD_00263,3,Okay for the price point.,2026-08-20 09:29:37
+RAT_001291,CUST_01915,PROD_00177,3,Meets basic expectations.,2026-06-15 20:23:37
+RAT_001292,CUST_00942,PROD_00527,3,Decent purchase. Average experience.,2026-05-23 20:18:33
+RAT_001293,CUST_00064,PROD_00253,2,Slightly disappointed with specs.,2026-09-04 13:11:23
+RAT_001294,CUST_02353,PROD_00191,4,"Good product, very satisfied with the purchase.",2026-05-13 01:00:44
+RAT_001295,CUST_01774,PROD_00001,3,Decent purchase. Average experience.,2026-08-01 09:20:18
+RAT_001296,CUST_01064,PROD_00309,3,Decent purchase. Average experience.,2026-04-19 06:56:37
+RAT_001297,CUST_01762,PROD_00090,5,Absolutely loved this! Highly recommended.,2026-04-18 02:57:35
+RAT_001298,CUST_00017,PROD_00178,4,"Good product, very satisfied with the purchase.",2026-04-16 14:55:57
+RAT_001299,CUST_01154,PROD_00521,4,"Good product, very satisfied with the purchase.",2026-06-06 04:57:30
+RAT_001300,CUST_02708,PROD_00023,4,"Good product, very satisfied with the purchase.",2026-05-21 07:13:00
+RAT_001301,CUST_02708,PROD_00039,4,"Works as described, pleased with quality.",2026-05-22 07:15:01
+RAT_001302,CUST_02597,PROD_00056,4,"Good product, very satisfied with the purchase.",2026-06-15 09:56:05
+RAT_001303,CUST_02597,PROD_00067,3,Meets basic expectations.,2026-06-16 09:57:43
+RAT_001304,CUST_00211,PROD_00233,5,"Exceptional quality, surpassed expectations!",2026-06-08 13:51:16
+RAT_001305,CUST_00211,PROD_00228,4,"Good product, very satisfied with the purchase.",2026-06-09 13:56:20
+RAT_001306,CUST_02018,PROD_00014,4,"Good product, very satisfied with the purchase.",2026-04-22 14:48:17
+RAT_001307,CUST_00735,PROD_00106,4,"Works as described, pleased with quality.",2026-03-19 11:26:21
+RAT_001308,CUST_02458,PROD_00018,3,Okay for the price point.,2026-07-07 18:22:47
+RAT_001309,CUST_00683,PROD_00434,4,Value for money. Delivery was fast.,2026-06-24 13:02:37
+RAT_001310,CUST_00028,PROD_00136,3,Decent purchase. Average experience.,2026-08-22 12:39:02
+RAT_001311,CUST_02300,PROD_00096,5,Absolutely loved this! Highly recommended.,2026-07-25 19:45:29
+RAT_001312,CUST_02287,PROD_00087,3,Meets basic expectations.,2026-04-10 06:39:33
+RAT_001313,CUST_00431,PROD_00033,4,"Works as described, pleased with quality.",2026-06-13 03:41:54

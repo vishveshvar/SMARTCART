@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}Order Confirmed – SmartCart{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center my-4">
+    <div class="col-lg-8">
+        <div class="card border-0 shadow-sm rounded-4 p-5 text-center mb-4">
+            <div class="text-success display-1 mb-3">
+                <i class="bi bi-check-circle-fill"></i>
+            </div>
+            <h2 class="fw-bold mb-1">Order Confirmed!</h2>
+            <p class="text-muted mb-4">Thank you for shopping with SmartCart. Your order has been placed successfully.</p>
+
+            <div class="p-3 bg-body-tertiary rounded-3 border d-inline-block mx-auto mb-4 px-4">
+                <span class="small text-muted text-uppercase fw-semibold">Order ID: </span>
+                <span class="fw-bold text-primary fs-5 ms-1">{{ order.order_id }}</span>
+            </div>
+
+            <div class="row g-3 text-start mb-4">
+                <div class="col-sm-6">
+                    <div class="p-3 border rounded-3 bg-body h-100">
+                        <div class="small text-muted fw-semibold mb-1"><i class="bi bi-truck me-1"></i> Delivery Details</div>
+                        <div class="fw-bold">{{ order.full_name }}</div>
+                        <div class="small text-muted">{{ order.address }}</div>
+                        <div class="small text-muted">{{ order.city }}, {{ order.state }} - {{ order.pincode }}</div>
+                        <div class="small text-muted">Phone: {{ order.phone }}</div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="p-3 border rounded-3 bg-body h-100">
+                        <div class="small text-muted fw-semibold mb-1"><i class="bi bi-calendar-check me-1"></i> Expected Delivery</div>
+                        <div class="fw-bold text-success">{{ expected_delivery }}</div>
+                        <div class="small text-muted mt-2">Payment Method: <strong>{{ order.payment_method }}</strong></div>
+                        <div class="small text-muted">Status: <span class="badge bg-primary">{{ order.status }}</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Items summary -->
+            <div class="text-start border rounded-3 p-3 mb-4">
+                <h6 class="fw-bold mb-3 border-bottom pb-2">Purchased Items ({{ items|length }})</h6>
+                {% for item in items %}
+                <div class="d-flex justify-content-between align-items-center py-2 {% if not loop.last %}border-bottom{% endif %}">
+                    <div>
+                        <span class="fw-semibold">{{ item.name }}</span>
+                        <span class="text-muted small ms-2">x {{ item.quantity }}</span>
+                    </div>
+                    <span class="fw-bold text-primary">₹{{ '{:,.2f}'.format(item.total_price) }}</span>
+                </div>
+                {% endfor %}
+                <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-2">
+                    <span class="h6 fw-bold mb-0">Total Paid</span>
+                    <span class="h5 fw-bold text-primary mb-0">₹{{ '{:,.2f}'.format(order.total_amount) }}</span>
+                </div>
+            </div>
+
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="{{ url_for('order.order_details', order_id=order.order_id) }}" class="btn btn-outline-primary px-4 fw-semibold">
+                    <i class="bi bi-receipt me-1"></i> View Order Details
+                </a>
+                <a href="{{ url_for('customer.home') }}" class="btn btn-primary px-4 fw-bold shadow-sm">
+                    <i class="bi bi-cart4 me-1"></i> Continue Shopping
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

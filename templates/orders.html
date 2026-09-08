@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}My Orders – SmartCart AI{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-between mb-4">
+    <h3 class="fw-bold mb-0"><i class="bi bi-box-seam text-primary me-2"></i> My Order History</h3>
+    <span class="badge bg-secondary-subtle text-secondary px-3 py-1 rounded-pill">{{ orders|length }} Total Orders</span>
+</div>
+
+{% if orders %}
+<div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+    <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+                <tr>
+                    <th scope="col" class="ps-4">Order ID</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Items</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Payment</th>
+                    <th scope="col">Status</th>
+                    <th scope="col" class="text-end pe-4">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for o in orders %}
+                <tr>
+                    <td class="ps-4 py-3 fw-bold text-primary">{{ o.order_id }}</td>
+                    <td class="small text-muted">{{ o.order_date.strftime('%b %d, %Y') if o.order_date else 'Recent' }}</td>
+                    <td><span class="badge bg-body-secondary text-body">{{ o.items|length }} item(s)</span></td>
+                    <td class="fw-bold">₹{{ '{:,.2f}'.format(o.total_amount) }}</td>
+                    <td class="small text-muted">{{ o.payment_method }}</td>
+                    <td>
+                        <span class="badge badge-{{ o.status.lower() }}">{{ o.status }}</span>
+                    </td>
+                    <td class="text-end pe-4">
+                        <a href="{{ url_for('order.order_details', order_id=o.order_id) }}" class="btn btn-outline-primary btn-sm rounded-pill px-3">
+                            View Details
+                        </a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% else %}
+<div class="text-center py-5 bg-body rounded-4 border p-5">
+    <i class="bi bi-bag-x display-1 text-muted opacity-50 mb-3 d-inline-block"></i>
+    <h4 class="fw-bold">No Orders Placed Yet</h4>
+    <p class="text-muted mb-4">Check out our recommended products tailored specifically for you!</p>
+    <a href="{{ url_for('customer.home') }}" class="btn btn-primary fw-bold">Start Shopping</a>
+</div>
+{% endif %}
+{% endblock %}

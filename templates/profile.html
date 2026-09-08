@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+{% block title %}{% if is_dashboard %}Customer Dashboard{% else %}My Profile{% endif %} – SmartCart AI{% endblock %}
+
+{% block content %}
+<div class="row g-4">
+    <!-- Left Column: Customer Overview & Stats -->
+    <div class="col-lg-4">
+        <!-- Customer Card -->
+        <div class="card border-0 shadow-sm rounded-4 p-4 text-center mb-4">
+            <div class="bg-primary-subtle text-primary rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                <i class="bi bi-person-fill display-5"></i>
+            </div>
+            <h4 class="fw-bold mb-1">{{ customer.name }}</h4>
+            <div class="text-muted small mb-2">{{ customer.email or session.get('email') }}</div>
+            <div>
+                <span class="badge bg-primary px-3 py-1 rounded-pill">Preferred: {{ customer.preferred_category }}</span>
+            </div>
+            <div class="small text-muted mt-2">{{ customer.city }}, {{ customer.state }} &bull; Age {{ customer.age }}</div>
+        </div>
+
+        <!-- Lifetime Spending Metrics -->
+        <div class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+            <h6 class="fw-bold text-uppercase small text-muted mb-3">Lifetime Account Stats</h6>
+            <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom">
+                <span class="text-muted small">Total Orders</span>
+                <span class="fw-bold">{{ orders|length }}</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom">
+                <span class="text-muted small">Total Spent</span>
+                <span class="fw-bold text-success">₹{{ '{:,.2f}'.format(total_spent) }}</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-2 pb-2 border-bottom">
+                <span class="text-muted small">Average Order Value</span>
+                <span class="fw-bold text-primary">₹{{ '{:,.2f}'.format(aov) }}</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <span class="text-muted small">Customer Code</span>
+                <span class="badge bg-body-tertiary text-body border">{{ customer.customer_id }}</span>
+            </div>
+        </div>
+
+        <!-- Section 68: "Your Shopping Insights" -->
+        {% if insights %}
+        <div class="card border-0 shadow-sm rounded-4 p-4 bg-gradient-primary text-white mb-4" style="background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);">
+            <div class="d-flex align-items-center gap-2 mb-3">
+                <i class="bi bi-lightbulb-fill text-warning fs-4"></i>
+                <h6 class="fw-bold mb-0">Your Shopping Insights</h6>
+            </div>
+            <ul class="list-unstyled small mb-0 d-flex flex-column gap-2 text-white-50">
+                {% for insight in insights %}
+                <li class="text-white"><i class="bi bi-check2-circle text-warning me-2"></i> {{ insight }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Right Column: Profile Edit Form or Dashboard Feed -->
+    <div class="col-lg-8">
+        {% if is_dashboard %}
+        <!-- Personalized Recommendations on Dashboard (Section 18) -->
+        <div class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+            <div class="d-flex align-items-center justify-content-between mb-3 border-bottom pb-2">
+                <div class="d-flex align-items-center gap-2">
+                    <span class="badge bg-primary rounded-pill px-3 py-1 fw-bold"><i class="bi bi-stars"></i> ML Match</span>
+                    <h5 class="fw-bold mb-0">Recommended For You</h5>
+                </div>
+                <span class="small text-muted">Tuned for your recent activity</span>
+            </div>
+
+            <div class="row g-3">
+                {% for p in recommendations %}
+                <div class="col-md-6 col-lg-4">
+                    <div class="sc-product-card sc-recommendation-card p-3 h-100" data-product-id="{{ p.Product_ID }}">
+                        <span class="badge {{ p.badge_class }} small mb-1 align-self-start">{{ p.match_percentage }}% Match</span>
+                        <div class="sc-explain-tag my-1" style="font-size: 0.72rem;">
+                            {{ p.recommendation_reason }}
+                        </div>
+                        <div class="fw-bold small text-truncate"><a href="{{ url_for('product.product_details', product_id=p.Product_ID) }}" class="text-decoration-none text-body">{{ p.Product_Name }}</a></div>
+                        <div class="text-muted small mb-2">{{ p.Category }}</div>
+                        <div class="fw-bold text-primary mt-auto mb-2">₹{{ '{:,.2f}'.format(p.Final_Price) }}</div>
+                        <button class="btn btn-primary btn-sm w-100 sc-add-to-cart-btn" data-product-id="{{ p.Product_ID }}">
+                            <i class="bi bi-cart-plus me-1"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Recent Orders on Dashboard -->
+        <div class="card border-0 shadow-sm rounded-4 p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3 border-bottom pb-2">
+                <h5 class="fw-bold mb-0"><i class="bi bi-clock-history text-primary me-2"></i> Recent Orders</h5>
+                <a href="{{ url_for('order.order_history') }}" class="small fw-semibold text-primary text-decoration-none">View All Orders &rarr;</a>
+            </div>
+
+            {% if orders %}
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for o in orders[:4] %}
+                        <tr>
+                            <td class="fw-bold">{{ o.order_id }}</td>
+                            <td class="small text-muted">{{ o.order_date.strftime('%b %d, %Y') if o.order_date else '' }}</td>
+                            <td class="fw-bold">₹{{ '{:,.2f}'.format(o.total_amount) }}</td>
+                            <td><span class="badge badge-{{ o.status.lower() }}">{{ o.status }}</span></td>
+                            <td class="text-end">
+                                <a href="{{ url_for('order.order_details', order_id=o.order_id) }}" class="btn btn-outline-primary btn-sm">View</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% else %}
+            <p class="text-muted small mb-0">No orders placed yet.</p>
+            {% endif %}
+        </div>
+
+        {% else %}
+        <!-- Profile Settings Form -->
+        <div class="card border-0 shadow-sm rounded-4 p-4">
+            <h5 class="fw-bold mb-3 border-bottom pb-2"><i class="bi bi-person-gear text-primary me-2"></i> Edit Profile Information</h5>
+            <form action="{{ url_for('customer.profile') }}" method="POST">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold small">Full Name</label>
+                        <input type="text" class="form-control" name="name" value="{{ customer.name }}" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold small">Email Address</label>
+                        <input type="email" class="form-control bg-body-tertiary" value="{{ customer.email or session.get('email') }}" readonly>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label fw-semibold small">Age</label>
+                        <input type="number" class="form-control" name="age" value="{{ customer.age or 28 }}">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label fw-semibold small">Gender</label>
+                        <select class="form-select" name="gender">
+                            <option value="Male" {% if customer.gender == 'Male' %}selected{% endif %}>Male</option>
+                            <option value="Female" {% if customer.gender == 'Female' %}selected{% endif %}>Female</option>
+                            <option value="Other" {% if customer.gender == 'Other' %}selected{% endif %}>Other</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label fw-semibold small">Preferred Category</label>
+                        <select class="form-select" name="preferred_category">
+                            <option value="Electronics" {% if customer.preferred_category == 'Electronics' %}selected{% endif %}>Electronics</option>
+                            <option value="Mobiles" {% if customer.preferred_category == 'Mobiles' %}selected{% endif %}>Mobiles</option>
+                            <option value="Laptops" {% if customer.preferred_category == 'Laptops' %}selected{% endif %}>Laptops</option>
+                            <option value="Fashion" {% if customer.preferred_category == 'Fashion' %}selected{% endif %}>Fashion</option>
+                            <option value="Footwear" {% if customer.preferred_category == 'Footwear' %}selected{% endif %}>Footwear</option>
+                            <option value="Home" {% if customer.preferred_category == 'Home' %}selected{% endif %}>Home</option>
+                            <option value="Kitchen" {% if customer.preferred_category == 'Kitchen' %}selected{% endif %}>Kitchen</option>
+                            <option value="Gaming" {% if customer.preferred_category == 'Gaming' %}selected{% endif %}>Gaming</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold small">City</label>
+                        <input type="text" class="form-control" name="city" value="{{ customer.city }}" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold small">State</label>
+                        <input type="text" class="form-control" name="state" value="{{ customer.state }}" required>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-primary px-4 fw-bold">Save Profile Changes</button>
+                </div>
+            </form>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

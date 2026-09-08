@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+{% block title %}Dataset Explorer – SmartCart Admin{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4 border-bottom pb-3">
+    <div>
+        <h3 class="fw-bold mb-0"><i class="bi bi-database-check text-primary me-2"></i> Dataset Explorer & Data Health</h3>
+        <p class="small text-muted mb-0">Inspect raw interaction telemetry records, dataset integrity, and export data as CSV.</p>
+    </div>
+    <div class="d-flex gap-2">
+        <a href="{{ url_for('admin.export_dataset') }}" class="btn btn-success fw-bold shadow-sm">
+            <i class="bi bi-download me-1"></i> Export Dataset (CSV)
+        </a>
+        <a href="{{ url_for('admin.dashboard') }}" class="btn btn-outline-secondary"><i class="bi bi-arrow-left me-1"></i> Dashboard</a>
+    </div>
+</div>
+
+<!-- Health Statistics Cards (Section 65) -->
+<div class="row g-3 mb-4">
+    <div class="col-6 col-md-3">
+        <div class="sc-stat-card">
+            <div>
+                <div class="sc-stat-label">Interactions CSV</div>
+                <div class="sc-stat-value text-primary">{{ '{:,}'.format(stats.interactions_csv_records) }}</div>
+            </div>
+            <div class="sc-stat-icon-wrap bg-primary-subtle text-primary"><i class="bi bi-activity"></i></div>
+        </div>
+    </div>
+    <div class="col-6 col-md-3">
+        <div class="sc-stat-card">
+            <div>
+                <div class="sc-stat-label">Products Count</div>
+                <div class="sc-stat-value text-info">{{ '{:,}'.format(stats.products_count) }}</div>
+            </div>
+            <div class="sc-stat-icon-wrap bg-info-subtle text-info"><i class="bi bi-box-seam"></i></div>
+        </div>
+    </div>
+    <div class="col-6 col-md-3">
+        <div class="sc-stat-card">
+            <div>
+                <div class="sc-stat-label">Missing Values</div>
+                <div class="sc-stat-value text-success">{{ stats.missing_values }}</div>
+            </div>
+            <div class="sc-stat-icon-wrap bg-success-subtle text-success"><i class="bi bi-check2-circle"></i></div>
+        </div>
+    </div>
+    <div class="col-6 col-md-3">
+        <div class="sc-stat-card">
+            <div>
+                <div class="sc-stat-label">Duplicates</div>
+                <div class="sc-stat-value text-success">{{ stats.duplicates }}</div>
+            </div>
+            <div class="sc-stat-icon-wrap bg-success-subtle text-success"><i class="bi bi-shield-check"></i></div>
+        </div>
+    </div>
+</div>
+
+<!-- Database Table Counts Summary -->
+<div class="card border-0 shadow-sm rounded-4 p-4 mb-4">
+    <h5 class="fw-bold mb-3 border-bottom pb-2">Database Entity Volumes</h5>
+    <div class="row g-3">
+        <div class="col-6 col-md-3">
+            <div class="p-3 border rounded-3 bg-body-tertiary">
+                <div class="small text-muted text-uppercase fw-semibold">Customers</div>
+                <div class="h4 fw-bold mb-0 text-primary">{{ '{:,}'.format(stats.customers_count) }}</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="p-3 border rounded-3 bg-body-tertiary">
+                <div class="small text-muted text-uppercase fw-semibold">Completed Orders</div>
+                <div class="h4 fw-bold mb-0 text-success">{{ '{:,}'.format(stats.orders_count) }}</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="p-3 border rounded-3 bg-body-tertiary">
+                <div class="small text-muted text-uppercase fw-semibold">Order Line Items</div>
+                <div class="h4 fw-bold mb-0 text-info">{{ '{:,}'.format(stats.order_items_count) }}</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="p-3 border rounded-3 bg-body-tertiary">
+                <div class="small text-muted text-uppercase fw-semibold">Recommendation Logs</div>
+                <div class="h4 fw-bold mb-0 text-warning">{{ '{:,}'.format(stats.recommendations_count) }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sample Interactions Records Table -->
+<div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-4">
+    <div class="card-header bg-body border-bottom p-3 d-flex justify-content-between align-items-center">
+        <h5 class="fw-bold mb-0"><i class="bi bi-table text-primary me-2"></i> Sample Interaction Records (data/interactions.csv)</h5>
+        <span class="badge bg-primary-subtle text-primary">Previewing First 10 Records</span>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-sm table-hover align-middle mb-0 font-monospace" style="font-size: 0.85rem;">
+            <thead class="table-light">
+                <tr>
+                    <th class="ps-3">Interaction ID</th>
+                    <th>Customer</th>
+                    <th>Product</th>
+                    <th>Type</th>
+                    <th>Category</th>
+                    <th>Time Spent</th>
+                    <th>Cart</th>
+                    <th>Purchased</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in sample_interactions %}
+                <tr>
+                    <td class="ps-3 fw-bold">{{ row.Interaction_ID }}</td>
+                    <td>{{ row.Customer_ID }}</td>
+                    <td>{{ row.Product_ID }}</td>
+                    <td>
+                        <span class="badge {% if row.Interaction_Type == 'Purchase' %}bg-success{% elif row.Interaction_Type == 'Cart' %}bg-primary{% elif row.Interaction_Type == 'Wishlist' %}bg-danger{% else %}bg-secondary{% endif %}">
+                            {{ row.Interaction_Type }}
+                        </span>
+                    </td>
+                    <td>{{ row.Category }}</td>
+                    <td>{{ row.Time_Spent }}s</td>
+                    <td>{{ row.Added_To_Cart }}</td>
+                    <td>
+                        <span class="fw-bold {% if row.Purchased == 1 %}text-success{% else %}text-muted{% endif %}">
+                            {{ row.Purchased }}
+                        </span>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,196 @@
+{% extends "base.html" %}
+{% block title %}Search & Browse Products – SmartCart AI{% endblock %}
+
+{% block content %}
+<div class="row g-4">
+    <!-- Filter Sidebar Column -->
+    <div class="col-lg-3">
+        <div class="p-3 bg-body rounded-4 border shadow-sm sticky-top" style="top: 85px; z-index: 10;">
+            <div class="d-flex align-items-center justify-content-between mb-3 border-bottom pb-2">
+                <h5 class="fw-bold mb-0"><i class="bi bi-funnel text-primary me-2"></i> Filters</h5>
+                <a href="{{ url_for('product.search') }}" class="small text-danger text-decoration-none">Reset All</a>
+            </div>
+
+            <form action="{{ url_for('product.search') }}" method="GET" id="filterForm">
+                <input type="hidden" name="q" value="{{ query_str }}">
+                <input type="hidden" name="sort" value="{{ sort_by }}">
+
+                <!-- Category Filter -->
+                <div class="mb-3">
+                    <label class="form-label fw-semibold small text-uppercase text-muted">Category</label>
+                    <select class="form-select form-select-sm" name="category" onchange="this.form.submit()">
+                        <option value="">All Categories</option>
+                        {% for cat in categories %}
+                        <option value="{{ cat }}" {% if selected_category == cat %}selected{% endif %}>{{ cat }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <!-- Brand Filter -->
+                <div class="mb-3">
+                    <label class="form-label fw-semibold small text-uppercase text-muted">Brand</label>
+                    <select class="form-select form-select-sm" name="brand" onchange="this.form.submit()">
+                        <option value="">All Brands</option>
+                        {% for b in brands %}
+                        <option value="{{ b }}" {% if selected_brand == b %}selected{% endif %}>{{ b }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <!-- Price Range -->
+                <div class="mb-3">
+                    <label class="form-label fw-semibold small text-uppercase text-muted">Price Range (₹)</label>
+                    <div class="d-flex gap-2">
+                        <input type="number" class="form-control form-control-sm" name="min_price" placeholder="Min" value="{{ min_price or '' }}">
+                        <input type="number" class="form-control form-control-sm" name="max_price" placeholder="Max" value="{{ max_price or '' }}">
+                    </div>
+                </div>
+
+                <!-- Rating Filter -->
+                <div class="mb-3">
+                    <label class="form-label fw-semibold small text-uppercase text-muted">Customer Rating</label>
+                    <div class="d-flex flex-column gap-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rating" id="rate4" value="4.0" {% if selected_rating == 4.0 %}checked{% endif %} onchange="this.form.submit()">
+                            <label class="form-check-label small" for="rate4">
+                                <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span> 4.0 & above
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rating" id="rate3" value="3.5" {% if selected_rating == 3.5 %}checked{% endif %} onchange="this.form.submit()">
+                            <label class="form-check-label small" for="rate3">
+                                <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span> 3.5 & above
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Availability -->
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="in_stock" id="inStockCheck" value="1" {% if in_stock_only %}checked{% endif %} onchange="this.form.submit()">
+                        <label class="form-check-label small fw-semibold" for="inStockCheck">In Stock Only</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-sm w-100">Apply Filters</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Products Catalog Column -->
+    <div class="col-lg-9">
+        <!-- Top Bar: Result Count & Sorting -->
+        <div class="d-flex align-items-center justify-content-between p-3 bg-body rounded-4 border mb-4 shadow-sm flex-wrap gap-2">
+            <div>
+                <span class="fw-bold">{{ total_results }}</span> Products Found
+                {% if query_str %}<span class="text-muted">for "<strong>{{ query_str }}</strong>"</span>{% endif %}
+                {% if selected_category %}<span class="badge bg-primary-subtle text-primary ms-2">{{ selected_category }}</span>{% endif %}
+                {% if selected_brand %}<span class="badge bg-secondary-subtle text-secondary ms-1">{{ selected_brand }}</span>{% endif %}
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+                <label class="small text-muted mb-0 fw-semibold text-nowrap">Sort by:</label>
+                <select class="form-select form-select-sm" style="width: auto;" onchange="location = this.value;">
+                    <option value="{{ url_for('product.search', q=query_str, category=selected_category, brand=selected_brand, sort='relevance') }}" {% if sort_by == 'relevance' %}selected{% endif %}>Relevance</option>
+                    <option value="{{ url_for('product.search', q=query_str, category=selected_category, brand=selected_brand, sort='popularity') }}" {% if sort_by == 'popularity' %}selected{% endif %}>Popularity</option>
+                    <option value="{{ url_for('product.search', q=query_str, category=selected_category, brand=selected_brand, sort='rating') }}" {% if sort_by == 'rating' %}selected{% endif %}>Customer Rating</option>
+                    <option value="{{ url_for('product.search', q=query_str, category=selected_category, brand=selected_brand, sort='price_asc') }}" {% if sort_by == 'price_asc' %}selected{% endif %}>Price: Low to High</option>
+                    <option value="{{ url_for('product.search', q=query_str, category=selected_category, brand=selected_brand, sort='price_desc') }}" {% if sort_by == 'price_desc' %}selected{% endif %}>Price: High to Low</option>
+                    <option value="{{ url_for('product.search', q=query_str, category=selected_category, brand=selected_brand, sort='newest') }}" {% if sort_by == 'newest' %}selected{% endif %}>Newest First</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        {% if products %}
+        <div class="row g-3">
+            {% for p in products %}
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="sc-product-card">
+                    <button class="sc-wishlist-btn sc-wishlist-toggle-btn" data-product-id="{{ p.product_id }}">
+                        <i class="bi bi-heart"></i>
+                    </button>
+
+                    <div class="sc-card-img-wrap">
+                        <a href="{{ url_for('product.product_details', product_id=p.product_id) }}" class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none">
+                            <i class="bi bi-box-seam display-4 text-secondary opacity-50"></i>
+                        </a>
+                    </div>
+
+                    <div class="p-3 d-flex flex-column flex-grow-1">
+                        <div class="small text-muted mb-1">{{ p.brand }} • {{ p.category }}</div>
+                        <h6 class="fw-bold text-truncate mb-2" title="{{ p.name }}">
+                            <a href="{{ url_for('product.product_details', product_id=p.product_id) }}" class="text-decoration-none text-reset">
+                                {{ p.name }}
+                            </a>
+                        </h6>
+
+                        <div class="sc-rating-stars mb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <span class="fw-bold text-body ms-1 small">{{ p.rating }}</span>
+                            <span class="text-muted small">({{ p.review_count }})</span>
+                        </div>
+
+                        <div class="sc-price-wrap mb-3">
+                            <span class="sc-final-price">₹{{ '{:,.2f}'.format(p.final_price) }}</span>
+                            {% if p.discount > 0 %}
+                            <span class="sc-original-price">₹{{ '{:,.0f}'.format(p.price) }}</span>
+                            <span class="sc-discount-badge">{{ p.discount|int }}% OFF</span>
+                            {% endif %}
+                        </div>
+
+                        <div class="d-flex gap-2 mt-auto">
+                            <button class="btn btn-primary btn-sm flex-grow-1 sc-add-to-cart-btn fw-semibold" data-product-id="{{ p.product_id }}">
+                                <i class="bi bi-cart-plus me-1"></i> Add to Cart
+                            </button>
+                            <a href="{{ url_for('product.product_details', product_id=p.product_id) }}" class="btn btn-outline-secondary btn-sm">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Pagination -->
+        {% if pagination.pages > 1 %}
+        <nav class="my-5 d-flex justify-content-center">
+            <ul class="pagination pagination-sm shadow-sm">
+                {% if pagination.has_prev %}
+                <li class="page-item">
+                    <a class="page-link" href="{{ url_for('product.search', page=pagination.prev_num, q=query_str, category=selected_category, brand=selected_brand, sort=sort_by) }}">&laquo; Prev</a>
+                </li>
+                {% endif %}
+
+                {% for page_num in pagination.iter_pages(left_edge=1, right_edge=1, left_current=2, right_current=2) %}
+                    {% if page_num %}
+                        <li class="page-item {% if page_num == pagination.page %}active{% endif %}">
+                            <a class="page-link" href="{{ url_for('product.search', page=page_num, q=query_str, category=selected_category, brand=selected_brand, sort=sort_by) }}">{{ page_num }}</a>
+                        </li>
+                    {% else %}
+                        <li class="page-item disabled"><span class="page-link">&hellip;</span></li>
+                    {% endif %}
+                {% endfor %}
+
+                {% if pagination.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="{{ url_for('product.search', page=pagination.next_num, q=query_str, category=selected_category, brand=selected_brand, sort=sort_by) }}">Next &raquo;</a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
+        {% endif %}
+
+        {% else %}
+        <div class="text-center py-5 bg-body rounded-4 border p-4">
+            <i class="bi bi-search display-3 text-muted mb-3 d-inline-block"></i>
+            <h4 class="fw-bold">No Products Found</h4>
+            <p class="text-muted">Try adjusting your keyword, categories, or price filters.</p>
+            <a href="{{ url_for('product.search') }}" class="btn btn-primary btn-sm">Clear All Filters</a>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

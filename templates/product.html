@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+{% block title %}{{ product.name }} – SmartCart{% endblock %}
+
+{% block content %}
+<!-- Product Detail Header Breadcrumb -->
+<nav aria-label="breadcrumb" class="mb-4">
+    <ol class="breadcrumb small">
+        <li class="breadcrumb-item"><a href="{{ url_for('customer.home') }}" class="text-decoration-none">Home</a></li>
+        <li class="breadcrumb-item"><a href="{{ url_for('product.search', category=product.category) }}" class="text-decoration-none">{{ product.category }}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ product.brand }}</li>
+    </ol>
+</nav>
+
+<!-- Main Product Details Container -->
+<div class="card border-0 shadow-sm rounded-4 p-4 mb-5">
+    <div class="row g-5">
+        <!-- Product Image Showcase -->
+        <div class="col-lg-5">
+            <div class="bg-body-tertiary rounded-4 d-flex align-items-center justify-content-center p-5 border position-relative" style="height: 380px;">
+                <i class="bi bi-box-seam display-1 text-primary opacity-50"></i>
+                {% if product.discount > 0 %}
+                <span class="position-absolute top-0 start-0 m-3 badge bg-danger fs-6 px-3 py-2 rounded-pill">
+                    {{ product.discount|int }}% OFF
+                </span>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Product Specifications & Buy Actions -->
+        <div class="col-lg-7 d-flex flex-column">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+                <span class="badge bg-primary-subtle text-primary fw-semibold px-2 py-1 rounded">{{ product.category }} &bull; {{ product.subcategory }}</span>
+                <span class="small text-muted">ID: {{ product.product_id }}</span>
+            </div>
+
+            <h2 class="fw-bold mb-2">{{ product.name }}</h2>
+            <div class="text-muted small mb-3">Brand: <span class="fw-bold text-body">{{ product.brand }}</span></div>
+
+            <!-- Ratings & Reviews Count -->
+            <div class="d-flex align-items-center gap-2 mb-3">
+                <div class="sc-rating-stars">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <span class="fw-bold text-body ms-1">{{ product.rating }}</span>
+                </div>
+                <span class="text-muted small">| {{ product.review_count }} Verified Ratings</span>
+                <span class="text-success small fw-semibold"><i class="bi bi-patch-check-fill"></i> In Stock ({{ product.stock }} units)</span>
+            </div>
+
+            <hr class="my-2">
+
+            <!-- Pricing Area -->
+            <div class="my-3">
+                <div class="d-flex align-items-baseline gap-3">
+                    <span class="display-6 fw-extrabold text-primary">₹{{ '{:,.2f}'.format(product.final_price) }}</span>
+                    {% if product.discount > 0 %}
+                    <span class="fs-5 text-muted text-decoration-line-through">₹{{ '{:,.2f}'.format(product.price) }}</span>
+                    <span class="badge bg-success-subtle text-success fs-6 fw-bold">Save ₹{{ '{:,.2f}'.format(product.price - product.final_price) }}</span>
+                    {% endif %}
+                </div>
+                <div class="small text-muted mt-1">Inclusive of all taxes &bull; Free standard delivery available</div>
+            </div>
+
+            <!-- Description -->
+            <p class="text-secondary mb-4">{{ product.description }}</p>
+
+            <!-- Attributes / Specs Pill -->
+            <div class="row g-2 mb-4">
+                <div class="col-6 col-sm-3">
+                    <div class="p-2 border rounded-3 small bg-body-tertiary">
+                        <div class="text-muted">Color</div>
+                        <div class="fw-semibold">{{ product.color }}</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div class="p-2 border rounded-3 small bg-body-tertiary">
+                        <div class="text-muted">Size/Variant</div>
+                        <div class="fw-semibold">{{ product.size }}</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div class="p-2 border rounded-3 small bg-body-tertiary">
+                        <div class="text-muted">Target Group</div>
+                        <div class="fw-semibold">{{ product.gender_target }}</div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div class="p-2 border rounded-3 small bg-body-tertiary">
+                        <div class="text-muted">Popularity</div>
+                        <div class="fw-semibold text-warning">{{ product.popularity_score }}/100</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Controls -->
+            <div class="d-flex align-items-center gap-3 mt-auto flex-wrap">
+                <div class="sc-qty-group">
+                    <button type="button" class="sc-qty-btn" onclick="let q=document.getElementById('productDetailQty'); if(q.value>1) q.value=parseInt(q.value)-1;"><i class="bi bi-dash"></i></button>
+                    <input type="text" id="productDetailQty" class="sc-qty-val border-0 bg-transparent" value="1" readonly style="width: 45px;">
+                    <button type="button" class="sc-qty-btn" onclick="let q=document.getElementById('productDetailQty'); q.value=parseInt(q.value)+1;"><i class="bi bi-plus"></i></button>
+                </div>
+
+                <button class="btn btn-primary btn-lg px-4 sc-add-to-cart-btn fw-bold shadow-sm" data-product-id="{{ product.product_id }}">
+                    <i class="bi bi-cart-plus me-2"></i> Add to Cart
+                </button>
+
+                <button class="btn btn-outline-danger btn-lg sc-wishlist-toggle-btn" data-product-id="{{ product.product_id }}" title="Wishlist">
+                    <i class="bi {% if is_wishlisted %}bi-heart-fill text-danger{% else %}bi-heart{% endif %}"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SECTION 1: FREQUENTLY BOUGHT TOGETHER (BASKET CO-OCCURRENCE BUNDLE) -->
+{% if fbt_bundle and fbt_bundle.bundle_items %}
+<div class="sc-bundle-card mb-5">
+    <div class="d-flex align-items-center justify-content-between mb-3 border-bottom pb-2">
+        <div class="d-flex align-items-center gap-2">
+            <span class="badge bg-warning text-dark fw-bold px-3 py-1 rounded-pill">
+                <i class="bi bi-layers-fill me-1"></i> Co-Occurrence Bundle
+            </span>
+            <h4 class="fw-bold mb-0">Frequently Bought Together</h4>
+        </div>
+        <span class="small text-muted">Customers who bought this item also frequently purchased:</span>
+    </div>
+
+    <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+            <div class="sc-bundle-items-row">
+                <!-- Primary Item -->
+                <div class="text-center" style="max-width: 140px;">
+                    <div class="sc-bundle-thumb mx-auto mb-2">
+                        <i class="bi bi-box-seam fs-2 text-primary opacity-50"></i>
+                    </div>
+                    <div class="small fw-bold text-truncate">{{ fbt_bundle.primary_product.Product_Name }}</div>
+                    <div class="small text-primary fw-bold">₹{{ '{:,.0f}'.format(fbt_bundle.primary_product.Final_Price) }}</div>
+                </div>
+
+                <!-- Accessory Items with + sign -->
+                {% for b_item in fbt_bundle.bundle_items %}
+                <div class="sc-bundle-plus">+</div>
+                <div class="text-center" style="max-width: 140px;">
+                    <div class="sc-bundle-thumb mx-auto mb-2">
+                        <i class="bi bi-plus-circle-dotted fs-2 text-success opacity-50"></i>
+                    </div>
+                    <div class="small fw-bold text-truncate">{{ b_item.Product_Name }}</div>
+                    <div class="small text-success fw-bold">₹{{ '{:,.0f}'.format(b_item.Final_Price) }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Bundle Pricing & 1-Click Purchase Box -->
+        <div class="col-lg-4 border-start ps-lg-4">
+            <div class="small text-muted">Total Bundle Value: <del>₹{{ '{:,.2f}'.format(fbt_bundle.original_bundle_price) }}</del></div>
+            <div class="h3 fw-extrabold text-primary mb-1">₹{{ '{:,.2f}'.format(fbt_bundle.total_bundle_price) }}</div>
+            <div class="badge bg-success-subtle text-success mb-3">Bundle Savings: ₹{{ '{:,.2f}'.format(fbt_bundle.total_savings) }}</div>
+
+            {% set bundle_pids = [fbt_bundle.primary_product.Product_ID] %}
+            {% for b in fbt_bundle.bundle_items %}
+                {% set _ = bundle_pids.append(b.Product_ID) %}
+            {% endfor %}
+
+            <button id="scAddBundleBtn" class="btn btn-warning w-100 py-2 fw-bold shadow-sm" data-bundle-pids="{{ bundle_pids|join(',') }}">
+                <i class="bi bi-cart-plus me-1"></i> Add All to Cart
+            </button>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<!-- SECTION 2: SIMILAR PRODUCTS (COSINE SIMILARITY ENGINE) -->
+{% if similar_products %}
+<div class="my-5">
+    <div class="d-flex align-items-center justify-content-between mb-4 border-bottom pb-2">
+        <div>
+            <span class="badge bg-info-subtle text-info-emphasis rounded-pill px-3 py-1 fw-bold">
+                <i class="bi bi-diagram-3 me-1"></i> Content-Based Filtering
+            </span>
+            <h4 class="fw-bold mb-0 mt-1">Similar Products</h4>
+        </div>
+        <span class="small text-muted">Computed via TF-IDF & Cosine Similarity on product specs</span>
+    </div>
+
+    <div class="row g-3">
+        {% for sp in similar_products %}
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="sc-product-card p-2 text-center h-100">
+                <div class="sc-card-img-wrap" style="height: 120px;">
+                    <a href="{{ url_for('product.product_details', product_id=sp.Product_ID) }}">
+                        <i class="bi bi-box-seam fs-2 text-secondary opacity-50"></i>
+                    </a>
+                </div>
+                <div class="p-2 d-flex flex-column flex-grow-1">
+                    <div class="badge bg-secondary-subtle text-secondary small mb-1">{{ sp.similarity_score }}% Similarity</div>
+                    <div class="small fw-bold text-truncate mb-1"><a href="{{ url_for('product.product_details', product_id=sp.Product_ID) }}" class="text-decoration-none text-reset">{{ sp.Product_Name }}</a></div>
+                    <div class="fw-bold text-primary mt-auto">₹{{ '{:,.0f}'.format(sp.Final_Price) }}</div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+<!-- SECTION 3: REVIEWS -->
+<div class="card border-0 shadow-sm rounded-4 p-4 mt-5">
+    <h4 class="fw-bold mb-3"><i class="bi bi-chat-quote-fill text-primary me-2"></i> Verified Customer Reviews</h4>
+    {% if reviews %}
+    <div class="row g-3">
+        {% for r in reviews %}
+        <div class="col-md-6">
+            <div class="p-3 bg-body-tertiary rounded-3 border">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                    <div class="text-warning">
+                        {% for star in range(r.rating) %}<i class="bi bi-star-fill"></i>{% endfor %}
+                        <span class="text-body fw-bold ms-1 small">{{ r.rating }}/5</span>
+                    </div>
+                    <span class="small text-muted">{{ r.customer_id }}</span>
+                </div>
+                <p class="small mb-0 text-secondary">"{{ r.review_text }}"</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p class="text-muted small">No written reviews yet for this model.</p>
+    {% endif %}
+</div>
+{% endblock %}

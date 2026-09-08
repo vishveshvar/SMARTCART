@@ -1,0 +1,247 @@
+{% extends "base.html" %}
+{% block title %}SmartCart – AI-Based Product Recommendation System{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="sc-hero position-relative">
+    <div class="row align-items-center position-relative" style="z-index: 2;">
+        <div class="col-lg-7">
+            <span class="badge bg-light text-primary fw-bold text-uppercase px-3 py-2 rounded-pill mb-3">
+                <i class="bi bi-stars text-warning me-1"></i> Powered by Random Forest AI
+            </span>
+            <h1 class="display-4 fw-extrabold tracking-tight mb-3">Personalized Shopping, Powered by Machine Learning.</h1>
+            <p class="lead mb-4 text-white-50">
+                SmartCart analyzes your shopping preferences, browsing history, and co-purchase affinity to deliver recommendations tuned with 90%+ purchase intent accuracy.
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+                <a href="#recommended" class="btn btn-light btn-lg text-primary fw-bold shadow">
+                    <i class="bi bi-lightning-charge-fill text-warning me-1"></i> Recommended For You
+                </a>
+                <a href="{{ url_for('product.search') }}" class="btn btn-outline-light btn-lg fw-semibold">
+                    <i class="bi bi-grid-fill me-1"></i> Explore All Products
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block text-center">
+            <div class="p-4 bg-white bg-opacity-10 backdrop-blur rounded-4 border border-white border-opacity-25 shadow-lg">
+                <div class="display-6 fw-bold text-white mb-2">32,000+</div>
+                <div class="text-white-50 small mb-3">Trained Customer Behavioral Interactions</div>
+                <div class="d-flex justify-content-center gap-2 mb-2">
+                    <span class="badge bg-success bg-opacity-75">86.9% ROC-AUC</span>
+                    <span class="badge bg-info bg-opacity-75">99.5% Recall</span>
+                </div>
+                <div class="small text-white-50">Stratified Random Forest Classifier</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SECTION 1: RECOMMENDED FOR YOU (AI HYBRID ENGINE) -->
+<section id="recommended" class="my-5">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <div>
+            <div class="d-flex align-items-center gap-2">
+                <span class="badge bg-primary text-white rounded-pill px-3 py-1 fw-bold">
+                    <i class="bi bi-magic me-1"></i> AI Personalization
+                </span>
+                <h3 class="fw-bold mb-0">Recommended For You</h3>
+            </div>
+            <p class="text-muted small mb-0 mt-1">Based on your browsing patterns, purchase history, and category affinities</p>
+        </div>
+        <a href="{{ url_for('product.search') }}" class="btn btn-outline-primary btn-sm rounded-pill px-3 fw-semibold">View All</a>
+    </div>
+
+    <div class="row g-4">
+        {% for p in recommended_products %}
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="sc-product-card sc-recommendation-card" data-product-id="{{ p.Product_ID }}" data-rec-type="Personalized">
+                <!-- AI Match Badge -->
+                <div class="sc-ai-badge">
+                    <i class="bi bi-stars"></i>
+                    <span>{{ p.match_percentage }}% Match</span>
+                </div>
+
+                <!-- Wishlist Toggle -->
+                <button class="sc-wishlist-btn sc-wishlist-toggle-btn" data-product-id="{{ p.Product_ID }}" title="Save to Wishlist">
+                    <i class="bi bi-heart"></i>
+                </button>
+
+                <!-- Product Thumbnail -->
+                <div class="sc-card-img-wrap">
+                    <a href="{{ url_for('product.product_details', product_id=p.Product_ID) }}" class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none">
+                        <i class="bi bi-box-seam display-3 text-secondary opacity-50"></i>
+                    </a>
+                </div>
+
+                <!-- Product Content -->
+                <div class="p-3 d-flex flex-column flex-grow-1">
+                    <div class="sc-explain-tag">
+                        <i class="bi bi-info-circle me-1"></i> {{ p.recommendation_reason }}
+                    </div>
+
+                    <div class="small text-muted mb-1">{{ p.Brand }} • {{ p.Category }}</div>
+                    <h6 class="fw-bold text-truncate mb-2" title="{{ p.Product_Name }}">
+                        <a href="{{ url_for('product.product_details', product_id=p.Product_ID) }}" class="text-decoration-none text-reset">
+                            {{ p.Product_Name }}
+                        </a>
+                    </h6>
+
+                    <!-- Rating Stars -->
+                    <div class="sc-rating-stars mb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="fw-bold text-body ms-1 small">{{ p.Rating }}</span>
+                        <span class="text-muted small">({{ p.Review_Count }})</span>
+                    </div>
+
+                    <!-- Price Block -->
+                    <div class="sc-price-wrap mb-3">
+                        <span class="sc-final-price">₹{{ '{:,.2f}'.format(p.Final_Price) }}</span>
+                        {% if p.Discount > 0 %}
+                        <span class="sc-original-price">₹{{ '{:,.0f}'.format(p.Price) }}</span>
+                        <span class="sc-discount-badge">{{ p.Discount|int }}% OFF</span>
+                        {% endif %}
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="d-flex gap-2 mt-auto">
+                        <button class="btn btn-primary btn-sm flex-grow-1 sc-add-to-cart-btn fw-semibold" data-product-id="{{ p.Product_ID }}">
+                            <i class="bi bi-cart-plus me-1"></i> Add to Cart
+                        </button>
+                        <a href="{{ url_for('product.product_details', product_id=p.Product_ID) }}" class="btn btn-outline-secondary btn-sm" title="View details">
+                            <i class="bi bi-eye"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- SECTION 2: TRENDING NOW -->
+<section id="trending" class="my-5 pt-4 border-top">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <div>
+            <span class="badge bg-danger text-white rounded-pill px-3 py-1 fw-bold">
+                <i class="bi bi-fire me-1"></i> Trending Now
+            </span>
+            <h3 class="fw-bold mb-0 mt-1">High Demand & Rapid Sales</h3>
+            <p class="text-muted small mb-0">Products seeing peak activity in searches and cart additions</p>
+        </div>
+        <a href="{{ url_for('product.search', sort='popularity') }}" class="btn btn-outline-primary btn-sm rounded-pill px-3 fw-semibold">View Trending</a>
+    </div>
+
+    <div class="row g-4">
+        {% for p in trending_products %}
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="sc-product-card sc-recommendation-card" data-product-id="{{ p.Product_ID }}" data-rec-type="Trending">
+                <button class="sc-wishlist-btn sc-wishlist-toggle-btn" data-product-id="{{ p.Product_ID }}">
+                    <i class="bi bi-heart"></i>
+                </button>
+
+                <div class="sc-card-img-wrap">
+                    <a href="{{ url_for('product.product_details', product_id=p.Product_ID) }}" class="w-100 h-100 d-flex align-items-center justify-content-center text-decoration-none">
+                        <i class="bi bi-fire display-4 text-danger opacity-50"></i>
+                    </a>
+                </div>
+
+                <div class="p-3 d-flex flex-column flex-grow-1">
+                    <div class="small text-muted mb-1">{{ p.Brand }} • {{ p.Category }}</div>
+                    <h6 class="fw-bold text-truncate mb-2" title="{{ p.Product_Name }}">
+                        <a href="{{ url_for('product.product_details', product_id=p.Product_ID) }}" class="text-decoration-none text-reset">
+                            {{ p.Product_Name }}
+                        </a>
+                    </h6>
+
+                    <div class="sc-rating-stars mb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <span class="fw-bold text-body ms-1 small">{{ p.Rating }}</span>
+                        <span class="text-muted small">({{ p.Review_Count }})</span>
+                    </div>
+
+                    <div class="sc-price-wrap mb-3">
+                        <span class="sc-final-price">₹{{ '{:,.2f}'.format(p.Final_Price) }}</span>
+                        {% if p.Discount > 0 %}
+                        <span class="sc-original-price">₹{{ '{:,.0f}'.format(p.Price) }}</span>
+                        <span class="sc-discount-badge">{{ p.Discount|int }}% OFF</span>
+                        {% endif %}
+                    </div>
+
+                    <div class="d-flex gap-2 mt-auto">
+                        <button class="btn btn-primary btn-sm flex-grow-1 sc-add-to-cart-btn fw-semibold" data-product-id="{{ p.Product_ID }}">
+                            <i class="bi bi-cart-plus me-1"></i> Add to Cart
+                        </button>
+                        <a href="{{ url_for('product.product_details', product_id=p.Product_ID) }}" class="btn btn-outline-secondary btn-sm">
+                            <i class="bi bi-eye"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- SECTION 3: BEST SELLERS & NEW ARRIVALS CAROUSEL/GRID -->
+<div class="row g-4 my-4">
+    <div class="col-lg-6">
+        <div class="p-4 bg-body-tertiary rounded-4 border h-100">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <h4 class="fw-bold mb-0"><i class="bi bi-award-fill text-warning me-2"></i> Best Sellers</h4>
+                <a href="{{ url_for('product.search', sort='rating') }}" class="small fw-semibold text-primary text-decoration-none">Explore &rarr;</a>
+            </div>
+            <div class="row g-3">
+                {% for p in bestsellers[:4] %}
+                <div class="col-6">
+                    <div class="p-3 bg-body rounded-3 border h-100 d-flex flex-column">
+                        <div class="small text-muted">{{ p.Brand }}</div>
+                        <div class="fw-bold text-truncate small mb-2"><a href="{{ url_for('product.product_details', product_id=p.Product_ID) }}" class="text-decoration-none text-reset">{{ p.Product_Name }}</a></div>
+                        <div class="fw-bold text-primary mt-auto">₹{{ '{:,.0f}'.format(p.Final_Price) }}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="p-4 bg-body-tertiary rounded-4 border h-100">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <h4 class="fw-bold mb-0"><i class="bi bi-sparkles text-info me-2"></i> New Arrivals</h4>
+                <a href="{{ url_for('product.search', sort='newest') }}" class="small fw-semibold text-primary text-decoration-none">Explore &rarr;</a>
+            </div>
+            <div class="row g-3">
+                {% for p in new_arrivals[:4] %}
+                <div class="col-6">
+                    <div class="p-3 bg-body rounded-3 border h-100 d-flex flex-column">
+                        <div class="small text-muted">{{ p.Category }}</div>
+                        <div class="fw-bold text-truncate small mb-2"><a href="{{ url_for('product.product_details', product_id=p.Product_ID) }}" class="text-decoration-none text-reset">{{ p.Product_Name }}</a></div>
+                        <div class="fw-bold text-success mt-auto">₹{{ '{:,.0f}'.format(p.Final_Price) }}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SECTION 4: RECENTLY VIEWED -->
+{% if recently_viewed %}
+<section class="my-5 pt-4 border-top">
+    <h4 class="fw-bold mb-3"><i class="bi bi-clock-history text-secondary me-2"></i> Recently Viewed</h4>
+    <div class="row g-3">
+        {% for p in recently_viewed %}
+        <div class="col-6 col-md-3 col-lg-2">
+            <div class="p-2 bg-body rounded-3 border text-center">
+                <a href="{{ url_for('product.product_details', product_id=p.product_id) }}" class="text-decoration-none text-reset">
+                    <div class="py-3"><i class="bi bi-box-seam fs-2 text-muted"></i></div>
+                    <div class="small fw-bold text-truncate">{{ p.name }}</div>
+                    <div class="small text-primary fw-semibold">₹{{ '{:,.0f}'.format(p.final_price) }}</div>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+{% endblock %}

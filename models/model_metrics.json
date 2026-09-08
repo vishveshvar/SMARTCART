@@ -1,0 +1,100 @@
+{
+    "model_name": "Random Forest Classifier",
+    "algorithm": "sklearn.ensemble.RandomForestClassifier",
+    "version": "1.0.0",
+    "trained_at": "2026-09-08 18:32:59",
+    "total_records": 32003,
+    "train_records": 25602,
+    "test_records": 6401,
+    "accuracy": 0.7858,
+    "precision": 0.3892,
+    "recall": 0.9954,
+    "f1_score": 0.5596,
+    "roc_auc": 0.8696,
+    "confusion_matrix": {
+        "tn": 4159,
+        "fp": 1367,
+        "fn": 4,
+        "tp": 871
+    },
+    "feature_importance": [
+        {
+            "feature": "Cart_Count",
+            "importance": 43.33
+        },
+        {
+            "feature": "Product_View_Count",
+            "importance": 42.16
+        },
+        {
+            "feature": "Category",
+            "importance": 3.49
+        },
+        {
+            "feature": "Preferred_Category",
+            "importance": 2.26
+        },
+        {
+            "feature": "Subcategory",
+            "importance": 1.76
+        },
+        {
+            "feature": "Wishlist_Count",
+            "importance": 1.71
+        },
+        {
+            "feature": "Category_Purchase_Count",
+            "importance": 0.9
+        },
+        {
+            "feature": "Product_Price",
+            "importance": 0.81
+        },
+        {
+            "feature": "Average_Order_Value",
+            "importance": 0.74
+        },
+        {
+            "feature": "Age",
+            "importance": 0.6
+        },
+        {
+            "feature": "Previous_Purchases",
+            "importance": 0.57
+        },
+        {
+            "feature": "Review_Count",
+            "importance": 0.57
+        },
+        {
+            "feature": "Popularity_Score",
+            "importance": 0.54
+        },
+        {
+            "feature": "Historical_Product_Rating",
+            "importance": 0.4
+        },
+        {
+            "feature": "Gender",
+            "importance": 0.36
+        },
+        {
+            "feature": "Product_Rating",
+            "importance": 0.36
+        },
+        {
+            "feature": "Discount",
+            "importance": 0.35
+        },
+        {
+            "feature": "Search_Relevance",
+            "importance": 0.0
+        }
+    ],
+    "hyperparameters": {
+        "n_estimators": 150,
+        "max_depth": 12,
+        "class_weight": "balanced",
+        "random_state": 42
+    }
+}

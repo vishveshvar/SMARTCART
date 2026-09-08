@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% block title %}Recommendation Analytics – SmartCart Admin{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4 border-bottom pb-3">
+    <div>
+        <h3 class="fw-bold mb-0"><i class="bi bi-cpu text-info me-2"></i> Recommendation Engine Analytics</h3>
+        <p class="small text-muted mb-0">Telemetry tracking shown, clicked, and purchased recommendations to quantify AI ROI.</p>
+    </div>
+    <div>
+        <a href="{{ url_for('admin.dashboard') }}" class="btn btn-outline-secondary btn-sm"><i class="bi bi-arrow-left me-1"></i> Dashboard</a>
+    </div>
+</div>
+
+<!-- Recommendation Stat Cards -->
+<div class="row g-3 mb-4">
+    <div class="col-6 col-md-3">
+        <div class="sc-stat-card">
+            <div>
+                <div class="sc-stat-label">Total Recs Shown</div>
+                <div class="sc-stat-value text-primary">{{ '{:,}'.format(stats.total_recommendations) }}</div>
+            </div>
+            <div class="sc-stat-icon-wrap bg-primary-subtle text-primary"><i class="bi bi-eye-fill"></i></div>
+        </div>
+    </div>
+    <div class="col-6 col-md-3">
+        <div class="sc-stat-card">
+            <div>
+                <div class="sc-stat-label">Rec Clicks</div>
+                <div class="sc-stat-value text-info">{{ '{:,}'.format(stats.recommendation_clicks) }}</div>
+            </div>
+            <div class="sc-stat-icon-wrap bg-info-subtle text-info"><i class="bi bi-cursor-fill"></i></div>
+        </div>
+    </div>
+    <div class="col-6 col-md-3">
+        <div class="sc-stat-card">
+            <div>
+                <div class="sc-stat-label">Click-Through Rate</div>
+                <div class="sc-stat-value text-warning">{{ stats.ctr }}%</div>
+            </div>
+            <div class="sc-stat-icon-wrap bg-warning-subtle text-warning"><i class="bi bi-graph-up"></i></div>
+        </div>
+    </div>
+    <div class="col-6 col-md-3">
+        <div class="sc-stat-card">
+            <div>
+                <div class="sc-stat-label">Purchased (CVR)</div>
+                <div class="sc-stat-value text-success">{{ stats.conversion_rate }}%</div>
+            </div>
+            <div class="sc-stat-icon-wrap bg-success-subtle text-success"><i class="bi bi-check2-circle"></i></div>
+        </div>
+    </div>
+</div>
+
+<!-- Most Recommended and Most Purchased Cards -->
+<div class="row g-4 mb-4">
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+            <h6 class="fw-bold text-uppercase small text-muted mb-3"><i class="bi bi-stars text-primary me-2"></i> Most Recommended Product</h6>
+            {% if stats.most_recommended_product %}
+            <div class="h5 fw-bold text-primary mb-1">{{ stats.most_recommended_product.name }}</div>
+            <div class="small text-muted mb-3">ID: {{ stats.most_recommended_product.product_id }}</div>
+            <div class="d-flex gap-3">
+                <div class="p-2 border rounded-3 bg-body-tertiary">
+                    <div class="small text-muted">Shown Count</div>
+                    <div class="fw-bold">{{ stats.most_recommended_product.shown_count }}</div>
+                </div>
+                <div class="p-2 border rounded-3 bg-body-tertiary">
+                    <div class="small text-muted">Clicks</div>
+                    <div class="fw-bold">{{ stats.most_recommended_product.clicks }}</div>
+                </div>
+                <div class="p-2 border rounded-3 bg-body-tertiary">
+                    <div class="small text-muted">Purchases</div>
+                    <div class="fw-bold">{{ stats.most_recommended_product.purchases }}</div>
+                </div>
+            </div>
+            {% else %}
+            <p class="text-muted small">No data yet.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+            <h6 class="fw-bold text-uppercase small text-muted mb-3"><i class="bi bi-trophy-fill text-warning me-2"></i> Most Purchased Recommended Product</h6>
+            {% if stats.most_purchased_recommended_product %}
+            <div class="h5 fw-bold text-success mb-1">{{ stats.most_purchased_recommended_product.name }}</div>
+            <div class="small text-muted mb-3">ID: {{ stats.most_purchased_recommended_product.product_id }}</div>
+            <div class="p-2 border rounded-3 bg-body-tertiary d-inline-block">
+                <div class="small text-muted">Direct Rec Conversions</div>
+                <div class="fw-bold text-success fs-5">{{ stats.most_purchased_recommended_product.purchases }} units</div>
+            </div>
+            {% else %}
+            <p class="text-muted small">No conversion data yet.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- Breakdown Table by Recommendation Type -->
+<div class="card border-0 shadow-sm rounded-4 p-4">
+    <h5 class="fw-bold mb-3 border-bottom pb-2">Recommendation Engine Strategy Breakdown</h5>
+    <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+                <tr>
+                    <th>Strategy / Algorithm</th>
+                    <th>Impressions</th>
+                    <th>Clicks</th>
+                    <th>CTR (%)</th>
+                    <th>Purchases</th>
+                    <th>CVR (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in stats.breakdown %}
+                <tr>
+                    <td class="fw-bold">
+                        {% if row.type == 'Personalized' %}
+                        <span class="badge bg-primary me-2">ML</span> Personalized (Random Forest + Hybrid)
+                        {% elif row.type == 'Similar' %}
+                        <span class="badge bg-info me-2">TF-IDF</span> Similar Products (Cosine Similarity)
+                        {% elif row.type == 'Frequently Bought Together' %}
+                        <span class="badge bg-warning text-dark me-2">Market Basket</span> Frequently Bought Together
+                        {% else %}
+                        <span class="badge bg-danger me-2">Cold-Start</span> Trending & Popular
+                        {% endif %}
+                    </td>
+                    <td>{{ row.total }}</td>
+                    <td>{{ row.clicks }}</td>
+                    <td><span class="fw-semibold text-primary">{{ row.ctr }}%</span></td>
+                    <td>{{ row.purchases }}</td>
+                    <td><span class="fw-semibold text-success">{{ row.cvr }}%</span></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

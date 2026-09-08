@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{% block title %}Sales & System Analytics – SmartCart Admin{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4 border-bottom pb-3">
+    <div>
+        <h3 class="fw-bold mb-0"><i class="bi bi-graph-up-arrow text-primary me-2"></i> Comprehensive Business Analytics</h3>
+        <p class="small text-muted mb-0">12 database-driven real-time visual charts analyzing sales, conversion funnels, and recommendation impact.</p>
+    </div>
+    <div>
+        <a href="{{ url_for('admin.dashboard') }}" class="btn btn-outline-secondary btn-sm"><i class="bi bi-arrow-left me-1"></i> Dashboard</a>
+    </div>
+</div>
+
+<div class="row g-4">
+    <!-- Chart 1: Daily Sales -->
+    <div class="col-lg-6">
+        <div class="sc-chart-card">
+            <div class="sc-chart-header">
+                <h6 class="sc-chart-title"><i class="bi bi-calendar-event text-primary me-2"></i> 1. Daily Sales (Revenue)</h6>
+                <span class="badge bg-primary-subtle text-primary">Last 14 Days</span>
+            </div>
+            <canvas id="chartDailySales" height="200"></canvas>
+        </div>
+    </div>
+
+    <!-- Chart 2: Monthly Revenue -->
+    <div class="col-lg-6">
+        <div class="sc-chart-card">
+            <div class="sc-chart-header">
+                <h6 class="sc-chart-title"><i class="bi bi-cash-stack text-info me-2"></i> 2. Monthly Revenue</h6>
+                <span class="badge bg-info-subtle text-info">Trailing 6 Months</span>
+            </div>
+            <canvas id="chartMonthlyRevenue" height="200"></canvas>
+        </div>
+    </div>
+
+    <!-- Chart 3: Orders Over Time -->
+    <div class="col-lg-6">
+        <div class="sc-chart-card">
+            <div class="sc-chart-header">
+                <h6 class="sc-chart-title"><i class="bi bi-clock-history text-success me-2"></i> 3. Orders Over Time</h6>
+                <span class="badge bg-success-subtle text-success">Order Volume</span>
+            </div>
+            <canvas id="chartOrdersOverTime" height="200"></canvas>
+        </div>
+    </div>
+
+    <!-- Chart 4: Sales by Category -->
+    <div class="col-lg-6">
+        <div class="sc-chart-card">
+            <div class="sc-chart-header">
+                <h6 class="sc-chart-title"><i class="bi bi-pie-chart-fill text-warning me-2"></i> 4. Sales by Category</h6>
+                <span class="badge bg-warning-subtle text-warning">Revenue Breakdown</span>
+            </div>
+            <div style="max-height: 240px;" class="d-flex justify-content-center">
+                <canvas id="chartSalesByCategory"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chart 5: Top Products -->
+    <div class="col-lg-6">
+        <div class="sc-chart-card">
+            <div class="sc-chart-header">
+                <h6 class="sc-chart-title"><i class="bi bi-trophy-fill text-warning me-2"></i> 5. Top 5 Products by Sales</h6>
+                <span class="badge bg-warning-subtle text-warning">Units Sold</span>
+            </div>
+            <canvas id="chartTopProducts" height="200"></canvas>
+        </div>
+    </div>
+
+    <!-- Chart 6: Customer Growth -->
+    <div class="col-lg-6">
+        <div class="sc-chart-card">
+            <div class="sc-chart-header">
+                <h6 class="sc-chart-title"><i class="bi bi-people-fill text-purple me-2"></i> 6. Customer Registration Growth</h6>
+                <span class="badge bg-secondary-subtle text-secondary">New Customers</span>
+            </div>
+            <canvas id="chartCustomerGrowth" height="200"></canvas>
+        </div>
+    </div>
+
+    <!-- Chart 7: Product Views & Funnel -->
+    <div class="col-lg-6">
+        <div class="sc-chart-card">
+            <div class="sc-chart-header">
+                <h6 class="sc-chart-title"><i class="bi bi-filter-circle text-primary me-2"></i> 7. E-Commerce Interaction Funnel</h6>
+                <span class="badge bg-primary-subtle text-primary">Views to Purchase</span>
+            </div>
+            <canvas id="chartProductViews" height="200"></canvas>
+        </div>
+    </div>
+
+    <!-- Chart 8: Add-to-Cart Rate -->
+    <div class="col-lg-3 col-md-6">
+        <div class="sc-chart-card text-center">
+            <div class="sc-chart-header justify-content-center">
+                <h6 class="sc-chart-title">8. Add-to-Cart Rate</h6>
+            </div>
+            <div style="max-height: 180px;" class="d-flex justify-content-center">
+                <canvas id="chartAddToCartRate"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chart 9: Purchase Conversion Rate -->
+    <div class="col-lg-3 col-md-6">
+        <div class="sc-chart-card text-center">
+            <div class="sc-chart-header justify-content-center">
+                <h6 class="sc-chart-title">9. Purchase Conversion Rate</h6>
+            </div>
+            <div style="max-height: 180px;" class="d-flex justify-content-center">
+                <canvas id="chartConversionRate"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chart 10: Recommendation Click Rate -->
+    <div class="col-lg-3 col-md-6">
+        <div class="sc-chart-card">
+            <div class="sc-chart-header">
+                <h6 class="sc-chart-title">10. Recommendation CTR</h6>
+            </div>
+            <canvas id="chartRecClickRate" height="200"></canvas>
+        </div>
+    </div>
+
+    <!-- Chart 11: Recommendation Purchase Rate -->
+    <div class="col-lg-3 col-md-6">
+        <div class="sc-chart-card">
+            <div class="sc-chart-header">
+                <h6 class="sc-chart-title">11. Recommendation CVR</h6>
+            </div>
+            <canvas id="chartRecPurchaseRate" height="200"></canvas>
+        </div>
+    </div>
+
+    <!-- Chart 12: Average Order Value Trend -->
+    <div class="col-lg-6">
+        <div class="sc-chart-card">
+            <div class="sc-chart-header">
+                <h6 class="sc-chart-title"><i class="bi bi-wallet2 text-pink me-2"></i> 12. Average Order Value (AOV)</h6>
+                <span class="badge bg-danger-subtle text-danger">Trend Analysis</span>
+            </div>
+            <canvas id="chartDailyAOV" height="200"></canvas>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="{{ url_for('static', filename='js/charts.js') }}"></script>
+{% endblock %}

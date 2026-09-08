@@ -1,0 +1,105 @@
+/* SmartCart - Admin Dashboard & Analytics Stylesheet */
+
+.sc-stat-card {
+  background-color: var(--sc-surface);
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius);
+  padding: 1.5rem;
+  box-shadow: var(--sc-card-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: var(--sc-transition);
+}
+
+.sc-stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--sc-hover-shadow);
+}
+
+.sc-stat-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.sc-stat-value {
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-top: 0.25rem;
+  color: var(--sc-text-main);
+}
+
+.sc-stat-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--sc-text-muted);
+}
+
+/* Charts Card Container */
+.sc-chart-card {
+  background-color: var(--sc-surface);
+  border: 1px solid var(--sc-border);
+  border-radius: var(--sc-radius);
+  padding: 1.5rem;
+  box-shadow: var(--sc-card-shadow);
+  height: 100%;
+}
+
+.sc-chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.sc-chart-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--sc-text-main);
+  margin: 0;
+}
+
+/* Confusion Matrix Box */
+.sc-confusion-matrix {
+  width: 100%;
+  max-width: 460px;
+  margin: 1.5rem auto;
+  border-collapse: separate;
+  border-spacing: 8px;
+}
+
+.sc-cm-cell {
+  padding: 1.25rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.sc-cm-tp {
+  background-color: #10b981;
+}
+
+.sc-cm-tn {
+  background-color: #3b82f6;
+}
+
+.sc-cm-fp, .sc-cm-fn {
+  background-color: #f59e0b;
+}
+
+/* Status Badges */
+.badge-placed { background-color: #3b82f6; color: #fff; }
+.badge-confirmed { background-color: #06b6d4; color: #fff; }
+.badge-packed { background-color: #8b5cf6; color: #fff; }
+.badge-shipped { background-color: #f59e0b; color: #fff; }
+.badge-delivered { background-color: #10b981; color: #fff; }
+.badge-cancelled { background-color: #ef4444; color: #fff; }
